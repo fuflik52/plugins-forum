@@ -10,115 +10,30 @@ TypeScript скрипт для индексации всех C# файлов с 
 - **Парсинг метаданных**: Извлекает название плагина и автора из `[Info("Name","Author",...)]` или `class Name : RustPlugin`
 - **Resume функциональность**: Возобновляет работу с места остановки
 - **Continuous режим**: Постоянно мониторит новые плагины
-- **Git интеграция**: Автоматически коммитит изменения в базу данных плагинов
 - **Единый вывод**: Все результаты в одном файле `output/oxide_plugins.json`
 
-## Установка
+## CI/CD (GitHub Actions)
+
+В репозитории настроен workflow `.github/workflows/index.yml`, который:
+- Запускается по расписанию каждые 30 минут и вручную через Run workflow
+- Выполняет сборку и одноразовый прогон индекса
+- Коммитит изменения `output/oxide_plugins.json` и `output/state.json` при их наличии
+
+Токен `GITHUB_TOKEN` берётся автоматически из среды Actions; дополнительных секретов добавлять не нужно.
+
+## Локальный запуск
 
 ```bash
 npm install
-```
-
-## Настройка
-
-1. Создайте GitHub Personal Access Token с правами `public_repo`
-2. Экспортируйте токен:
-   ```bash
-   export GITHUB_TOKEN=ghp_your_token_here
-   ```
-
-## Запуск
-
-### Одноразовая индексация
-```bash
+export GITHUB_TOKEN=ghp_your_token
+npm run build
 npm start
 ```
 
-### Непрерывный мониторинг
+Для непрерывного режима локально:
 ```bash
-CONTINUOUS=true npm start
+CONTINUOUS=true CYCLE_DELAY_MS=300000 npm start
 ```
-
-### Непрерывный мониторинг с кастомной задержкой
-```bash
-CONTINUOUS=true CYCLE_DELAY_MS=300000 npm start  # проверка каждые 5 минут
-```
-
-## Архитектура
-
-### Множественные стратегии поиска
-Скрипт использует 30+ различных вариантов поиска для обхода ограничений GitHub API:
-
-- **Базовые запросы**: `all`, `with-extension`, `no-language`
-- **Fork режимы**: `fork-true`, `fork-false` с различными комбинациями
-- **Size шардирование**: `size-tiny`, `size-small`, `size-medium`, `size-large`, `size-huge`
-- **Сортировки**: `sort-indexed`, `sort-indexed-desc`, `sort-indexed-asc`
-- **Комбинированные**: различные сочетания фильтров
-
-### Обработка файлов
-1. **Поиск**: GitHub Code Search API с множественными стратегиями
-2. **Парсинг**: Извлечение метаданных из содержимого файла
-3. **Кэширование**: Репозитории кэшируются для оптимизации
-4. **Дедупликация**: Уникальные ключи по `repo#path#sha`
-
-### Git интеграция
-- **Автоматические коммиты**: В continuous режиме изменения автоматически коммитятся
-- **История изменений**: Полная история обновлений базы плагинов
-- **Отслеживание роста**: Видно, как растет база плагинов со временем
-
-### Состояние
-Сохраняется в `output/state.json`:
-- Текущий вариант поиска
-- Текущая страница
-- Уже обработанные ключи
-- Кэш репозиториев
-- Время последнего полного сканирования
-
-## Выходные данные
-
-Файл `output/oxide_plugins.json` содержит:
-```json
-{
-  "generated_at": "2024-01-01T00:00:00.000Z",
-  "query": "namespace Oxide.Plugins in:file language:C# extension:cs",
-  "count": 5090,
-  "items": [
-    {
-      "plugin_name": "MyPlugin",
-      "plugin_author": "AuthorName",
-      "language": "C#",
-      "file": {
-        "path": "MyPlugin.cs",
-        "html_url": "https://github.com/...",
-        "raw_url": "https://raw.githubusercontent.com/...",
-        "sha": "abc123...",
-        "size": 1024
-      },
-      "repository": {
-        "full_name": "owner/repo",
-        "name": "repo",
-        "html_url": "https://github.com/owner/repo",
-        "description": "Plugin description",
-        "owner_login": "owner",
-        "owner_url": "https://github.com/owner",
-        "default_branch": "main",
-        "stargazers_count": 100,
-        "forks_count": 10,
-        "open_issues_count": 5,
-        "created_at": "2020-01-01T00:00:00Z"
-      },
-      "indexed_at": "2024-01-01T00:00:00.000Z"
-    }
-  ]
-}
-```
-
-## Переменные окружения
-
-- `GITHUB_TOKEN` (обязательно): GitHub Personal Access Token
-- `CONTINUOUS` (по умолчанию: `false`): Непрерывный режим
-- `CYCLE_DELAY_MS` (по умолчанию: `900000`): Задержка между циклами (15 мин)
-- `SEARCH_QUERY` (по умолчанию: `namespace Oxide.Plugins in:file language:C# extension:cs`): Поисковый запрос
 
 ## Ограничения
 
@@ -127,31 +42,5 @@ CONTINUOUS=true CYCLE_DELAY_MS=300000 npm start  # проверка каждые
 - Файлы > 384KB не индексируются GitHub
 - Rate limits: ~30 запросов/мин для поиска
 - Веб-интерфейс GitHub может показывать больше результатов, чем доступно через API
-
-## Логи
-
-Скрипт выводит подробные логи:
-- Прогресс обработки вариантов поиска
-- Количество найденных элементов
-- Ошибки парсинга
-- Rate limit предупреждения
-- Статистика по завершении
-- Автоматические коммиты
-
-## Восстановление
-
-При прерывании работы скрипт автоматически:
-- Сохраняет прогресс в `state.json`
-- Возобновляет с последнего обработанного варианта поиска
-- Пропускает уже обработанные элементы
-- Продолжает с текущей очереди задач
-
-## Git история
-
-Каждый коммит содержит:
-- Количество плагинов в базе
-- Количество новых плагинов
-- Временную метку обновления
-- Полную историю изменений базы данных
 
 

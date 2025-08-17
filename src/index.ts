@@ -523,21 +523,6 @@ async function runOnce(): Promise<void> {
   saveState(state);
   
   console.log(`Completed scan. Total: ${existingMap.size} entries, New: ${newEntries}`);
-  
-  // Auto-commit changes if in continuous mode
-  if (CONTINUOUS && newEntries > 0) {
-    try {
-      const { execSync } = require('child_process');
-      const timestamp = new Date().toISOString().replace('T', ' ').replace('Z', '');
-      const commitMessage = `Update plugins index: ${existingMap.size} plugins (${newEntries} new) at ${timestamp}`;
-      
-      execSync('git add output/', { stdio: 'inherit' });
-      execSync(`git commit -m "${commitMessage}"`, { stdio: 'inherit' });
-      console.log(`Auto-committed changes: ${newEntries} new plugins`);
-    } catch (err) {
-      console.warn(`Failed to auto-commit: ${(err as Error).message}`);
-    }
-  }
 }
 
 async function run(): Promise<void> {
