@@ -423,6 +423,7 @@ async function runOnce(): Promise<void> {
   
   let processedCount = 0;
   let newEntries = 0;
+  let lastFlushedNewEntries = 0;
   
   // Process all search variants
   const variants = buildSearchVariants();
@@ -470,21 +471,22 @@ async function runOnce(): Promise<void> {
           
           try {
             const indexed = await mapItemToIndexedPlugin(item, state.repoCache);
-            const indexedKey = `${indexed.repository.full_name}#${indexed.file.path}#${indexed.file.sha}`;
+            const indexedKeyStr = `${indexed.repository.full_name}#${indexed.file.path}#${indexed.file.sha}`;
             
-            if (!existingMap.has(indexedKey)) {
-              existingMap.set(indexedKey, indexed);
+            if (!existingMap.has(indexedKeyStr)) {
+              existingMap.set(indexedKeyStr, indexed);
               newEntries++;
             }
             
             state.seenKeys[key] = true;
             processedCount++;
             
-            // Save progress every 10 items
-            if (processedCount % 10 === 0) {
+            // Periodic save only if there are new entries since last flush
+            if (processedCount % 50 === 0 && newEntries > lastFlushedNewEntries) {
               writeUnifiedOutput(existingMap, SEARCH_QUERY);
               saveState(state);
-              console.log(`Processed ${processedCount} items, ${newEntries} new entries`);
+              lastFlushedNewEntries = newEntries;
+              console.log(`Saved progress (${newEntries} new so far)`);
             }
             
           } catch (err) {
@@ -514,8 +516,10 @@ async function runOnce(): Promise<void> {
     }
   }
   
-  // Final save
-  writeUnifiedOutput(existingMap, SEARCH_QUERY);
+  // Final save only if there are new entries in this run
+  if (newEntries > lastFlushedNewEntries) {
+    writeUnifiedOutput(existingMap, SEARCH_QUERY);
+  }
   state.lastFullScanAt = new Date().toISOString();
   state.currentVariant = 0;
   state.currentPage = 1;
