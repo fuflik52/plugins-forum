@@ -1,6 +1,6 @@
 import type { PluginIndex } from '../types/plugin';
 
-const API_BASE_URL = 'https://raw.githubusercontent.com/publicrust/plugins-forum/main/output';
+const API_BASE_URL = 'https://raw.githubusercontent.com/publicrust/plugins-forum/main/backend/output';
 
 export class ApiService {
   static async fetchPluginIndex(): Promise<PluginIndex> {
