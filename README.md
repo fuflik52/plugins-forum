@@ -1,46 +1,157 @@
-# Oxide Rust Plugins Indexer
+# Rust Oxide Plugins Forum
 
-TypeScript скрипт для индексации всех C# файлов с `namespace Oxide.Plugins` на GitHub с использованием множественных стратегий поиска для обхода лимита 1000 результатов.
+A comprehensive platform for indexing, searching, and discovering Rust Oxide plugins from GitHub repositories.
 
-## Особенности
+## Project Structure
 
-- **Множественные стратегии поиска**: 30+ вариантов запросов для получения максимума результатов
-- **Fork режимы**: Обрабатывает как оригинальные репозитории (`fork:false`), так и форки (`fork:true`)
-- **Size-based шардирование**: Разбивает поиск по размеру файлов для обхода лимитов
-- **Парсинг метаданных**: Извлекает название плагина и автора из `[Info("Name","Author",...)]` или `class Name : RustPlugin`
-- **Resume функциональность**: Возобновляет работу с места остановки
-- **Continuous режим**: Постоянно мониторит новые плагины
-- **Единый вывод**: Все результаты в одном файле `output/oxide_plugins.json`
+```
+plugins-forum/
+├── backend/           # TypeScript indexer backend
+│   ├── src/          # Indexer source code
+│   ├── output/       # Generated plugin data
+│   ├── package.json  # Backend dependencies
+│   └── .github/      # CI/CD workflows
+└── frontend/         # React frontend application
+    ├── src/          # React components and logic
+    ├── public/       # Static assets
+    └── package.json  # Frontend dependencies
+```
 
-## CI/CD (GitHub Actions)
+## Features
 
-В репозитории настроен workflow `.github/workflows/index.yml`, который:
-- Запускается по расписанию каждые 30 минут и вручную через Run workflow
-- Выполняет сборку и одноразовый прогон индекса
-- Коммитит изменения `output/oxide_plugins.json` и `output/state.json` при их наличии
+### Backend (Indexer)
+- **GitHub Integration**: Searches GitHub repositories for Oxide plugins
+- **Smart Indexing**: Uses multiple search strategies to overcome API limits
+- **Resume Capability**: Can continue from where it left off
+- **Continuous Monitoring**: Automatically finds and indexes new plugins
+- **CI/CD**: GitHub Actions workflow for scheduled indexing
 
-Токен `GITHUB_TOKEN` берётся автоматически из среды Actions; дополнительных секретов добавлять не нужно.
+### Frontend (React App)
+- **Modern UI**: Clean, responsive design with Tailwind CSS
+- **Real-time Search**: Instant search across plugin names, authors, repositories
+- **Rich Plugin Cards**: Detailed information with stats and links
+- **Statistics**: Live count and update information
+- **Mobile Friendly**: Responsive design for all devices
 
-## Локальный запуск
+## Quick Start
+
+### Backend Setup
 
 ```bash
+cd backend
 npm install
-export GITHUB_TOKEN=ghp_your_token
 npm run build
+
+# Set your GitHub token
+export GITHUB_TOKEN=your_github_token_here
+
+# Run the indexer
 npm start
 ```
 
-Для непрерывного режима локально:
+### Frontend Setup
+
 ```bash
-CONTINUOUS=true CYCLE_DELAY_MS=300000 npm start
+cd frontend
+npm install
+npm start
 ```
 
-## Ограничения
+The frontend will be available at `http://localhost:3000`
 
-- GitHub Code Search API имеет лимит 1000 результатов на запрос
-- Индексируются только файлы в дефолтной ветке
-- Файлы > 384KB не индексируются GitHub
-- Rate limits: ~30 запросов/мин для поиска
-- Веб-интерфейс GitHub может показывать больше результатов, чем доступно через API
+## Configuration
+
+### Backend Environment Variables
+
+- `GITHUB_TOKEN`: Your GitHub personal access token (required)
+- `CONTINUOUS`: Set to "true" for continuous monitoring mode
+- `CYCLE_DELAY_MS`: Delay between cycles in continuous mode (default: 300000ms)
+
+### Frontend Configuration
+
+The frontend automatically fetches data from the GitHub-hosted JSON file. No additional configuration needed.
+
+## API Endpoints
+
+The frontend consumes data from:
+- `https://raw.githubusercontent.com/publicrust/plugins-forum/main/backend/output/oxide_plugins.json`
+
+## Development
+
+### Backend Development
+
+```bash
+cd backend
+npm run build  # Compile TypeScript
+npm start      # Run indexer
+```
+
+### Frontend Development
+
+```bash
+cd frontend
+npm start      # Start development server
+npm run build  # Build for production
+```
+
+## Data Format
+
+The indexer generates a JSON file with the following structure:
+
+```json
+{
+  "generated_at": "2025-08-17T13:43:24.283Z",
+  "query": "namespace Oxide.Plugins in:file language:C# extension:cs",
+  "count": 5090,
+  "items": [
+    {
+      "plugin_name": "SimpleScrapShop",
+      "plugin_author": "djimbou92",
+      "language": "C#",
+      "file": {
+        "path": "SimpleScrapShop.cs",
+        "html_url": "https://github.com/...",
+        "raw_url": "https://raw.githubusercontent.com/..."
+      },
+      "repository": {
+        "full_name": "djimbou92/SimpleScrapShop",
+        "name": "SimpleScrapShop",
+        "html_url": "https://github.com/...",
+        "description": "A simple Rust shop plugin...",
+        "owner_login": "djimbou92",
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "open_issues_count": 0
+      },
+      "commits": {
+        "created": { /* commit info */ },
+        "latest": { /* commit info */ }
+      },
+      "indexed_at": "2025-08-17T11:14:57.040Z"
+    }
+  ]
+}
+```
+
+## CI/CD
+
+The project uses GitHub Actions for automated indexing:
+
+- **Schedule**: Runs every 30 minutes
+- **Manual Trigger**: Can be triggered manually via GitHub Actions
+- **Auto-commit**: Automatically commits changes to the repository
+- **Data Source**: Updates the JSON file used by the frontend
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test both backend and frontend
+5. Submit a pull request
+
+## License
+
+This project is open source and available under the MIT License.
 
 
