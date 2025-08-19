@@ -5,6 +5,7 @@ import { SearchBar } from './components/SearchBar';
 import { PluginGrid } from './components/PluginGrid';
 import { StatsBar } from './components/StatsBar';
 import { AlertCircle, RefreshCw, Zap, Sparkles, Code } from 'lucide-react';
+import { Pagination } from './components/Pagination';
 
 function App() {
   const [pluginIndex, setPluginIndex] = useState<PluginIndex | null>(null);
@@ -12,6 +13,8 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(30);
 
   useEffect(() => {
     loadPlugins();
@@ -21,6 +24,7 @@ function App() {
     if (pluginIndex) {
       const filtered = ApiService.searchPlugins(searchQuery, pluginIndex);
       setFilteredPlugins(filtered);
+      setCurrentPage(1);
     }
   }, [searchQuery, pluginIndex]);
 
@@ -46,6 +50,15 @@ function App() {
   const handleRefresh = () => {
     loadPlugins();
   };
+
+  const pagedItems = (() => {
+    if (!filteredPlugins) return [];
+    const start = (currentPage - 1) * pageSize;
+    const end = start + pageSize;
+    return filteredPlugins.items.slice(start, end);
+  })();
+
+  const totalPages = filteredPlugins ? Math.max(1, Math.ceil(filteredPlugins.count / pageSize)) : 1;
 
   if (loading && !pluginIndex) {
     return (
@@ -133,10 +146,36 @@ function App() {
               searchQuery={searchQuery}
             />
             
+            <div className="flex items-center justify-between gap-4 mb-4">
+              <div className="text-sm text-gray-600">
+                Showing {(filteredPlugins.count === 0 ? 0 : (currentPage - 1) * pageSize + 1).toLocaleString()}–
+                {Math.min(filteredPlugins.count, currentPage * pageSize).toLocaleString()} of {filteredPlugins.count.toLocaleString()}
+              </div>
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-gray-600">Per page:</span>
+                <select
+                  value={pageSize}
+                  onChange={(e) => { setPageSize(Number(e.target.value)); setCurrentPage(1); }}
+                  className="border border-gray-300 rounded-md px-2 py-1 bg-white"
+                >
+                  <option value={12}>12</option>
+                  <option value={24}>24</option>
+                  <option value={30}>30</option>
+                  <option value={48}>48</option>
+                  <option value={60}>60</option>
+                  <option value={96}>96</option>
+                </select>
+              </div>
+            </div>
+
+            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+
             <PluginGrid
-              plugins={filteredPlugins.items}
+              plugins={pagedItems}
               loading={loading}
             />
+
+            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
           </>
         )}
       </main>
