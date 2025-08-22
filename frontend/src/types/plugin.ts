@@ -50,3 +50,41 @@ export interface PluginIndex {
   items: IndexedPlugin[];
 }
 
+
+// Search customization types
+export type SearchFieldKey =
+  | 'plugin_name'
+  | 'plugin_author'
+  | 'repo_name'
+  | 'repo_full_name'
+  | 'repo_description'
+  | 'repo_owner'
+  | 'file_path';
+
+export type SearchMatchMode = 'contains' | 'startsWith' | 'exact' | 'regex';
+export type SearchLogic = 'any' | 'all';
+
+export interface SearchOptions {
+  fields: SearchFieldKey[];
+  matchMode: SearchMatchMode;
+  logic: SearchLogic;
+  caseSensitive: boolean;
+}
+
+export function getDefaultSearchOptions(): SearchOptions {
+  return {
+    fields: [
+      'plugin_name',
+      'plugin_author',
+      'repo_name',
+      'repo_full_name',
+      'repo_description',
+      'repo_owner',
+      'file_path'
+    ],
+    matchMode: 'contains',
+    logic: 'any',
+    caseSensitive: false
+  };
+}
+

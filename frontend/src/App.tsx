@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { PluginIndex } from './types/plugin';
+import { type SearchOptions, getDefaultSearchOptions } from './types/plugin';
 import { ApiService } from './services/api';
 import { SearchBar } from './components/SearchBar';
 import { PluginGrid } from './components/PluginGrid';
@@ -15,6 +16,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(30);
+  const [searchOptions, setSearchOptions] = useState<SearchOptions>(getDefaultSearchOptions());
 
   useEffect(() => {
     loadPlugins();
@@ -22,11 +24,11 @@ function App() {
 
   useEffect(() => {
     if (pluginIndex) {
-      const filtered = ApiService.searchPlugins(searchQuery, pluginIndex);
+      const filtered = ApiService.searchPlugins(searchQuery, pluginIndex, searchOptions);
       setFilteredPlugins(filtered);
       setCurrentPage(1);
     }
-  }, [searchQuery, pluginIndex]);
+  }, [searchQuery, pluginIndex, searchOptions]);
 
   const loadPlugins = async () => {
     try {
@@ -130,6 +132,8 @@ function App() {
           <SearchBar
             value={searchQuery}
             onChange={handleSearchChange}
+            options={searchOptions}
+            onOptionsChange={setSearchOptions}
             placeholder="Search by plugin name, author, repository, or description..."
           />
         </div>
