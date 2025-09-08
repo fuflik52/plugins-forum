@@ -1,1 +1,0 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/ErrorBoundary.tsx","./src/components/Pagination.tsx","./src/components/PluginCard.tsx","./src/components/PluginGrid.tsx","./src/components/SearchBar.tsx","./src/components/StatsBar.tsx","./src/services/api.ts","./src/types/plugin.ts"],"version":"5.8.3"}
