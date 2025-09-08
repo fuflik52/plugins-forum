@@ -1,25 +1,35 @@
-import { useState, useEffect } from 'react';
-import type { PluginIndex } from './types/plugin';
-import { type SearchOptions, getDefaultSearchOptions } from './types/plugin';
+import React, { useState, useEffect } from 'react';
+import type { PluginIndex, IndexedPlugin } from './types/plugin';
 import { ApiService } from './services/api';
 import { SearchBar } from './components/SearchBar';
 import { PluginGrid } from './components/PluginGrid';
+import { GroupedPluginView } from './components/GroupedPluginView';
 import { StatsBar } from './components/StatsBar';
-import { AlertCircle, RefreshCw, Zap, Sparkles, Code } from 'lucide-react';
+import { AlertCircle, RefreshCw, Zap, Sparkles, Code, Grid, Package } from 'lucide-react';
 import { Pagination } from './components/Pagination';
+import { useUrlState } from './hooks/useUrlState';
 
 function App() {
   const [pluginIndex, setPluginIndex] = useState<PluginIndex | null>(null);
   const [filteredPlugins, setFilteredPlugins] = useState<PluginIndex | null>(null);
-  const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(30);
-  const [searchOptions, setSearchOptions] = useState<SearchOptions>(getDefaultSearchOptions());
-  const [sortBy, setSortBy] = useState<
-    'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc'
-  >('updated_desc');
+
+  // Use URL state management
+  const {
+    searchQuery,
+    viewMode,
+    sortBy,
+    currentPage,
+    pageSize,
+    searchOptions,
+    setSearchQuery,
+    setViewMode,
+    setSortBy,
+    setCurrentPage,
+    setPageSize,
+    setSearchOptions
+  } = useUrlState();
 
   useEffect(() => {
     loadPlugins();
@@ -29,7 +39,6 @@ function App() {
     if (pluginIndex) {
       const filtered = ApiService.searchPlugins(searchQuery, pluginIndex, searchOptions);
       setFilteredPlugins(filtered);
-      setCurrentPage(1);
     }
   }, [searchQuery, pluginIndex, searchOptions]);
 
@@ -48,16 +57,98 @@ function App() {
     }
   };
 
-  const handleSearchChange = (value: string) => {
-    setSearchQuery(value);
-  };
-
   const handleRefresh = () => {
     loadPlugins();
   };
 
+  // Calculate unique plugin count for stats
+  const uniquePluginCount = filteredPlugins ? 
+    new Set(filteredPlugins.items.map(p => p.plugin_name || 'Unknown')).size : 0;
+
+  // For grouped view, we need to group and paginate groups
+  const groupedData = React.useMemo(() => {
+    if (!filteredPlugins || viewMode !== 'grouped') return null;
+    
+    const groups: Record<string, IndexedPlugin[]> = {};
+    
+    filteredPlugins.items.forEach(plugin => {
+      const name = plugin.plugin_name || 'Unknown';
+      if (!groups[name]) {
+        groups[name] = [];
+      }
+      groups[name].push(plugin);
+    });
+
+    // Parse sort parameters
+    const [field, dir] = (() => {
+      if (sortBy.startsWith('updated')) return ['updated', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
+      if (sortBy.startsWith('created')) return ['created', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
+      return ['indexed', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
+    })();
+
+    const getTs = (p: any, mode: 'updated' | 'created' | 'indexed'): number => {
+      try {
+        if (mode === 'updated') {
+          const d = p?.commits?.latest?.committed_at ?? p?.indexed_at ?? p?.repository?.created_at;
+          return d ? new Date(d).getTime() : 0;
+        }
+        if (mode === 'created') {
+          const d = p?.commits?.created?.committed_at ?? p?.repository?.created_at ?? p?.indexed_at;
+          return d ? new Date(d).getTime() : 0;
+        }
+        // indexed
+        const d = p?.indexed_at ?? p?.commits?.latest?.committed_at ?? p?.repository?.created_at;
+        return d ? new Date(d).getTime() : 0;
+      } catch {
+        return 0;
+      }
+    };
+
+    // Sort groups by their representative plugin
+    const sortedGroups = Object.entries(groups)
+      .map(([name, pluginList]) => {
+        // Sort plugins within each group
+        const sortedPlugins = [...pluginList].sort((a, b) => {
+          const ta = getTs(a, field as any);
+          const tb = getTs(b, field as any);
+          const diff = tb - ta;
+          return dir === 'asc' ? -diff : diff;
+        });
+
+        return {
+          name,
+          plugins: sortedPlugins,
+          representativePlugin: sortedPlugins[0]
+        };
+      })
+      .sort((a, b) => {
+        const ta = getTs(a.representativePlugin, field as any);
+        const tb = getTs(b.representativePlugin, field as any);
+        const diff = tb - ta;
+        return dir === 'asc' ? -diff : diff;
+      });
+
+    return {
+      allGroups: sortedGroups,
+      totalGroups: sortedGroups.length,
+      pagedGroups: sortedGroups.slice((currentPage - 1) * pageSize, currentPage * pageSize)
+    };
+  }, [filteredPlugins, viewMode, sortBy, currentPage, pageSize]);
+
   const pagedItems = (() => {
     if (!filteredPlugins) return [];
+    
+    if (viewMode === 'grouped') {
+      // Return plugins from paginated groups
+      if (!groupedData) return [];
+      const plugins: IndexedPlugin[] = [];
+      groupedData.pagedGroups.forEach(group => {
+        plugins.push(...group.plugins);
+      });
+      return plugins;
+    }
+
+    // For grid view, sort and paginate individual plugins
     const getTs = (p: any, mode: 'updated' | 'created' | 'indexed'): number => {
       try {
         if (mode === 'updated') {
@@ -94,7 +185,15 @@ function App() {
     return sorted.slice(start, end);
   })();
 
-  const totalPages = filteredPlugins ? Math.max(1, Math.ceil(filteredPlugins.count / pageSize)) : 1;
+  const totalPages = (() => {
+    if (!filteredPlugins) return 1;
+    
+    if (viewMode === 'grouped') {
+      return groupedData ? Math.max(1, Math.ceil(groupedData.totalGroups / pageSize)) : 1;
+    }
+    
+    return Math.max(1, Math.ceil(filteredPlugins.count / pageSize));
+  })();
 
   if (loading && !pluginIndex) {
     return (
@@ -165,7 +264,7 @@ function App() {
           
           <SearchBar
             value={searchQuery}
-            onChange={handleSearchChange}
+            onChange={setSearchQuery}
             options={searchOptions}
             onOptionsChange={setSearchOptions}
             placeholder="Search by plugin name, author, repository, or description..."
@@ -186,15 +285,52 @@ function App() {
             
             <div className="flex items-center justify-between gap-4 mb-4">
               <div className="text-sm text-gray-600">
-                Showing {(filteredPlugins.count === 0 ? 0 : (currentPage - 1) * pageSize + 1).toLocaleString()}–
-                {Math.min(filteredPlugins.count, currentPage * pageSize).toLocaleString()} of {filteredPlugins.count.toLocaleString()}
+                {viewMode === 'grouped' ? (
+                  <span>
+                    Showing {(uniquePluginCount === 0 ? 0 : (currentPage - 1) * pageSize + 1).toLocaleString()}–
+                    {Math.min(uniquePluginCount, currentPage * pageSize).toLocaleString()} of {uniquePluginCount.toLocaleString()} unique plugins 
+                    ({filteredPlugins.count.toLocaleString()} total instances)
+                  </span>
+                ) : (
+                  <span>
+                    Showing {(filteredPlugins.count === 0 ? 0 : (currentPage - 1) * pageSize + 1).toLocaleString()}–
+                    {Math.min(filteredPlugins.count, currentPage * pageSize).toLocaleString()} of {filteredPlugins.count.toLocaleString()}
+                  </span>
+                )}
               </div>
               <div className="flex items-center gap-4 text-sm">
+                <div className="flex items-center gap-2">
+                  <span className="text-gray-600">View:</span>
+                  <div className="flex rounded-lg border border-gray-300 overflow-hidden">
+                    <button
+                      onClick={() => setViewMode('grid')}
+                      className={`px-3 py-1 flex items-center gap-1 transition-colors ${
+                        viewMode === 'grid' 
+                          ? 'bg-blue-500 text-white' 
+                          : 'bg-white text-gray-700 hover:bg-gray-50'
+                      }`}
+                    >
+                      <Grid className="h-3 w-3" />
+                      Grid
+                    </button>
+                    <button
+                      onClick={() => setViewMode('grouped')}
+                      className={`px-3 py-1 flex items-center gap-1 transition-colors border-l border-gray-300 ${
+                        viewMode === 'grouped' 
+                          ? 'bg-blue-500 text-white' 
+                          : 'bg-white text-gray-700 hover:bg-gray-50'
+                      }`}
+                    >
+                      <Package className="h-3 w-3" />
+                      Grouped
+                    </button>
+                  </div>
+                </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-600">Sort:</span>
                   <select
                     value={sortBy}
-                    onChange={(e) => { setSortBy(e.target.value as any); setCurrentPage(1); }}
+                    onChange={(e) => setSortBy(e.target.value as any)}
                     className="border border-gray-300 rounded-md px-2 py-1 bg-white"
                   >
                     <option value="updated_desc">Last updated — newest</option>
@@ -205,30 +341,40 @@ function App() {
                     <option value="indexed_asc">Indexed — oldest</option>
                   </select>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-600">Per page:</span>
-                  <select
-                    value={pageSize}
-                    onChange={(e) => { setPageSize(Number(e.target.value)); setCurrentPage(1); }}
-                    className="border border-gray-300 rounded-md px-2 py-1 bg-white"
-                  >
-                    <option value={12}>12</option>
-                    <option value={24}>24</option>
-                    <option value={30}>30</option>
-                    <option value={48}>48</option>
-                    <option value={60}>60</option>
-                    <option value={96}>96</option>
-                  </select>
-                </div>
+                {viewMode === 'grid' && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-600">Per page:</span>
+                    <select
+                      value={pageSize}
+                      onChange={(e) => setPageSize(Number(e.target.value))}
+                      className="border border-gray-300 rounded-md px-2 py-1 bg-white"
+                    >
+                      <option value={12}>12</option>
+                      <option value={24}>24</option>
+                      <option value={30}>30</option>
+                      <option value={48}>48</option>
+                      <option value={60}>60</option>
+                      <option value={96}>96</option>
+                    </select>
+                  </div>
+                )}
               </div>
             </div>
 
             <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
 
-            <PluginGrid
-              plugins={pagedItems}
-              loading={loading}
-            />
+            {viewMode === 'grid' ? (
+              <PluginGrid
+                plugins={pagedItems}
+                loading={loading}
+              />
+            ) : (
+              <GroupedPluginView
+                plugins={pagedItems}
+                loading={loading}
+                sortBy={sortBy}
+              />
+            )}
 
             <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
           </>
