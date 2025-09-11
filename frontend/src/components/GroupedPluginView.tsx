@@ -1,29 +1,38 @@
-import React, { useState, useCallback } from 'react';
-import type { IndexedPlugin } from '../types/plugin';
-import { PluginCard } from './PluginCard';
-import { ErrorBoundary } from './ErrorBoundary';
-import { ChevronDown, ChevronRight, Package, Users } from 'lucide-react';
-import { getPluginTimestamp } from '../utils/dateUtils';
+import React, { useState, useCallback } from "react";
+import type { IndexedPlugin } from "../types/plugin";
+import { PluginCard } from "./PluginCard";
+import { ErrorBoundary } from "./ErrorBoundary";
+import { ChevronDown, ChevronRight, Package, Users } from "lucide-react";
+import { getPluginTimestamp } from "../utils/dateUtils";
+import { findPluginGlobalIndex } from "../utils/pluginUtils";
 
 interface GroupedPluginViewProps {
   plugins: IndexedPlugin[];
   loading?: boolean;
-  sortBy: 'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc';
+  sortBy:
+    | "updated_desc"
+    | "updated_asc"
+    | "created_desc"
+    | "created_asc"
+    | "indexed_desc"
+    | "indexed_asc";
+  allPlugins?: IndexedPlugin[]; // All plugins for calculating global index
 }
 
-export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({ 
-  plugins, 
+export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
+  plugins,
   loading = false,
-  sortBy
+  sortBy,
+  allPlugins,
 }) => {
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
 
   // Group plugins by name
   const groupedPlugins = React.useMemo(() => {
     const groups: Record<string, IndexedPlugin[]> = {};
-    
-    plugins.forEach(plugin => {
-      const name = plugin.plugin_name || 'Unknown';
+
+    plugins.forEach((plugin) => {
+      const name = plugin.plugin_name || "Unknown";
       if (!groups[name]) {
         groups[name] = [];
       }
@@ -31,12 +40,16 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
     });
 
     // Parse sort parameters
-    const [field, dir] = ((): ['updated' | 'created' | 'indexed', 'asc' | 'desc'] => {
-      if (sortBy.startsWith('updated')) return ['updated', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
-      if (sortBy.startsWith('created')) return ['created', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
-      return ['indexed', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
+    const [field, dir] = ((): [
+      "updated" | "created" | "indexed",
+      "asc" | "desc"
+    ] => {
+      if (sortBy.startsWith("updated"))
+        return ["updated", sortBy.endsWith("asc") ? "asc" : "desc"] as const;
+      if (sortBy.startsWith("created"))
+        return ["created", sortBy.endsWith("asc") ? "asc" : "desc"] as const;
+      return ["indexed", sortBy.endsWith("asc") ? "asc" : "desc"] as const;
     })();
-
 
     // Convert to array and sort groups by the latest plugin in each group
     return Object.entries(groups)
@@ -46,17 +59,17 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
           const ta = getPluginTimestamp(a, field);
           const tb = getPluginTimestamp(b, field);
           const diff = tb - ta;
-          return dir === 'asc' ? -diff : diff;
+          return dir === "asc" ? -diff : diff;
         });
 
         // Get the representative plugin (first one after sorting)
         const representativePlugin = sortedPlugins[0];
-        
+
         return {
           name,
           plugins: sortedPlugins,
           count: pluginList.length,
-          representativePlugin
+          representativePlugin,
         };
       })
       .sort((a, b) => {
@@ -64,13 +77,13 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
         const ta = getPluginTimestamp(a.representativePlugin, field);
         const tb = getPluginTimestamp(b.representativePlugin, field);
         const diff = tb - ta;
-        return dir === 'asc' ? -diff : diff;
+        return dir === "asc" ? -diff : diff;
       });
   }, [plugins, sortBy]);
 
   // Mathematical optimization: Stable callback for group toggling
   const toggleGroup = useCallback((groupName: string): void => {
-    setExpandedGroups(prev => {
+    setExpandedGroups((prev) => {
       const newExpanded = new Set(prev);
       if (newExpanded.has(groupName)) {
         newExpanded.delete(groupName);
@@ -83,7 +96,7 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
 
   // Mathematical proof: O(n) Set creation instead of O(n²) updates
   const expandAll = useCallback((): void => {
-    setExpandedGroups(new Set(groupedPlugins.map(g => g.name)));
+    setExpandedGroups(new Set(groupedPlugins.map((g) => g.name)));
   }, [groupedPlugins]);
 
   const collapseAll = useCallback((): void => {
@@ -94,7 +107,10 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
     return (
       <div className="space-y-4">
         {Array.from({ length: 5 }).map((_, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden animate-pulse">
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden animate-pulse"
+          >
             <div className="p-4 border-b border-gray-100">
               <div className="h-6 bg-gray-200 rounded mb-2 w-1/3"></div>
               <div className="h-4 bg-gray-200 rounded w-1/4"></div>
@@ -109,7 +125,9 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
     return (
       <div className="text-center py-12">
         <div className="text-gray-500 text-lg mb-2">No plugins found</div>
-        <div className="text-gray-400 text-sm">Try adjusting your search criteria</div>
+        <div className="text-gray-400 text-sm">
+          Try adjusting your search criteria
+        </div>
       </div>
     );
   }
@@ -149,9 +167,12 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
       {/* Grouped plugins */}
       {groupedPlugins.map((group) => {
         const isExpanded = expandedGroups.has(group.name);
-        
+
         return (
-          <div key={group.name} className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+          <div
+            key={group.name}
+            className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden"
+          >
             {/* Group header */}
             <button
               onClick={() => toggleGroup(group.name)}
@@ -168,7 +189,7 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
                     {group.name}
                   </h3>
                   <p className="text-sm text-gray-600">
-                    {group.count} {group.count === 1 ? 'instance' : 'instances'}
+                    {group.count} {group.count === 1 ? "instance" : "instances"}
                   </p>
                 </div>
               </div>
@@ -183,11 +204,25 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
             {isExpanded && (
               <div className="border-t border-gray-100 p-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {group.plugins.map((plugin, index) => (
-                    <ErrorBoundary key={`${plugin.repository?.full_name || 'unknown'}-${plugin.file?.path || 'unknown'}-${index}`}>
-                      <PluginCard plugin={plugin} />
-                    </ErrorBoundary>
-                  ))}
+                  {group.plugins.map((plugin, index) => {
+                    // Find the global index of this plugin in the original array
+                    const globalIndex = allPlugins
+                      ? findPluginGlobalIndex(plugin, allPlugins)
+                      : index;
+
+                    return (
+                      <ErrorBoundary
+                        key={`${plugin.repository?.full_name || "unknown"}-${
+                          plugin.file?.path || "unknown"
+                        }-${index}`}
+                      >
+                        <PluginCard
+                          plugin={plugin}
+                          pluginIndex={globalIndex >= 0 ? globalIndex : index}
+                        />
+                      </ErrorBoundary>
+                    );
+                  })}
                 </div>
               </div>
             )}

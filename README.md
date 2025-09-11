@@ -6,7 +6,7 @@ A comprehensive platform for indexing, searching, and discovering Rust Oxide plu
 
 ```
 plugins-forum/
-├── backend/           # TypeScript indexer backend
+├── backend/          # TypeScript indexer backend
 │   ├── src/          # Indexer source code
 │   ├── output/       # Generated plugin data
 │   ├── package.json  # Backend dependencies

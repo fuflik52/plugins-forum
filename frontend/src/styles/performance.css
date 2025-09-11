@@ -23,6 +23,16 @@ button:hover,
   transition: all 0.15s ease-out;
 }
 
+/* Pagination-specific performance optimizations */
+.pagination-button {
+  contain: layout style paint;
+  will-change: background-color, border-color, box-shadow;
+}
+
+.pagination-button:hover {
+  will-change: auto;
+}
+
 /* Critical: Optimize scroll performance */
 .overflow-auto,
 [style*="overflow: auto"],
