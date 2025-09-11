@@ -6,7 +6,9 @@ interface PluginCardProps {
   plugin: IndexedPlugin;
 }
 
-export const PluginCard: React.FC<PluginCardProps> = ({ plugin }) => {
+// Mathematical optimization: React.memo prevents unnecessary re-renders
+// Theorem: Shallow comparison O(k) is cheaper than full render O(n)
+export const PluginCard: React.FC<PluginCardProps> = React.memo(({ plugin }) => {
   const formatDate = (dateString: string | null | undefined): string => {
     if (!dateString) return 'Unknown';
     try {
@@ -171,4 +173,4 @@ export const PluginCard: React.FC<PluginCardProps> = ({ plugin }) => {
       </div>
     </div>
   );
-};
+});

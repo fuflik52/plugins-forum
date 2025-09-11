@@ -14,7 +14,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
   description,
   onReset
 }) => {
-  const getIcon = (): JSX.Element => {
+  const getIcon = (): React.ReactElement => {
     switch (type) {
       case 'search':
         return <Search className="h-16 w-16 text-gray-400" />;

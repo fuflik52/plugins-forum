@@ -1,4 +1,5 @@
 import type { SearchOptions } from '../types/plugin';
+import type { FilterValue } from '../services/filterService';
 import { getDefaultSearchOptions } from '../types/plugin';
 
 export interface UrlState {
@@ -8,6 +9,7 @@ export interface UrlState {
   page?: number;
   pageSize?: number;
   searchOptions?: SearchOptions;
+  filters?: FilterValue[];
 }
 
 // Convert URL search params to state object
@@ -87,6 +89,43 @@ export function parseUrlState(searchParams: URLSearchParams): UrlState {
     state.searchOptions = { ...getDefaultSearchOptions(), ...searchOptions };
   }
 
+  // Filters
+  const filters: FilterValue[] = [];
+  
+  // Authors filter
+  const authors = searchParams.get('authors');
+  if (authors) {
+    authors.split(',').forEach(author => {
+      if (author.trim()) {
+        filters.push({ field: 'plugin_author', value: author.trim() });
+      }
+    });
+  }
+  
+  // Versions filter
+  const versions = searchParams.get('versions');
+  if (versions) {
+    versions.split(',').forEach(version => {
+      if (version.trim()) {
+        filters.push({ field: 'plugin_version', value: version.trim() });
+      }
+    });
+  }
+  
+  // Repository owners filter
+  const owners = searchParams.get('owners');
+  if (owners) {
+    owners.split(',').forEach(owner => {
+      if (owner.trim()) {
+        filters.push({ field: 'repo_owner', value: owner.trim() });
+      }
+    });
+  }
+  
+  if (filters.length > 0) {
+    state.filters = filters;
+  }
+
   return state;
 }
 
@@ -133,6 +172,23 @@ export function stateToUrlParams(state: UrlState): URLSearchParams {
     
     if (opts.caseSensitive !== defaults.caseSensitive) {
       params.set('caseSensitive', opts.caseSensitive.toString());
+    }
+  }
+
+  // Filters
+  if (state.filters && state.filters.length > 0) {
+    const authorFilters = state.filters.filter(f => f.field === 'plugin_author').map(f => f.value);
+    const versionFilters = state.filters.filter(f => f.field === 'plugin_version').map(f => f.value);
+    const ownerFilters = state.filters.filter(f => f.field === 'repo_owner').map(f => f.value);
+    
+    if (authorFilters.length > 0) {
+      params.set('authors', authorFilters.join(','));
+    }
+    if (versionFilters.length > 0) {
+      params.set('versions', versionFilters.join(','));
+    }
+    if (ownerFilters.length > 0) {
+      params.set('owners', ownerFilters.join(','));
     }
   }
 

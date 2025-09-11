@@ -4,14 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run lint && npm run build && vite",
     "build": "tsc -b && vite build",
     "lint": "npx tsx lint.ts src/",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",
-    "@ton-ai-core/devtrace": "^0.2.2",
     "autoprefixer": "^10.4.21",
     "lovable-tagger": "^1.1.9",
     "lucide-react": "^0.539.0",

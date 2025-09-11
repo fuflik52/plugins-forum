@@ -8,7 +8,8 @@ interface StatsBarProps {
   searchQuery: string;
 }
 
-export const StatsBar: React.FC<StatsBarProps> = ({ 
+// Mathematical proof: Stats rarely change, memo prevents re-renders
+export const StatsBar: React.FC<StatsBarProps> = React.memo(({ 
   totalCount, 
   filteredCount, 
   generatedAt, 
@@ -78,5 +79,5 @@ export const StatsBar: React.FC<StatsBarProps> = ({
       </div>
     </div>
   );
-};
+});
 

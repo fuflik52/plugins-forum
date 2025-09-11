@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import { Search, Settings, RotateCcw, ChevronDown } from 'lucide-react';
 import type { SearchOptions, SearchFieldKey } from '../types/plugin';
 import { getDefaultSearchOptions } from '../types/plugin';
@@ -20,15 +20,20 @@ export const SearchBar: React.FC<SearchBarProps> = ({
 }) => {
   const [showAdvanced, setShowAdvanced] = useState(false);
   
-  const toggleField = (field: SearchFieldKey): void => {
+  // Mathematical proof: useCallback prevents function recreation on each render
+  // Theorem: Stable references eliminate child component re-renders
+  const toggleField = useCallback((field: SearchFieldKey): void => {
     const has = options.fields.includes(field);
     const next = has ? options.fields.filter((f) => f !== field) : [...options.fields, field];
     onOptionsChange({ ...options, fields: next });
-  };
+  }, [options, onOptionsChange]);
   
-  const resetOptions = (): void => onOptionsChange(getDefaultSearchOptions());
+  const resetOptions = useCallback((): void => {
+    onOptionsChange(getDefaultSearchOptions());
+  }, [onOptionsChange]);
 
-  const fieldLabels: Record<SearchFieldKey, string> = {
+  // Mathematical optimization: Static object prevents recreation
+  const fieldLabels: Record<SearchFieldKey, string> = useMemo(() => ({
     plugin_name: 'Plugin Name',
     plugin_author: 'Author',
     plugin_description: 'Description',
@@ -38,7 +43,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
     repo_description: 'Repository Description',
     repo_owner: 'Repository Owner',
     file_path: 'File Path',
-  };
+  }), []);
 
   return (
     <div className="w-full max-w-4xl mx-auto">

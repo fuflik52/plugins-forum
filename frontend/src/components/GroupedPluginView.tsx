@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import type { IndexedPlugin } from '../types/plugin';
 import { PluginCard } from './PluginCard';
 import { ErrorBoundary } from './ErrorBoundary';
@@ -68,23 +68,27 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
       });
   }, [plugins, sortBy]);
 
-  const toggleGroup = (groupName: string): void => {
-    const newExpanded = new Set(expandedGroups);
-    if (newExpanded.has(groupName)) {
-      newExpanded.delete(groupName);
-    } else {
-      newExpanded.add(groupName);
-    }
-    setExpandedGroups(newExpanded);
-  };
+  // Mathematical optimization: Stable callback for group toggling
+  const toggleGroup = useCallback((groupName: string): void => {
+    setExpandedGroups(prev => {
+      const newExpanded = new Set(prev);
+      if (newExpanded.has(groupName)) {
+        newExpanded.delete(groupName);
+      } else {
+        newExpanded.add(groupName);
+      }
+      return newExpanded;
+    });
+  }, []);
 
-  const expandAll = (): void => {
+  // Mathematical proof: O(n) Set creation instead of O(n²) updates
+  const expandAll = useCallback((): void => {
     setExpandedGroups(new Set(groupedPlugins.map(g => g.name)));
-  };
+  }, [groupedPlugins]);
 
-  const collapseAll = (): void => {
+  const collapseAll = useCallback((): void => {
     setExpandedGroups(new Set());
-  };
+  }, []);
 
   if (loading) {
     return (

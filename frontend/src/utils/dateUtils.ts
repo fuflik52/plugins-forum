@@ -23,7 +23,7 @@ export function getPluginTimestamp(plugin: IndexedPlugin, mode: 'updated' | 'cre
       }
     } else {
       // indexed
-      dateStr = plugin.indexed_at;
+      dateStr = plugin.indexed_at ?? undefined;
       if (!dateStr) {
         const commits = plugin.commits;
         if (commits && commits.latest) {
