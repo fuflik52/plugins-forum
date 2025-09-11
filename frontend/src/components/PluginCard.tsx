@@ -5,11 +5,12 @@ import {
   Star,
   GitFork,
   AlertCircle,
-  Calendar,
   User,
   Github,
   Eye,
   Info,
+  Clock,
+  Database,
 } from "lucide-react";
 
 interface PluginCardProps {
@@ -54,7 +55,7 @@ export const PluginCard: React.FC<PluginCardProps> = React.memo(
     return (
       <div
         className="bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg 
-                  transition-all duration-300 group overflow-hidden h-[400px] flex flex-col"
+                  transition-all duration-300 group overflow-hidden h-[420px] flex flex-col"
       >
         {/* Header Section - Fixed 80px */}
         <div className="p-4 flex-shrink-0 h-20">
@@ -147,22 +148,37 @@ export const PluginCard: React.FC<PluginCardProps> = React.memo(
           </div>
         </div>
 
-        {/* Footer Section - Fixed 80px */}
-        <div className="px-4 pb-4 flex-shrink-0 h-20">
+        {/* Footer Section - Fixed 100px */}
+        <div className="px-4 pb-4 flex-shrink-0 h-25">
           {/* File & Date Info */}
-          <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
-            <div className="flex items-center">
-              <Calendar className="h-3 w-3 mr-1" />
-              <span>
-                {plugin.commits && plugin.commits.latest
-                  ? formatDate(plugin.commits.latest.committed_at)
-                  : "Unknown"}
-              </span>
+          <div className="text-xs text-gray-500 mb-3 space-y-1">
+            {/* Creation Date */}
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <Clock className="h-3 w-3 mr-1 text-green-500" />
+                <span>Created: </span>
+                <span className="font-medium">
+                  {plugin.repository.created_at 
+                    ? formatDate(plugin.repository.created_at)
+                    : "Unknown"}
+                </span>
+              </div>
             </div>
-            <div className="text-right truncate max-w-24">
-              <span className="font-mono text-xs">
-                {plugin.file.path?.split("/").pop() || "Unknown"}
-              </span>
+            
+            {/* Indexed Date */}
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <Database className="h-3 w-3 mr-1 text-purple-500" />
+                <span>Indexed: </span>
+                <span className="font-medium">
+                  {plugin.indexed_at ? formatDate(plugin.indexed_at) : "Unknown"}
+                </span>
+              </div>
+              <div className="text-right truncate max-w-24">
+                <span className="font-mono text-xs">
+                  {plugin.file.path?.split("/").pop() || "Unknown"}
+                </span>
+              </div>
             </div>
           </div>
 

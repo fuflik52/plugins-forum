@@ -15,11 +15,15 @@ export function getPluginTimestamp(plugin: IndexedPlugin, mode: 'updated' | 'cre
         dateStr = plugin.indexed_at ?? plugin.repository.created_at ?? undefined;
       }
     } else if (mode === 'created') {
-      const commits = plugin.commits;
-      if (commits && commits.created) {
-        dateStr = commits.created.committed_at;
-      } else {
-        dateStr = plugin.repository.created_at ?? plugin.indexed_at ?? undefined;
+      // For 'created' mode, prioritize repository creation date, then first commit, then indexed date
+      dateStr = plugin.repository.created_at ?? undefined;
+      if (!dateStr) {
+        const commits = plugin.commits;
+        if (commits && commits.created) {
+          dateStr = commits.created.committed_at;
+        } else {
+          dateStr = plugin.indexed_at ?? undefined;
+        }
       }
     } else {
       // indexed

@@ -20,6 +20,7 @@ import { AlertCircle, RefreshCw, Zap, Sparkles, Code, Grid, Package } from 'luci
 import { Pagination } from './components/Pagination';
 import { useUrlState } from './hooks/useUrlState';
 import { getPluginTimestamp } from './utils/dateUtils';
+import { debugSortOrder } from './utils/debugSort';
 
 // Mathematical optimization: Single Source of Truth pattern
 // Memory complexity: O(1) for state, O(n) for data where n = plugin count
@@ -228,9 +229,17 @@ function App(): React.JSX.Element {
     // O(pageSize) slice operation
     const start = (currentPage - 1) * pageSize;
     const end = start + pageSize;
-    return sortedIndices
+    const result = sortedIndices
       .slice(start, end)
       .map(index => filteredData.finalFiltered[index]);
+    
+    // Debug output for 'created' sorting
+    if (field === 'created' && dir === 'desc') {
+      const allSorted = sortedIndices.map(index => filteredData.finalFiltered[index]);
+      debugSortOrder(allSorted);
+    }
+    
+    return result;
   }, [filteredData, viewMode, groupedData, sortBy, currentPage, pageSize]);
 
   // O(1) total pages calculation
