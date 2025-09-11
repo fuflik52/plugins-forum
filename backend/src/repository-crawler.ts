@@ -316,6 +316,16 @@ class RepositoryCrawler {
       const progress = `[${i + 1}/${newRepositories.length}]`;
       console.log(`\n${progress} Processing: ${repo}`);
       
+      // Mark repository as "in progress" immediately to prevent re-processing
+      this.state.processed_repositories[repo] = {
+        last_crawled: new Date().toISOString(),
+        plugins_count: 0,
+        success: false,
+        errors: ["Processing in progress..."]
+      };
+      this.updateGlobalState(successful, failed);
+      this.saveState();
+      
       try {
         const result = await this.crawlSingleRepository(repo);
         results.push(result);
