@@ -38,6 +38,7 @@ const FilterSection = React.memo(({
   maxAbsolute?: number;
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [isToggling, setIsToggling] = useState(false);
 
   // Mathematical optimization: Strict DOM element limits
   // Theorem: O(1) memory usage regardless of data size
@@ -144,7 +145,7 @@ const FilterSection = React.memo(({
             
             return (
               <button
-                key={option}
+                key={`${field}-${option}-${isActive ? 'active' : 'inactive'}`}
                 onClick={() => isActive ? onRemoveFilter(field, option) : onAddFilter(field, option)}
                 className={`w-full flex items-center justify-between px-2 py-1.5 text-xs rounded-md transition-all hover:bg-gray-50 ${
                   isActive 
@@ -169,8 +170,14 @@ const FilterSection = React.memo(({
       {/* Expand/Collapse button */}
       {processedData.hasMore && (
         <button
-          onClick={onToggleExpanded}
-          className="w-full mt-2 py-1.5 text-xs text-blue-600 hover:text-blue-700 transition-colors flex items-center justify-center"
+          onClick={() => {
+            if (isToggling) return; // Prevent double clicks
+            setIsToggling(true);
+            onToggleExpanded();
+            setTimeout(() => setIsToggling(false), 100); // Reset after 100ms
+          }}
+          disabled={isToggling}
+          className="w-full mt-2 py-1.5 text-xs text-blue-600 hover:text-blue-700 transition-colors flex items-center justify-center disabled:opacity-50"
         >
           {isExpanded ? (
             <>
@@ -342,6 +349,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   };
 
   const toggleSection = (section: keyof typeof expandedSections): void => {
+    // Prevent rapid clicking that could cause DOM issues
     setExpandedSections(prev => ({ ...prev, [section]: !prev[section] }));
   };
 
