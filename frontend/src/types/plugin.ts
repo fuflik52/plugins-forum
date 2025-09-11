@@ -36,6 +36,9 @@ export interface PluginCommits {
 export interface IndexedPlugin {
   plugin_name: string;
   plugin_author?: string | null;
+  plugin_version?: string | null;
+  plugin_description?: string | null;
+  plugin_resource_id?: number | null;
   language: string;
   file: PluginFile;
   repository: PluginRepository;
@@ -48,5 +51,47 @@ export interface PluginIndex {
   query: string;
   count: number;
   items: IndexedPlugin[];
+}
+
+
+// Search customization types
+export type SearchFieldKey =
+  | 'plugin_name'
+  | 'plugin_author'
+  | 'plugin_description'
+  | 'plugin_version'
+  | 'repo_name'
+  | 'repo_full_name'
+  | 'repo_description'
+  | 'repo_owner'
+  | 'file_path';
+
+export type SearchMatchMode = 'contains' | 'startsWith' | 'exact' | 'regex';
+export type SearchLogic = 'any' | 'all';
+
+export interface SearchOptions {
+  fields: SearchFieldKey[];
+  matchMode: SearchMatchMode;
+  logic: SearchLogic;
+  caseSensitive: boolean;
+}
+
+export function getDefaultSearchOptions(): SearchOptions {
+  return {
+    fields: [
+      'plugin_name',
+      'plugin_author',
+      'plugin_description',
+      'plugin_version',
+      'repo_name',
+      'repo_full_name',
+      'repo_description',
+      'repo_owner',
+      'file_path'
+    ],
+    matchMode: 'contains',
+    logic: 'any',
+    caseSensitive: false
+  };
 }
 

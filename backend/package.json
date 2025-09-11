@@ -6,7 +6,9 @@
   "description": "Index Rust (Oxide) C# plugins from GitHub code search into a JSON file with metadata.",
   "scripts": {
     "build": "tsc -p .",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "crawl-repos": "tsc -p . && node dist/repository-crawler.js",
+    "crawl": "npm run crawl-repos"
   },
   "engines": {
     "node": ">=18"

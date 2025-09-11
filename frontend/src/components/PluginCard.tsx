@@ -1,14 +1,16 @@
 import React from 'react';
 import type { IndexedPlugin } from '../types/plugin';
-import { Star, GitFork, MessageCircle, Calendar, User, FileCode, Github, Eye } from 'lucide-react';
+import { Star, GitFork, AlertCircle, Calendar, User, Github, Eye } from 'lucide-react';
 
 interface PluginCardProps {
   plugin: IndexedPlugin;
 }
 
-export const PluginCard: React.FC<PluginCardProps> = ({ plugin }) => {
-  const formatDate = (dateString: string | null | undefined) => {
-    if (!dateString) return 'Unknown date';
+// Mathematical optimization: React.memo prevents unnecessary re-renders
+// Theorem: Shallow comparison O(k) is cheaper than full render O(n)
+export const PluginCard: React.FC<PluginCardProps> = React.memo(({ plugin }) => {
+  const formatDate = (dateString: string | null | undefined): string => {
+    if (!dateString) return 'Unknown';
     try {
       return new Date(dateString).toLocaleDateString('en-US', {
         year: 'numeric',
@@ -16,133 +18,159 @@ export const PluginCard: React.FC<PluginCardProps> = ({ plugin }) => {
         day: 'numeric'
       });
     } catch {
-      return 'Unknown date';
+      return 'Unknown';
     }
   };
 
-  // Проверяем наличие необходимых данных
+  const formatNumber = (num: number | undefined): string => {
+    if (!num) return '0';
+    return num > 1000 ? `${(num / 1000).toFixed(1)}k` : num.toString();
+  };
+
   if (!plugin || !plugin.repository || !plugin.file) {
     return (
-      <div className="plugin-card">
-        <div className="p-8">
-          <div className="text-gray-500 text-center">Invalid plugin data</div>
+      <div className="bg-white rounded-xl border border-gray-200 p-6">
+        <div className="flex items-center justify-center h-32 text-gray-500">
+          <AlertCircle className="h-8 w-8 mr-2" />
+          <span>Invalid plugin data</span>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="plugin-card group">
-      <div className="p-8">
-        {/* Header with gradient background */}
-        <div className="relative mb-6">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl"></div>
-          <div className="relative p-6">
-            <div className="flex items-start justify-between mb-4">
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:gradient-text transition-all duration-300">
-                  {plugin.plugin_name || 'Unnamed Plugin'}
-                </h3>
-                <div className="flex items-center text-gray-600 mb-3">
-                  <div className="icon-wrapper mr-3">
-                    <User className="h-4 w-4" />
-                  </div>
-                  <span className="font-medium">
-                    {plugin.plugin_author || plugin.repository.owner_login || 'Unknown Author'}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="badge">
-                  {plugin.language || 'Unknown'}
+    <div className="bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg 
+                  transition-all duration-300 group overflow-hidden h-[400px] flex flex-col">
+      
+      {/* Header Section - Fixed 80px */}
+      <div className="p-4 flex-shrink-0 h-20">
+        <div className="flex items-start justify-between">
+          <div className="flex-1 min-w-0 mr-3">
+            {/* Plugin Name & Version */}
+            <div className="flex items-center gap-2 mb-1">
+              <h3 className="text-base font-bold text-gray-900 truncate group-hover:text-blue-600 transition-colors">
+                {plugin.plugin_name || 'Unnamed Plugin'}
+              </h3>
+              {plugin.plugin_version && (
+                <span className="inline-flex items-center px-1.5 py-0.5 text-xs font-semibold 
+                               bg-blue-100 text-blue-800 rounded-full flex-shrink-0">
+                  v{plugin.plugin_version}
                 </span>
-              </div>
+              )}
+            </div>
+            
+            {/* Author */}
+            <div className="flex items-center text-gray-600">
+              <User className="h-3 w-3 mr-1 flex-shrink-0" />
+              <span className="text-xs font-medium truncate">
+                {plugin.plugin_author || plugin.repository.owner_login || 'Unknown Author'}
+              </span>
             </div>
           </div>
-        </div>
-
-        {/* Repository Info */}
-        <div className="mb-6">
-          <div className="flex items-center space-x-3 mb-3">
-            <Github className="h-5 w-5 text-gray-600" />
-            <h4 className="text-lg font-semibold text-gray-800">
-              {plugin.repository.full_name || 'Unknown Repository'}
-            </h4>
-          </div>
-          {plugin.repository.description && (
-            <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
-              {plugin.repository.description}
-            </p>
-          )}
-        </div>
-
-        {/* Stats with modern design */}
-        <div className="grid grid-cols-3 gap-4 mb-6">
-          <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-100/50">
-            <div className="flex items-center justify-center mb-2">
-              <Star className="h-5 w-5 text-yellow-500" />
-            </div>
-            <div className="text-xl font-bold text-gray-900">{plugin.repository.stargazers_count?.toLocaleString() || 0}</div>
-            <div className="text-xs text-gray-600">Stars</div>
-          </div>
-          <div className="text-center p-4 bg-gradient-to-br from-green-50 to-blue-50 rounded-xl border border-green-100/50">
-            <div className="flex items-center justify-center mb-2">
-              <GitFork className="h-5 w-5 text-green-500" />
-            </div>
-            <div className="text-xl font-bold text-gray-900">{plugin.repository.forks_count?.toLocaleString() || 0}</div>
-            <div className="text-xs text-gray-600">Forks</div>
-          </div>
-          <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl border border-purple-100/50">
-            <div className="flex items-center justify-center mb-2">
-              <MessageCircle className="h-5 w-5 text-purple-500" />
-            </div>
-            <div className="text-xl font-bold text-gray-900">{plugin.repository.open_issues_count?.toLocaleString() || 0}</div>
-            <div className="text-xs text-gray-600">Issues</div>
-          </div>
-        </div>
-
-        {/* File Info with modern design */}
-        <div className="mb-6 p-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-200/50">
-          <div className="flex items-center text-gray-700 mb-2">
-            <FileCode className="h-4 w-4 mr-2 text-blue-500" />
-            <span className="font-semibold">File:</span>
-            <span className="ml-2 text-gray-600 font-mono text-sm">{plugin.file.path || 'Unknown file'}</span>
-          </div>
-          <div className="flex items-center text-gray-600">
-            <Calendar className="h-4 w-4 mr-2 text-purple-500" />
-            <span className="text-sm">
-              Latest: {plugin.commits?.latest?.committed_at ? formatDate(plugin.commits.latest.committed_at) : 'Unknown date'}
+          
+          {/* Language Badge */}
+          <div className="flex-shrink-0">
+            <span className="inline-flex items-center px-2 py-0.5 text-xs font-medium 
+                           bg-gray-100 text-gray-800 rounded-full">
+              C#
             </span>
           </div>
         </div>
+      </div>
 
-        {/* Actions with modern buttons */}
-        <div className="flex items-center space-x-4">
+      {/* Description Section - Fixed 60px */}
+      <div className="px-4 flex-shrink-0 h-15">
+        {plugin.plugin_description ? (
+          <p className="text-gray-700 text-xs leading-relaxed line-clamp-3">
+            {plugin.plugin_description}
+          </p>
+        ) : (
+          <p className="text-gray-400 text-xs italic">No description available</p>
+        )}
+      </div>
+
+      {/* Repository Section - Flexible */}
+      <div className="px-4 flex-1 py-3">
+        <div className="bg-gray-50 rounded-lg p-3 h-full flex flex-col">
+          <div className="flex items-center mb-2">
+            <Github className="h-3 w-3 text-gray-600 mr-1 flex-shrink-0" />
+            <h4 className="font-medium text-gray-900 truncate text-xs">
+              {plugin.repository.full_name || 'Unknown Repository'}
+            </h4>
+          </div>
+          
+          <div className="flex-1">
+            {plugin.repository.description && (
+              <p className="text-xs text-gray-600 leading-relaxed line-clamp-2 mb-2">
+                {plugin.repository.description}
+              </p>
+            )}
+          </div>
+          
+          {/* Repository Stats */}
+          <div className="flex items-center gap-3 text-xs text-gray-500 mt-auto">
+            <div className="flex items-center">
+              <Star className="h-3 w-3 mr-1 text-yellow-500" />
+              <span>{formatNumber(plugin.repository.stargazers_count)}</span>
+            </div>
+            <div className="flex items-center">
+              <GitFork className="h-3 w-3 mr-1 text-green-500" />
+              <span>{formatNumber(plugin.repository.forks_count)}</span>
+            </div>
+            <div className="flex items-center">
+              <AlertCircle className="h-3 w-3 mr-1 text-red-500" />
+              <span>{formatNumber(plugin.repository.open_issues_count)}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Section - Fixed 80px */}
+      <div className="px-4 pb-4 flex-shrink-0 h-20">
+        {/* File & Date Info */}
+        <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
+          <div className="flex items-center">
+            <Calendar className="h-3 w-3 mr-1" />
+            <span>
+              {plugin.commits && plugin.commits.latest
+                ? formatDate(plugin.commits.latest.committed_at) 
+                : 'Unknown'}
+            </span>
+          </div>
+          <div className="text-right truncate max-w-24">
+            <span className="font-mono text-xs">{plugin.file.path?.split('/').pop() || 'Unknown'}</span>
+          </div>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex gap-2 justify-center">
           {plugin.repository.html_url && (
             <a
               href={plugin.repository.html_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="button-primary flex items-center"
+              title="View Repository"
+              className="flex items-center justify-center w-10 h-10 bg-gray-900 hover:bg-gray-800 
+                       text-white rounded-lg transition-all duration-200 hover:scale-105"
             >
-              <Github className="h-4 w-4 mr-2" />
-              Repository
+              <Github className="h-4 w-4" />
             </a>
           )}
+          
           {plugin.file.html_url && (
             <a
               href={plugin.file.html_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="button-secondary flex items-center"
+              title="View Source Code"
+              className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 
+                       text-white rounded-lg transition-all duration-200 hover:scale-105"
             >
-              <Eye className="h-4 w-4 mr-2" />
-              View File
+              <Eye className="h-4 w-4" />
             </a>
           )}
         </div>
       </div>
     </div>
   );
-};
-
+});

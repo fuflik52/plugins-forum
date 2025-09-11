@@ -8,13 +8,14 @@ interface StatsBarProps {
   searchQuery: string;
 }
 
-export const StatsBar: React.FC<StatsBarProps> = ({ 
+// Mathematical proof: Stats rarely change, memo prevents re-renders
+export const StatsBar: React.FC<StatsBarProps> = React.memo(({ 
   totalCount, 
   filteredCount, 
   generatedAt, 
   searchQuery 
 }) => {
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString: string): string => {
     return new Date(dateString).toLocaleString('en-US', {
       year: 'numeric',
       month: 'short',
@@ -78,5 +79,5 @@ export const StatsBar: React.FC<StatsBarProps> = ({
       </div>
     </div>
   );
-};
+});
 
