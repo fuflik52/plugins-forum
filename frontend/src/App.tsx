@@ -430,12 +430,14 @@ function App(): React.JSX.Element {
                   <PluginGrid
                     plugins={pagedItems}
                     loading={loading}
+                    allPlugins={pluginIndex.items}
                   />
                 ) : (
                   <GroupedPluginView
                     plugins={pagedItems}
                     loading={loading}
                     sortBy={sortBy}
+                    allPlugins={pluginIndex.items}
                   />
                 )}
 

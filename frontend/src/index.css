@@ -138,6 +138,65 @@
   .icon-wrapper {
     @apply flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 text-white;
   }
+
+  /* Pagination Styles - Optimized for Performance */
+  .pagination-button {
+    @apply relative inline-flex items-center justify-center min-w-[2.75rem] h-11 font-medium text-sm rounded-lg transition-all duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-1;
+    /* GPU acceleration for smooth animations */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .pagination-active {
+    @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-md;
+    /* Prevent animation conflicts */
+    transform: translateZ(0) scale(1);
+  }
+
+  .pagination-inactive {
+    @apply bg-white/90 border border-gray-200/80 text-gray-700 hover:bg-gray-50 hover:border-gray-300 hover:shadow-sm;
+    /* Smooth hover without scale conflicts */
+    transform: translateZ(0);
+  }
+
+  .pagination-nav {
+    @apply bg-white/90 border border-gray-200/80 text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 px-4;
+    /* Consistent styling for nav buttons */
+    transform: translateZ(0);
+  }
+
+  /* Override conflicting styles */
+  .pagination-button:hover {
+    transform: translateZ(0) !important;
+  }
+
+  .pagination-active:hover {
+    transform: translateZ(0) scale(1) !important;
+  }
+
+  /* Custom scrollbar for dark code blocks */
+  .custom-scrollbar-dark {
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 #1f2937;
+  }
+  
+  .custom-scrollbar-dark::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .custom-scrollbar-dark::-webkit-scrollbar-track {
+    @apply bg-gray-800 rounded;
+  }
+  
+  .custom-scrollbar-dark::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded hover:bg-gray-500;
+  }
+  
+  .custom-scrollbar-dark::-webkit-scrollbar-corner {
+    @apply bg-gray-800;
+  }
 }
 
 @layer utilities {
