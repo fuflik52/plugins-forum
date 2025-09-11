@@ -215,7 +215,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   // Theorem: Filter options update based on cross-filter dependencies
   const baseFilterOptions = useMemo(() => {
     // Calculate what plugins remain after applying OTHER filters
-    const getAvailablePluginsForField = (excludeField: string) => {
+    const getAvailablePluginsForField = (excludeField: string): IndexedPlugin[] => {
       const otherFilters = activeFilters.filter(f => f.field !== excludeField);
       return otherFilters.length > 0 
         ? FilterService.applyFilters(plugins, otherFilters)
