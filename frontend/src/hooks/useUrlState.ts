@@ -22,7 +22,7 @@ export function useUrlState(): {
 } {
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'grouped'>('grid');
-  const [sortBy, setSortBy] = useState<'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc'>('updated_desc');
+  const [sortBy, setSortBy] = useState<'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc'>('created_desc');
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(30);
   const [searchOptions, setSearchOptions] = useState<SearchOptions>(getDefaultSearchOptions());
@@ -128,7 +128,7 @@ export function useUrlState(): {
       
       setSearchQuery(urlState.search || '');
       setViewMode(urlState.view || 'grid');
-      setSortBy(urlState.sort || 'updated_desc');
+      setSortBy(urlState.sort || 'created_desc');
       setCurrentPage(urlState.page || 1);
       setPageSize(urlState.pageSize || 30);
       setSearchOptions(urlState.searchOptions || getDefaultSearchOptions());
