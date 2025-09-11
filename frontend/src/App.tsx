@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo } from 'react';
 import type { PluginIndex, IndexedPlugin } from './types/plugin';
 import { ApiService } from './services/api';
 import { FilterService } from './services/filterService';
-import type { FilterValue } from './services/filterService';
 import { enableDOMMonitoring } from './utils/domAnalytics';
 import { 
   optimizeAnimations, 
