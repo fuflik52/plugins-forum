@@ -279,13 +279,13 @@ function parsePluginInfo(content: string): { name: string; author: string } | nu
   
   // Try [Info("Name","Author",...)] pattern
   const infoMatch = decoded.match(/\[Info\s*\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*\)/);
-  if (infoMatch) {
+  if (infoMatch && infoMatch[1] && infoMatch[2]) {
     return { name: infoMatch[1], author: infoMatch[2] };
   }
   
   // Try class Name : RustPlugin pattern
   const classMatch = decoded.match(/class\s+(\w+)\s*:\s*(RustPlugin|CovalencePlugin)/);
-  if (classMatch) {
+  if (classMatch && classMatch[1]) {
     return { name: classMatch[1], author: "" }; // Will be filled with repo owner
   }
   
@@ -295,6 +295,10 @@ function parsePluginInfo(content: string): { name: string; author: string } | nu
 async function mapItemToIndexedPlugin(item: GitHubCodeSearchItem, repoCache: Record<string, GitHubRepo>): Promise<IndexedPlugin> {
   const fullName = item.repository.full_name;
   const [owner, repo] = fullName.split("/");
+  
+  if (!owner || !repo) {
+    throw new Error(`Invalid repository format: ${fullName}`);
+  }
   
   // Get or cache repo data
   let repoData = repoCache[fullName];
@@ -430,6 +434,11 @@ async function runOnce(): Promise<void> {
   
   for (let variantIndex = state.currentVariant; variantIndex < variants.length; variantIndex++) {
     const variant = variants[variantIndex];
+    
+    if (!variant) {
+      console.error(`Variant at index ${variantIndex} is undefined`);
+      continue;
+    }
     
     if (variantIndex !== state.currentVariant) {
       state.currentVariant = variantIndex;
