@@ -1,3 +1,5 @@
+import HooksLoader from './hooksLoader';
+
 export interface PluginAnalysis {
   commands: {
     chatCommands: string[];
@@ -94,37 +96,12 @@ export class PluginAnalyzer {
       }
     }
 
-    // Analyze Oxide hooks
-    const oxideHooks = [
-      "OnPlayerInit",
-      "OnPlayerConnected",
-      "OnPlayerDisconnected",
-      "OnPlayerRespawned",
-      "OnPlayerChat",
-      "OnPlayerCommand",
-      "OnPlayerSleep",
-      "OnPlayerWound",
-      "OnEntityKill",
-      "OnEntityDeath",
-      "OnEntitySpawned",
-      "OnEntityTakeDamage",
-      "OnServerInitialized",
-      "OnServerSave",
-      "OnServerShutdown",
-      "OnItemCraft",
-      "OnItemRepair",
-      "OnItemUpgrade",
-      "OnStructureBuild",
-      "OnStructureUpgrade",
-      "OnStructureRepair",
-      "OnRocketLaunched",
-      "OnExplosiveThrown",
-      "OnWeaponFired",
-    ];
+    // Analyze Oxide hooks using hooks from JSON
+    const allHooks = HooksLoader.getHookNames();
 
-    oxideHooks.forEach((hook) => {
+    allHooks.forEach((hook) => {
       const hookRegex = new RegExp(`\\b${hook}\\s*\\(`, "g");
-      if (hookRegex.test(code)) {
+      if (hookRegex.test(code) && !analysis.hooks.oxideHooks.includes(hook)) {
         analysis.hooks.oxideHooks.push(hook);
       }
     });
