@@ -14,7 +14,7 @@ export const StatsBar: React.FC<StatsBarProps> = ({
   generatedAt, 
   searchQuery 
 }) => {
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString: string): string => {
     return new Date(dateString).toLocaleString('en-US', {
       year: 'numeric',
       month: 'short',

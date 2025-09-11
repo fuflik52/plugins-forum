@@ -1,19 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import type { PluginIndex, IndexedPlugin } from './types/plugin';
 import { ApiService } from './services/api';
+import { FilterService } from './services/filterService';
+import type { FilterValue } from './services/filterService';
 import { SearchBar } from './components/SearchBar';
+import { FilterPanel } from './components/FilterPanel';
 import { PluginGrid } from './components/PluginGrid';
 import { GroupedPluginView } from './components/GroupedPluginView';
 import { StatsBar } from './components/StatsBar';
+import { EmptyState } from './components/EmptyState';
 import { AlertCircle, RefreshCw, Zap, Sparkles, Code, Grid, Package } from 'lucide-react';
 import { Pagination } from './components/Pagination';
 import { useUrlState } from './hooks/useUrlState';
+import { getPluginTimestamp } from './utils/dateUtils';
 
-function App() {
+function App(): React.JSX.Element {
   const [pluginIndex, setPluginIndex] = useState<PluginIndex | null>(null);
-  const [filteredPlugins, setFilteredPlugins] = useState<PluginIndex | null>(null);
+  const [searchFilteredPlugins, setSearchFilteredPlugins] = useState<PluginIndex | null>(null);
+  const [finalFilteredPlugins, setFinalFilteredPlugins] = useState<PluginIndex | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [activeFilters, setActiveFilters] = useState<FilterValue[]>([]);
 
   // Use URL state management
   const {
@@ -32,23 +39,41 @@ function App() {
   } = useUrlState();
 
   useEffect(() => {
-    loadPlugins();
+    void loadPlugins();
   }, []);
 
+  // First effect: Apply text search only
   useEffect(() => {
     if (pluginIndex) {
-      const filtered = ApiService.searchPlugins(searchQuery, pluginIndex, searchOptions);
-      setFilteredPlugins(filtered);
+      const searchFiltered = ApiService.searchPlugins(searchQuery, pluginIndex, searchOptions);
+      setSearchFilteredPlugins(searchFiltered);
     }
   }, [searchQuery, pluginIndex, searchOptions]);
 
-  const loadPlugins = async () => {
+  // Second effect: Apply field filters to search results
+  useEffect(() => {
+    if (searchFilteredPlugins) {
+      if (activeFilters.length > 0) {
+        const filteredItems = FilterService.applyFilters(searchFilteredPlugins.items, activeFilters);
+        setFinalFilteredPlugins({
+          ...searchFilteredPlugins,
+          items: filteredItems,
+          count: filteredItems.length
+        });
+      } else {
+        setFinalFilteredPlugins(searchFilteredPlugins);
+      }
+    }
+  }, [searchFilteredPlugins, activeFilters]);
+
+  const loadPlugins = async (): Promise<void> => {
     try {
       setLoading(true);
       setError(null);
       const data = await ApiService.fetchPluginIndex();
       setPluginIndex(data);
-      setFilteredPlugins(data);
+      setSearchFilteredPlugins(data);
+      setFinalFilteredPlugins(data);
     } catch (err) {
       setError('Failed to load plugins. Please try again later.');
       console.error('Error loading plugins:', err);
@@ -57,21 +82,21 @@ function App() {
     }
   };
 
-  const handleRefresh = () => {
-    loadPlugins();
+  const handleRefresh = (): void => {
+    void loadPlugins();
   };
 
   // Calculate unique plugin count for stats
-  const uniquePluginCount = filteredPlugins ? 
-    new Set(filteredPlugins.items.map(p => p.plugin_name || 'Unknown')).size : 0;
+  const uniquePluginCount = finalFilteredPlugins ? 
+    new Set(finalFilteredPlugins.items.map(p => p.plugin_name || 'Unknown')).size : 0;
 
   // For grouped view, we need to group and paginate groups
   const groupedData = React.useMemo(() => {
-    if (!filteredPlugins || viewMode !== 'grouped') return null;
+    if (!finalFilteredPlugins || viewMode !== 'grouped') return null;
     
     const groups: Record<string, IndexedPlugin[]> = {};
     
-    filteredPlugins.items.forEach(plugin => {
+    finalFilteredPlugins.items.forEach(plugin => {
       const name = plugin.plugin_name || 'Unknown';
       if (!groups[name]) {
         groups[name] = [];
@@ -80,37 +105,20 @@ function App() {
     });
 
     // Parse sort parameters
-    const [field, dir] = (() => {
-      if (sortBy.startsWith('updated')) return ['updated', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
-      if (sortBy.startsWith('created')) return ['created', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
-      return ['indexed', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
+    const [field, dir]: ['updated' | 'created' | 'indexed', 'asc' | 'desc'] = ((): ['updated' | 'created' | 'indexed', 'asc' | 'desc'] => {
+      if (sortBy.startsWith('updated')) return ['updated', sortBy.endsWith('asc') ? 'asc' : 'desc'];
+      if (sortBy.startsWith('created')) return ['created', sortBy.endsWith('asc') ? 'asc' : 'desc'];
+      return ['indexed', sortBy.endsWith('asc') ? 'asc' : 'desc'];
     })();
 
-    const getTs = (p: any, mode: 'updated' | 'created' | 'indexed'): number => {
-      try {
-        if (mode === 'updated') {
-          const d = p?.commits?.latest?.committed_at ?? p?.indexed_at ?? p?.repository?.created_at;
-          return d ? new Date(d).getTime() : 0;
-        }
-        if (mode === 'created') {
-          const d = p?.commits?.created?.committed_at ?? p?.repository?.created_at ?? p?.indexed_at;
-          return d ? new Date(d).getTime() : 0;
-        }
-        // indexed
-        const d = p?.indexed_at ?? p?.commits?.latest?.committed_at ?? p?.repository?.created_at;
-        return d ? new Date(d).getTime() : 0;
-      } catch {
-        return 0;
-      }
-    };
 
     // Sort groups by their representative plugin
     const sortedGroups = Object.entries(groups)
       .map(([name, pluginList]) => {
         // Sort plugins within each group
         const sortedPlugins = [...pluginList].sort((a, b) => {
-          const ta = getTs(a, field as any);
-          const tb = getTs(b, field as any);
+          const ta = getPluginTimestamp(a, field);
+          const tb = getPluginTimestamp(b, field);
           const diff = tb - ta;
           return dir === 'asc' ? -diff : diff;
         });
@@ -122,8 +130,8 @@ function App() {
         };
       })
       .sort((a, b) => {
-        const ta = getTs(a.representativePlugin, field as any);
-        const tb = getTs(b.representativePlugin, field as any);
+        const ta = getPluginTimestamp(a.representativePlugin, field);
+        const tb = getPluginTimestamp(b.representativePlugin, field);
         const diff = tb - ta;
         return dir === 'asc' ? -diff : diff;
       });
@@ -133,10 +141,10 @@ function App() {
       totalGroups: sortedGroups.length,
       pagedGroups: sortedGroups.slice((currentPage - 1) * pageSize, currentPage * pageSize)
     };
-  }, [filteredPlugins, viewMode, sortBy, currentPage, pageSize]);
+  }, [finalFilteredPlugins, viewMode, sortBy, currentPage, pageSize]);
 
-  const pagedItems = (() => {
-    if (!filteredPlugins) return [];
+  const pagedItems = ((): IndexedPlugin[] => {
+    if (!finalFilteredPlugins) return [];
     
     if (viewMode === 'grouped') {
       // Return plugins from paginated groups
@@ -149,33 +157,16 @@ function App() {
     }
 
     // For grid view, sort and paginate individual plugins
-    const getTs = (p: any, mode: 'updated' | 'created' | 'indexed'): number => {
-      try {
-        if (mode === 'updated') {
-          const d = p?.commits?.latest?.committed_at ?? p?.indexed_at ?? p?.repository?.created_at;
-          return d ? new Date(d).getTime() : 0;
-        }
-        if (mode === 'created') {
-          const d = p?.commits?.created?.committed_at ?? p?.repository?.created_at ?? p?.indexed_at;
-          return d ? new Date(d).getTime() : 0;
-        }
-        // indexed
-        const d = p?.indexed_at ?? p?.commits?.latest?.committed_at ?? p?.repository?.created_at;
-        return d ? new Date(d).getTime() : 0;
-      } catch {
-        return 0;
-      }
-    };
 
-    const [field, dir] = (() => {
-      if (sortBy.startsWith('updated')) return ['updated', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
-      if (sortBy.startsWith('created')) return ['created', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
-      return ['indexed', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
+    const [field, dir]: ['updated' | 'created' | 'indexed', 'asc' | 'desc'] = ((): ['updated' | 'created' | 'indexed', 'asc' | 'desc'] => {
+      if (sortBy.startsWith('updated')) return ['updated', sortBy.endsWith('asc') ? 'asc' : 'desc'];
+      if (sortBy.startsWith('created')) return ['created', sortBy.endsWith('asc') ? 'asc' : 'desc'];
+      return ['indexed', sortBy.endsWith('asc') ? 'asc' : 'desc'];
     })();
 
-    const sorted = [...filteredPlugins.items].sort((a, b) => {
-      const ta = getTs(a, field as any);
-      const tb = getTs(b, field as any);
+    const sorted = [...finalFilteredPlugins.items].sort((a, b) => {
+      const ta = getPluginTimestamp(a, field);
+      const tb = getPluginTimestamp(b, field);
       const diff = tb - ta;
       return dir === 'asc' ? -diff : diff;
     });
@@ -185,14 +176,14 @@ function App() {
     return sorted.slice(start, end);
   })();
 
-  const totalPages = (() => {
-    if (!filteredPlugins) return 1;
+  const totalPages = ((): number => {
+    if (!finalFilteredPlugins) return 1;
     
     if (viewMode === 'grouped') {
       return groupedData ? Math.max(1, Math.ceil(groupedData.totalGroups / pageSize)) : 1;
     }
     
-    return Math.max(1, Math.ceil(filteredPlugins.count / pageSize));
+    return Math.max(1, Math.ceil(finalFilteredPlugins.count / pageSize));
   })();
 
   if (loading && !pluginIndex) {
@@ -273,28 +264,40 @@ function App() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {pluginIndex && filteredPlugins && (
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {pluginIndex && finalFilteredPlugins && (
           <>
             <StatsBar
               totalCount={pluginIndex.count}
-              filteredCount={filteredPlugins.count}
+              filteredCount={finalFilteredPlugins.count}
               generatedAt={pluginIndex.generated_at}
               searchQuery={searchQuery}
             />
             
-            <div className="flex items-center justify-between gap-4 mb-4">
+            <div className="flex gap-8">
+              {/* Left Sidebar - Filters */}
+              <div className="w-72 flex-shrink-0">
+                <FilterPanel
+                  plugins={searchFilteredPlugins ? searchFilteredPlugins.items : []}
+                  activeFilters={activeFilters}
+                  onFiltersChange={setActiveFilters}
+                />
+              </div>
+              
+              {/* Main Content Area */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between gap-4 mb-6">
               <div className="text-sm text-gray-600">
                 {viewMode === 'grouped' ? (
                   <span>
                     Showing {(uniquePluginCount === 0 ? 0 : (currentPage - 1) * pageSize + 1).toLocaleString()}–
                     {Math.min(uniquePluginCount, currentPage * pageSize).toLocaleString()} of {uniquePluginCount.toLocaleString()} unique plugins 
-                    ({filteredPlugins.count.toLocaleString()} total instances)
+                    ({finalFilteredPlugins.count.toLocaleString()} total instances)
                   </span>
                 ) : (
                   <span>
-                    Showing {(filteredPlugins.count === 0 ? 0 : (currentPage - 1) * pageSize + 1).toLocaleString()}–
-                    {Math.min(filteredPlugins.count, currentPage * pageSize).toLocaleString()} of {filteredPlugins.count.toLocaleString()}
+                    Showing {(finalFilteredPlugins.count === 0 ? 0 : (currentPage - 1) * pageSize + 1).toLocaleString()}–
+                    {Math.min(finalFilteredPlugins.count, currentPage * pageSize).toLocaleString()} of {finalFilteredPlugins.count.toLocaleString()}
                   </span>
                 )}
               </div>
@@ -330,7 +333,7 @@ function App() {
                   <span className="text-gray-600">Sort:</span>
                   <select
                     value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value as any)}
+                    onChange={(e): void => setSortBy(e.target.value as 'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc')}
                     className="border border-gray-300 rounded-md px-2 py-1 bg-white"
                   >
                     <option value="updated_desc">Last updated — newest</option>
@@ -361,22 +364,50 @@ function App() {
               </div>
             </div>
 
-            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+            {finalFilteredPlugins.count > 0 ? (
+              <>
+                <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
 
-            {viewMode === 'grid' ? (
-              <PluginGrid
-                plugins={pagedItems}
-                loading={loading}
-              />
+                {viewMode === 'grid' ? (
+                  <PluginGrid
+                    plugins={pagedItems}
+                    loading={loading}
+                  />
+                ) : (
+                  <GroupedPluginView
+                    plugins={pagedItems}
+                    loading={loading}
+                    sortBy={sortBy}
+                  />
+                )}
+
+                <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+              </>
             ) : (
-              <GroupedPluginView
-                plugins={pagedItems}
-                loading={loading}
-                sortBy={sortBy}
+              <EmptyState
+                type={activeFilters.length > 0 ? 'filter' : searchQuery ? 'search' : 'general'}
+                title={
+                  activeFilters.length > 0 
+                    ? 'No plugins match your filters' 
+                    : searchQuery 
+                      ? 'No plugins found' 
+                      : 'No plugins available'
+                }
+                description={
+                  activeFilters.length > 0 
+                    ? 'Try removing some filters or adjusting your criteria to see more results.'
+                    : searchQuery 
+                      ? `No plugins found matching "${searchQuery}". Try different keywords or check your spelling.`
+                      : 'There are currently no plugins available to display.'
+                }
+                onReset={() => {
+                  setSearchQuery('');
+                  setActiveFilters([]);
+                }}
               />
             )}
-
-            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+              </div>
+            </div>
           </>
         )}
       </main>

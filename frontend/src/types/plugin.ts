@@ -36,6 +36,9 @@ export interface PluginCommits {
 export interface IndexedPlugin {
   plugin_name: string;
   plugin_author?: string | null;
+  plugin_version?: string | null;
+  plugin_description?: string | null;
+  plugin_resource_id?: number | null;
   language: string;
   file: PluginFile;
   repository: PluginRepository;
@@ -55,6 +58,8 @@ export interface PluginIndex {
 export type SearchFieldKey =
   | 'plugin_name'
   | 'plugin_author'
+  | 'plugin_description'
+  | 'plugin_version'
   | 'repo_name'
   | 'repo_full_name'
   | 'repo_description'
@@ -76,6 +81,8 @@ export function getDefaultSearchOptions(): SearchOptions {
     fields: [
       'plugin_name',
       'plugin_author',
+      'plugin_description',
+      'plugin_version',
       'repo_name',
       'repo_full_name',
       'repo_description',

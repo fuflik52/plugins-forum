@@ -1,18 +1,49 @@
-import type { PluginIndex, SearchOptions, SearchFieldKey } from '../types/plugin';
+import type { PluginIndex, SearchOptions, SearchFieldKey, IndexedPlugin } from '../types/plugin';
+import { PluginMerger } from './pluginMerger';
 
 const API_BASE_URL = 'https://raw.githubusercontent.com/publicrust/plugins-forum/main/backend/output';
 
 export class ApiService {
   static async fetchPluginIndex(): Promise<PluginIndex> {
     try {
-      const response = await fetch(`${API_BASE_URL}/oxide_plugins.json`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      // Fetch both plugin sources in parallel
+      const [oxideResponse, crawledResponse] = await Promise.all([
+        fetch(`${API_BASE_URL}/oxide_plugins.json`),
+        fetch(`${API_BASE_URL}/crawled_plugins.json`)
+      ]);
+
+      // Check responses
+      if (!oxideResponse.ok) {
+        throw new Error(`Failed to fetch oxide_plugins.json: ${oxideResponse.status}`);
       }
-      return await response.json();
+      if (!crawledResponse.ok) {
+        throw new Error(`Failed to fetch crawled_plugins.json: ${crawledResponse.status}`);
+      }
+
+      // Parse JSON data
+      const [oxidePlugins, crawledPlugins] = await Promise.all([
+        oxideResponse.json() as Promise<PluginIndex>,
+        crawledResponse.json() as Promise<PluginIndex>
+      ]);
+
+      // Merge the plugin sources
+      return PluginMerger.mergePluginSources(oxidePlugins, crawledPlugins);
+      
     } catch (error) {
       console.error('Failed to fetch plugin index:', error);
-      throw error;
+      
+      // Fallback: try to fetch oxide_plugins.json only
+      try {
+        console.warn('Falling back to oxide_plugins.json only');
+        const response = await fetch(`${API_BASE_URL}/oxide_plugins.json`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json() as PluginIndex;
+      } catch (fallbackError) {
+        console.error('Fallback also failed:', fallbackError);
+        throw error;
+      }
     }
   }
 
@@ -20,7 +51,7 @@ export class ApiService {
     const q = query.trim();
     if (!q) return plugins;
 
-    const fieldsToPick: SearchFieldKey[] = options?.fields ?? [
+    const fieldsToPick: SearchFieldKey[] = options ? options.fields : [
       'plugin_name',
       'plugin_author',
       'repo_name',
@@ -29,9 +60,9 @@ export class ApiService {
       'repo_owner',
       'file_path'
     ];
-    const matchMode = options?.matchMode ?? 'contains';
-    const logic = options?.logic ?? 'any';
-    const caseSensitive = options?.caseSensitive ?? false;
+    const matchMode = options ? options.matchMode : 'contains';
+    const logic = options ? options.logic : 'any';
+    const caseSensitive = options ? options.caseSensitive : false;
 
     // Prepare query for regex mode
     let regex: RegExp | null = null;
@@ -44,19 +75,23 @@ export class ApiService {
       }
     }
 
-    const norm = (v: string | null | undefined) => {
+    const norm = (v: string | null | undefined): string => {
       if (v == null) return '';
       return caseSensitive ? String(v) : String(v).toLowerCase();
     };
 
     const queryNorm = caseSensitive ? q : q.toLowerCase();
 
-    const pickField = (key: SearchFieldKey, p: any): string => {
+    const pickField = (key: SearchFieldKey, p: IndexedPlugin): string => {
       switch (key) {
         case 'plugin_name':
           return norm(p.plugin_name);
         case 'plugin_author':
           return norm(p.plugin_author ?? '');
+        case 'plugin_description':
+          return norm(p.plugin_description ?? '');
+        case 'plugin_version':
+          return norm(p.plugin_version ?? '');
         case 'repo_name':
           return norm(p.repository?.name ?? '');
         case 'repo_full_name':

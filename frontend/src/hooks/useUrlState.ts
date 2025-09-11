@@ -3,7 +3,20 @@ import type { SearchOptions } from '../types/plugin';
 import { getDefaultSearchOptions } from '../types/plugin';
 import { updateUrl, getCurrentUrlState, type UrlState } from '../utils/urlState';
 
-export function useUrlState() {
+export function useUrlState(): {
+  searchQuery: string;
+  viewMode: 'grid' | 'grouped';
+  sortBy: 'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc';
+  currentPage: number;
+  pageSize: number;
+  searchOptions: SearchOptions;
+  setSearchQuery: (query: string) => void;
+  setViewMode: (mode: 'grid' | 'grouped') => void;
+  setSortBy: (sort: 'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc') => void;
+  setCurrentPage: (page: number) => void;
+  setPageSize: (size: number) => void;
+  setSearchOptions: (options: SearchOptions) => void;
+} {
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'grouped'>('grid');
   const [sortBy, setSortBy] = useState<'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc'>('updated_desc');
@@ -93,7 +106,7 @@ export function useUrlState() {
 
   // Handle browser back/forward navigation
   useEffect(() => {
-    const handlePopState = () => {
+    const handlePopState = (): void => {
       const urlState = getCurrentUrlState();
       
       setSearchQuery(urlState.search || '');
@@ -105,7 +118,7 @@ export function useUrlState() {
     };
 
     window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    return (): void => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   return {

@@ -9,7 +9,7 @@ interface PaginationProps {
 export const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
   if (totalPages <= 1) return null;
 
-  const goToPage = (page: number) => {
+  const goToPage = (page: number): void => {
     const clamped = Math.max(1, Math.min(totalPages, page));
     if (clamped !== currentPage) onPageChange(clamped);
   };
@@ -18,7 +18,7 @@ export const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages,
     const pages: (number | 'dots')[] = [];
     const windowSize = 2;
 
-    const add = (p: number) => {
+    const add = (p: number): void => {
       if (p >= 1 && p <= totalPages) pages.push(p);
     };
 

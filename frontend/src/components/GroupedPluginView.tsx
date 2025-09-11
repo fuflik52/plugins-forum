@@ -3,6 +3,7 @@ import type { IndexedPlugin } from '../types/plugin';
 import { PluginCard } from './PluginCard';
 import { ErrorBoundary } from './ErrorBoundary';
 import { ChevronDown, ChevronRight, Package, Users } from 'lucide-react';
+import { getPluginTimestamp } from '../utils/dateUtils';
 
 interface GroupedPluginViewProps {
   plugins: IndexedPlugin[];
@@ -30,37 +31,20 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
     });
 
     // Parse sort parameters
-    const [field, dir] = (() => {
+    const [field, dir] = ((): ['updated' | 'created' | 'indexed', 'asc' | 'desc'] => {
       if (sortBy.startsWith('updated')) return ['updated', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
       if (sortBy.startsWith('created')) return ['created', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
       return ['indexed', sortBy.endsWith('asc') ? 'asc' : 'desc'] as const;
     })();
 
-    const getTs = (p: any, mode: 'updated' | 'created' | 'indexed'): number => {
-      try {
-        if (mode === 'updated') {
-          const d = p?.commits?.latest?.committed_at ?? p?.indexed_at ?? p?.repository?.created_at;
-          return d ? new Date(d).getTime() : 0;
-        }
-        if (mode === 'created') {
-          const d = p?.commits?.created?.committed_at ?? p?.repository?.created_at ?? p?.indexed_at;
-          return d ? new Date(d).getTime() : 0;
-        }
-        // indexed
-        const d = p?.indexed_at ?? p?.commits?.latest?.committed_at ?? p?.repository?.created_at;
-        return d ? new Date(d).getTime() : 0;
-      } catch {
-        return 0;
-      }
-    };
 
     // Convert to array and sort groups by the latest plugin in each group
     return Object.entries(groups)
       .map(([name, pluginList]) => {
         // Sort plugins within each group by the same criteria
         const sortedPlugins = [...pluginList].sort((a, b) => {
-          const ta = getTs(a, field as any);
-          const tb = getTs(b, field as any);
+          const ta = getPluginTimestamp(a, field);
+          const tb = getPluginTimestamp(b, field);
           const diff = tb - ta;
           return dir === 'asc' ? -diff : diff;
         });
@@ -77,14 +61,14 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
       })
       .sort((a, b) => {
         // Sort groups by their representative plugin
-        const ta = getTs(a.representativePlugin, field as any);
-        const tb = getTs(b.representativePlugin, field as any);
+        const ta = getPluginTimestamp(a.representativePlugin, field);
+        const tb = getPluginTimestamp(b.representativePlugin, field);
         const diff = tb - ta;
         return dir === 'asc' ? -diff : diff;
       });
   }, [plugins, sortBy]);
 
-  const toggleGroup = (groupName: string) => {
+  const toggleGroup = (groupName: string): void => {
     const newExpanded = new Set(expandedGroups);
     if (newExpanded.has(groupName)) {
       newExpanded.delete(groupName);
@@ -94,11 +78,11 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
     setExpandedGroups(newExpanded);
   };
 
-  const expandAll = () => {
+  const expandAll = (): void => {
     setExpandedGroups(new Set(groupedPlugins.map(g => g.name)));
   };
 
-  const collapseAll = () => {
+  const collapseAll = (): void => {
     setExpandedGroups(new Set());
   };
 

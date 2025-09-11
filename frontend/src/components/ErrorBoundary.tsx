@@ -20,11 +20,11 @@ export class ErrorBoundary extends Component<Props, State> {
     return { hasError: true, error };
   }
 
-  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
     console.error('Error caught by boundary:', error, errorInfo);
   }
 
-  render() {
+  render(): ReactNode {
     if (this.state.hasError) {
       return (
         <div className="bg-white rounded-lg shadow-md border border-red-200 overflow-hidden">
@@ -34,7 +34,7 @@ export class ErrorBoundary extends Component<Props, State> {
               <span className="font-medium">Something went wrong</span>
             </div>
             <p className="text-gray-600 text-sm">
-              {this.state.error?.message || 'An unexpected error occurred'}
+              {this.state.error ? this.state.error.message : 'An unexpected error occurred'}
             </p>
           </div>
         </div>

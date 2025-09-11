@@ -29,7 +29,7 @@ export function parseUrlState(searchParams: URLSearchParams): UrlState {
   // Sort
   const sort = searchParams.get('sort');
   if (sort && ['updated_desc', 'updated_asc', 'created_desc', 'created_asc', 'indexed_desc', 'indexed_asc'].includes(sort)) {
-    state.sort = sort as any;
+    state.sort = sort as 'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc';
   }
 
   // Page
@@ -60,20 +60,20 @@ export function parseUrlState(searchParams: URLSearchParams): UrlState {
       ['plugin_name', 'plugin_author', 'repo_name', 'repo_full_name', 'repo_description', 'repo_owner', 'file_path'].includes(f)
     );
     if (fieldArray.length > 0) {
-      searchOptions.fields = fieldArray as any;
+      searchOptions.fields = fieldArray as ('plugin_name' | 'plugin_author' | 'plugin_description' | 'plugin_version' | 'repo_name' | 'repo_full_name' | 'repo_description' | 'repo_owner' | 'file_path')[];
     }
   }
 
   // Match mode
   const matchMode = searchParams.get('matchMode');
   if (matchMode && ['contains', 'startsWith', 'exact', 'regex'].includes(matchMode)) {
-    searchOptions.matchMode = matchMode as any;
+    searchOptions.matchMode = matchMode as 'contains' | 'startsWith' | 'exact' | 'regex';
   }
 
   // Logic
   const logic = searchParams.get('logic');
   if (logic && ['any', 'all'].includes(logic)) {
-    searchOptions.logic = logic as any;
+    searchOptions.logic = logic as 'any' | 'all';
   }
 
   // Case sensitive
@@ -140,7 +140,7 @@ export function stateToUrlParams(state: UrlState): URLSearchParams {
 }
 
 // Update browser URL without page reload
-export function updateUrl(state: UrlState, replace = false) {
+export function updateUrl(state: UrlState, replace = false): void {
   const params = stateToUrlParams(state);
   const url = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
   
