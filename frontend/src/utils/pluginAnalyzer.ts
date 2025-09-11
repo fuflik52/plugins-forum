@@ -34,7 +34,7 @@ export interface PluginAnalysis {
 }
 
 export class PluginAnalyzer {
-  static analyzePlugin(code: string): PluginAnalysis {
+  static async analyzePlugin(code: string): Promise<PluginAnalysis> {
     const analysis: PluginAnalysis = {
       commands: {
         chatCommands: [],
@@ -97,14 +97,19 @@ export class PluginAnalyzer {
     }
 
     // Analyze Oxide hooks using hooks from JSON
-    const allHooks = HooksLoader.getHookNames();
+    try {
+      const allHooks = await HooksLoader.getHookNames();
 
-    allHooks.forEach((hook) => {
-      const hookRegex = new RegExp(`\\b${hook}\\s*\\(`, "g");
-      if (hookRegex.test(code) && !analysis.hooks.oxideHooks.includes(hook)) {
-        analysis.hooks.oxideHooks.push(hook);
-      }
-    });
+      allHooks.forEach((hook) => {
+        const hookRegex = new RegExp(`\\b${hook}\\s*\\(`, "g");
+        if (hookRegex.test(code) && !analysis.hooks.oxideHooks.includes(hook)) {
+          analysis.hooks.oxideHooks.push(hook);
+        }
+      });
+    } catch (error) {
+      console.warn('Could not load hooks from GitHub, using fallback detection');
+      // Fallback to basic hook detection if GitHub is not accessible
+    }
 
     // Analyze plugin references
     const pluginRefRegex = /\[PluginReference\]\s*(?:Plugin\s+)?(\w+)/g;
