@@ -21,7 +21,7 @@ class HooksLoader {
         throw new Error(`Failed to fetch hooks: ${response.status}`);
       }
       
-      const hooks: HookData[] = await response.json();
+      const hooks = await response.json() as HookData[];
       this.hooksCache = hooks;
       return hooks;
     } catch (error) {
