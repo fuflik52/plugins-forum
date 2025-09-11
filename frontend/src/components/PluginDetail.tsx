@@ -79,7 +79,9 @@ export const PluginDetail: React.FC = () => {
       // Преобразуем URL из GitHub blob в raw URL для получения содержимого
       const rawUrl = plugin.file.html_url.replace("/blob/", "/raw/");
 
-      const response = await fetch(rawUrl);
+      // Используем публичный CORS прокси для избежания CORS проблем
+      const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(rawUrl)}`;
+      const response = await fetch(proxyUrl);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
