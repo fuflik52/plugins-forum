@@ -90,7 +90,7 @@ export const PluginDetail: React.FC = () => {
       setFileContent(content);
 
       // Анализируем содержимое плагина
-      const analysis = PluginAnalyzer.analyzePlugin(content);
+      const analysis = await PluginAnalyzer.analyzePlugin(content);
       setPluginAnalysis(analysis);
     } catch (err) {
       setFileError("Не удалось загрузить содержимое файла");
