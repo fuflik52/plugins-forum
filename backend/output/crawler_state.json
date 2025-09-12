@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-12T07:42:28.677Z",
-  "total_repositories_processed": 679,
-  "successful_crawls": 675,
+  "last_updated": "2025-09-12T07:45:08.643Z",
+  "total_repositories_processed": 684,
+  "successful_crawls": 680,
   "failed_crawls": 4,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -4085,24 +4085,54 @@
       "plugins_count": 24,
       "success": true,
       "errors": []
+    },
+    "13dasd123/RustPlugins": {
+      "last_crawled": "2025-09-12T07:44:59.930Z",
+      "plugins_count": 2741,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/sunshine-assembly": {
+      "last_crawled": "2025-09-12T07:45:01.503Z",
+      "plugins_count": 55,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/rust-free-plugins": {
+      "last_crawled": "2025-09-12T07:45:02.170Z",
+      "plugins_count": 4,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/-DayzRust": {
+      "last_crawled": "2025-09-12T07:45:03.077Z",
+      "plugins_count": 79,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/Rust-School-Plugins": {
+      "last_crawled": "2025-09-12T07:45:08.604Z",
+      "plugins_count": 581,
+      "success": true,
+      "errors": []
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-11T06:50:08.877Z",
-      "completed_at": "2025-09-11T07:47:59.216Z",
-      "duration_ms": 3470339
+      "started_at": "2025-09-12T07:44:54.858Z",
+      "completed_at": "2025-09-12T07:45:03.198Z",
+      "duration_ms": 8340
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 0,
-      "newly_processed": 677,
-      "successful": 673,
-      "failed": 4
+      "already_processed": 679,
+      "newly_processed": 4,
+      "successful": 4,
+      "failed": 0
     },
     "plugins": {
-      "total_found": 13828,
-      "new_plugins": 1
+      "total_found": 2879,
+      "new_plugins": 79
     }
   }
 }
