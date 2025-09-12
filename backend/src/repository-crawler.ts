@@ -275,18 +275,45 @@ class RepositoryCrawler {
     console.log(`Session started at: ${sessionStarted}`);
     
     const oxidePluginsPath = path.join(this.outputDir, "oxide_plugins.json");
+    const manualReposPath = path.join(process.cwd(), "input", "manual-repositories.json");
     
-    if (!fs.existsSync(oxidePluginsPath)) {
-      console.error("oxide_plugins.json not found!");
+    let uniqueRepositories: string[] = [];
+    
+    // Load repositories from oxide_plugins.json
+    if (fs.existsSync(oxidePluginsPath)) {
+      const oxideData: OxidePluginData = JSON.parse(
+        fs.readFileSync(oxidePluginsPath, "utf-8")
+      );
+      uniqueRepositories = this.extractUniqueRepositories(oxideData);
+      console.log(`Found ${uniqueRepositories.length} unique repositories in oxide_plugins.json`);
+    } else {
+      console.log("oxide_plugins.json not found, continuing without it");
+    }
+    
+    // Load manual repositories
+    if (fs.existsSync(manualReposPath)) {
+      try {
+        const manualRepos: string[] = JSON.parse(fs.readFileSync(manualReposPath, "utf-8"));
+        const manualRepoNames = manualRepos.map(url => {
+          const match = url.match(/github\.com\/([^\/]+\/[^\/]+)/);
+          return match ? match[1] : null;
+        }).filter(Boolean) as string[];
+        
+        uniqueRepositories = [...uniqueRepositories, ...manualRepoNames];
+        console.log(`Found ${manualRepoNames.length} manual repositories`);
+      } catch (error) {
+        console.warn("Failed to load manual repositories:", error);
+      }
+    }
+    
+    if (uniqueRepositories.length === 0) {
+      console.error("No repositories found in oxide_plugins.json or manual-repositories.json!");
       return;
     }
-
-    const oxideData: OxidePluginData = JSON.parse(
-      fs.readFileSync(oxidePluginsPath, "utf-8")
-    );
-
-    const uniqueRepositories = this.extractUniqueRepositories(oxideData);
-    console.log(`Found ${uniqueRepositories.length} unique repositories in oxide_plugins.json`);
+    
+    // Remove duplicates
+    uniqueRepositories = [...new Set(uniqueRepositories)];
+    console.log(`Total unique repositories: ${uniqueRepositories.length}`);
 
     // Filter out already processed repositories
     const newRepositories = uniqueRepositories.filter(repo => !this.state.processed_repositories[repo]);

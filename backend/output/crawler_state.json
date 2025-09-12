@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-11T07:48:00.099Z",
-  "total_repositories_processed": 678,
-  "successful_crawls": 674,
+  "last_updated": "2025-09-12T07:42:28.677Z",
+  "total_repositories_processed": 679,
+  "successful_crawls": 675,
   "failed_crawls": 4,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -4077,6 +4077,12 @@
     "atlasrustservers/JERRYSun": {
       "last_crawled": "2025-09-11T07:48:00.098Z",
       "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/-1-TheRustBay": {
+      "last_crawled": "2025-09-12T07:42:28.675Z",
+      "plugins_count": 24,
       "success": true,
       "errors": []
     }
