@@ -11,8 +11,8 @@
 ## 🎯 Phase 2: Advanced Code Analysis (Next Priority)
 
 ### 2.1 Command Parsing
-- [ ] **Chat Commands**: `[ChatCommand("tp")]`, `[ChatCommand("home")]`
-- [ ] **Console Commands**: `[ConsoleCommand("server.restart")]`
+- [x] **Chat Commands**: `[ChatCommand("tp")]`, `[ChatCommand("home")]`
+- [x] **Console Commands**: `[ConsoleCommand("server.restart")]`
 - [ ] **Dynamic Commands**: Commands registered programmatically
 - [ ] **Command Aliases**: Multiple commands pointing to same method
 
@@ -23,14 +23,14 @@
 - [ ] **Permission Hierarchy**: Admin/user permission relationships
 
 ### 2.3 Hook Detection
-- [ ] **Oxide Hooks**: `OnPlayerConnected`, `OnEntityKill`, `OnPlayerChat`
+- [x] **Oxide Hooks**: `OnPlayerConnected`, `OnEntityKill`, `OnPlayerChat`
 - [ ] **Hook Parameters**: Method signatures and parameter types
 - [ ] **Hook Categories**: Player, Entity, Server, Economy hooks
 - [ ] **Custom Hooks**: Plugin-specific hook definitions
 
 ### 2.4 Plugin Dependencies
-- [ ] **PluginReference Attributes**: `[PluginReference("Economics")]`
-- [ ] **PluginReference Fields**: `[PluginReference] Plugin Kits;`
+- [x] **PluginReference Attributes**: `[PluginReference("Economics")]`
+- [x] **PluginReference Fields**: `[PluginReference] Plugin Kits;`
 - [ ] **Dynamic Loading**: `plugins.Find("PluginName")`
 - [ ] **Dependency Graph**: Plugin interdependency mapping
 

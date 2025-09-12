@@ -142,7 +142,7 @@ export function stateToUrlParams(state: UrlState): URLSearchParams {
     params.set('view', state.view);
   }
 
-  if (state.sort && state.sort !== 'updated_desc') {
+  if (state.sort && state.sort !== 'created_desc') {
     params.set('sort', state.sort);
   }
 
