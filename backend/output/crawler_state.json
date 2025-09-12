@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-12T07:45:08.643Z",
-  "total_repositories_processed": 684,
-  "successful_crawls": 680,
+  "last_updated": "2025-09-12T12:13:09.559Z",
+  "total_repositories_processed": 685,
+  "successful_crawls": 681,
   "failed_crawls": 4,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -4113,6 +4113,12 @@
     "13dasd123/Rust-School-Plugins": {
       "last_crawled": "2025-09-12T07:45:08.604Z",
       "plugins_count": 581,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/rust-school-discord-indexing": {
+      "last_crawled": "2025-09-12T12:13:07.575Z",
+      "plugins_count": 4385,
       "success": true,
       "errors": []
     }
