@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-12T12:13:09.559Z",
-  "total_repositories_processed": 685,
-  "successful_crawls": 681,
+  "last_updated": "2025-09-13T03:40:42.565Z",
+  "total_repositories_processed": 688,
+  "successful_crawls": 684,
   "failed_crawls": 4,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -4121,24 +4121,42 @@
       "plugins_count": 4385,
       "success": true,
       "errors": []
+    },
+    "Ghenghis/Auto-Base-Builder": {
+      "last_crawled": "2025-09-12T22:19:34.263Z",
+      "plugins_count": 64,
+      "success": true,
+      "errors": []
+    },
+    "yetzt/rust-grid": {
+      "last_crawled": "2025-09-12T22:19:35.008Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/AutoFlipDrones": {
+      "last_crawled": "2025-09-13T03:40:42.548Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-12T07:44:54.858Z",
-      "completed_at": "2025-09-12T07:45:03.198Z",
-      "duration_ms": 8340
+      "started_at": "2025-09-12T22:19:32.041Z",
+      "completed_at": "2025-09-12T22:19:34.457Z",
+      "duration_ms": 2416
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 679,
-      "newly_processed": 4,
-      "successful": 4,
+      "already_processed": 685,
+      "newly_processed": 1,
+      "successful": 1,
       "failed": 0
     },
     "plugins": {
-      "total_found": 2879,
-      "new_plugins": 79
+      "total_found": 64,
+      "new_plugins": 64
     }
   }
 }
