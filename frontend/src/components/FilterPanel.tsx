@@ -429,7 +429,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           isExpanded={expandedSections.versions}
           onToggleExpanded={() => toggleSection('versions')}
           maxVisible={5}
-          maxAbsolute={15}
+          maxAbsolute={30}
           getPluginCount={getPluginCount}
         />
         
@@ -444,7 +444,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           isExpanded={expandedSections.owners}
           onToggleExpanded={() => toggleSection('owners')}
           maxVisible={5}
-          maxAbsolute={15}
+          maxAbsolute={50}
           getPluginCount={getPluginCount}
         />
       </div>
