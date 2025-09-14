@@ -1,0 +1,2935 @@
+{
+  "last_updated": "2025-09-14T17:41:01.930Z",
+  "current_author_index": 0,
+  "processed_authors": {
+    "djimbou92": {
+      "last_processed": "2025-09-14T05:13:43.006Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "MONaH-Rasta": {
+      "last_processed": "2025-09-14T05:14:42.856Z",
+      "repositories_found": 37,
+      "success": true
+    },
+    "Wrecks830": {
+      "last_processed": "2025-09-14T05:14:50.178Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "Yorboot": {
+      "last_processed": "2025-09-14T05:15:09.739Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "LaserHydra": {
+      "last_processed": "2025-09-14T05:16:08.106Z",
+      "repositories_found": 13,
+      "success": true
+    },
+    "oddbunchmedia": {
+      "last_processed": "2025-09-14T05:16:12.971Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "HunterZ": {
+      "last_processed": "2025-09-14T05:17:12.754Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Wakanda1519": {
+      "last_processed": "2025-09-14T05:18:24.162Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "0xz00m": {
+      "last_processed": "2025-09-14T05:18:27.870Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Rust-Haus": {
+      "last_processed": "2025-09-14T05:18:37.154Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "read-0nly": {
+      "last_processed": "2025-09-14T05:25:47.299Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "CarbonCommunity": {
+      "last_processed": "2025-09-14T05:27:30.407Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "publicrust": {
+      "last_processed": "2025-09-14T05:30:33.145Z",
+      "repositories_found": 7,
+      "success": true
+    },
+    "ilovepatatos-rust": {
+      "last_processed": "2025-09-14T05:30:51.955Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "Tacman1981": {
+      "last_processed": "2025-09-14T05:30:59.605Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "st-little": {
+      "last_processed": "2025-09-14T05:32:20.481Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "abolfazl3133": {
+      "last_processed": "2025-09-14T05:32:29.504Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RustyyTown": {
+      "last_processed": "2025-09-14T05:32:38.615Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "PenisBlistashiq": {
+      "last_processed": "2025-09-14T05:32:43.532Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Cl1cker0": {
+      "last_processed": "2025-09-14T05:32:58.829Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "DanielHenderson-17": {
+      "last_processed": "2025-09-14T05:39:24.723Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "0xBlitzmachine": {
+      "last_processed": "2025-09-14T05:39:57.380Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "codefling-0xf": {
+      "last_processed": "2025-09-14T05:40:02.695Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "JorgeCayetano1": {
+      "last_processed": "2025-09-14T05:41:23.943Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "DemoNiMa": {
+      "last_processed": "2025-09-14T05:41:44.564Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "KajWithAJ": {
+      "last_processed": "2025-09-14T05:41:57.238Z",
+      "repositories_found": 7,
+      "success": true
+    },
+    "dassjosh": {
+      "last_processed": "2025-09-14T05:42:54.200Z",
+      "repositories_found": 13,
+      "success": true
+    },
+    "Warri0r007": {
+      "last_processed": "2025-09-14T05:42:58.478Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "VisEntities": {
+      "last_processed": "2025-09-14T05:46:08.574Z",
+      "repositories_found": 149,
+      "success": true
+    },
+    "VFlov": {
+      "last_processed": "2025-09-14T05:49:14.801Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "dakkinbyte": {
+      "last_processed": "2025-09-14T05:50:00.006Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "illRalli": {
+      "last_processed": "2025-09-14T05:50:04.817Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "flintmonkey": {
+      "last_processed": "2025-09-14T05:50:12.276Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "jerkypaisen": {
+      "last_processed": "2025-09-14T05:50:40.604Z",
+      "repositories_found": 20,
+      "success": true
+    },
+    "ViolationHandler-exe": {
+      "last_processed": "2025-09-14T05:51:17.566Z",
+      "repositories_found": 14,
+      "success": true
+    },
+    "birdenly": {
+      "last_processed": "2025-09-14T05:53:05.158Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "Mabel8686": {
+      "last_processed": "2025-09-14T05:53:12.873Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "cipeaX": {
+      "last_processed": "2025-09-14T05:53:52.191Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "rube200": {
+      "last_processed": "2025-09-14T05:55:48.964Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "CaptainBlake": {
+      "last_processed": "2025-09-14T05:55:57.905Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "mvanzanten": {
+      "last_processed": "2025-09-14T05:56:15.766Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "PRISM-Servers": {
+      "last_processed": "2025-09-14T05:56:27.560Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "greggianbayocboc": {
+      "last_processed": "2025-09-14T05:57:22.812Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RustWipeDay": {
+      "last_processed": "2025-09-14T05:57:57.996Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "mjmfighter": {
+      "last_processed": "2025-09-14T05:58:04.876Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RebeccaStevens": {
+      "last_processed": "2025-09-14T06:02:38.566Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "Limmek": {
+      "last_processed": "2025-09-14T06:03:09.700Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "Eoin-McCartan": {
+      "last_processed": "2025-09-14T06:03:47.114Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "DocValerian": {
+      "last_processed": "2025-09-14T06:04:15.479Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "drakar-bit": {
+      "last_processed": "2025-09-14T06:05:15.606Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "WheteThunger": {
+      "last_processed": "2025-09-14T06:07:49.315Z",
+      "repositories_found": 103,
+      "success": true
+    },
+    "famus0v": {
+      "last_processed": "2025-09-14T06:08:07.011Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Tyler-Lopez": {
+      "last_processed": "2025-09-14T06:11:51.206Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "bugrakaann": {
+      "last_processed": "2025-09-14T06:13:15.238Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "KichDM": {
+      "last_processed": "2025-09-14T06:18:23.305Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "john-clark": {
+      "last_processed": "2025-09-14T06:23:18.872Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "jchernin4": {
+      "last_processed": "2025-09-14T06:25:16.874Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "erikmoch": {
+      "last_processed": "2025-09-14T06:25:40.131Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Orhidea-Development": {
+      "last_processed": "2025-09-14T06:26:08.213Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "JesseMH": {
+      "last_processed": "2025-09-14T06:26:15.882Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "manuelbpc": {
+      "last_processed": "2025-09-14T06:26:52.270Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Kaidoz": {
+      "last_processed": "2025-09-14T06:27:09.168Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "rustireland": {
+      "last_processed": "2025-09-14T06:27:20.476Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "mattwilshire": {
+      "last_processed": "2025-09-14T06:27:58.570Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "johnmcclumpha": {
+      "last_processed": "2025-09-14T06:28:49.273Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "OxideMod": {
+      "last_processed": "2025-09-14T06:30:03.072Z",
+      "repositories_found": 8,
+      "success": true
+    },
+    "tbdscripts": {
+      "last_processed": "2025-09-14T06:30:11.871Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "MitchBriles": {
+      "last_processed": "2025-09-14T06:32:05.334Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "TheFriendlyChap": {
+      "last_processed": "2025-09-14T06:32:42.576Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "2chevskii": {
+      "last_processed": "2025-09-14T06:33:35.106Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Joe90384": {
+      "last_processed": "2025-09-14T06:33:55.922Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "ElliotRedhead": {
+      "last_processed": "2025-09-14T06:35:08.014Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "kiloOhm": {
+      "last_processed": "2025-09-14T06:36:13.241Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "Cannabis-CFG": {
+      "last_processed": "2025-09-14T06:37:25.219Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "codeStev": {
+      "last_processed": "2025-09-14T06:37:44.772Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Grimston": {
+      "last_processed": "2025-09-14T06:38:21.864Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "k1lly0u": {
+      "last_processed": "2025-09-14T06:39:38.234Z",
+      "repositories_found": 7,
+      "success": true
+    },
+    "MorganSkilly": {
+      "last_processed": "2025-09-14T06:48:05.995Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "decaydev": {
+      "last_processed": "2025-09-14T06:48:30.484Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "kus": {
+      "last_processed": "2025-09-14T06:50:56.038Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "eandersson": {
+      "last_processed": "2025-09-14T06:51:31.791Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "SpencerSharkey": {
+      "last_processed": "2025-09-14T06:55:53.550Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "tVeratti": {
+      "last_processed": "2025-09-14T07:00:09.330Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Calytic": {
+      "last_processed": "2025-09-14T07:00:55.557Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "PierreAnken": {
+      "last_processed": "2025-09-14T07:01:25.520Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "MrGraversen": {
+      "last_processed": "2025-09-14T07:02:05.004Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "unet-dev": {
+      "last_processed": "2025-09-14T07:02:13.328Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "chucklenugget": {
+      "last_processed": "2025-09-14T07:02:30.508Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "niekschoemaker": {
+      "last_processed": "2025-09-14T07:06:51.647Z",
+      "repositories_found": 8,
+      "success": true
+    },
+    "BattleSheep94": {
+      "last_processed": "2025-09-14T07:08:32.393Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "vick-kumar": {
+      "last_processed": "2025-09-14T07:09:01.311Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RustServers-IO": {
+      "last_processed": "2025-09-14T07:09:09.864Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "openmailbox": {
+      "last_processed": "2025-09-14T07:10:11.014Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "jacobcoughenour": {
+      "last_processed": "2025-09-14T07:16:55.002Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "PsychoTea": {
+      "last_processed": "2025-09-14T07:19:15.745Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "diametric": {
+      "last_processed": "2025-09-14T07:20:44.509Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Ryan-J-D": {
+      "last_processed": "2025-09-14T07:21:23.054Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "i-love-code": {
+      "last_processed": "2025-09-14T07:23:18.030Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Skippeh": {
+      "last_processed": "2025-09-14T07:27:57.823Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "byome": {
+      "last_processed": "2025-09-14T07:28:54.349Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "zanderwar": {
+      "last_processed": "2025-09-14T07:32:18.840Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "davidc538": {
+      "last_processed": "2025-09-14T07:33:12.023Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "DeusProx": {
+      "last_processed": "2025-09-14T07:34:16.889Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Hallonkaka": {
+      "last_processed": "2025-09-14T07:34:28.302Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Nogrod": {
+      "last_processed": "2025-09-14T07:35:40.715Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "tolland": {
+      "last_processed": "2025-09-14T07:41:37.125Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "strykes": {
+      "last_processed": "2025-09-14T07:42:19.548Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "ternpixel": {
+      "last_processed": "2025-09-14T07:43:30.636Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "JonathanPorta": {
+      "last_processed": "2025-09-14T07:53:55.634Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "scorpyon": {
+      "last_processed": "2025-09-14T07:55:31.659Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "QuetzalQatl": {
+      "last_processed": "2025-09-14T07:55:51.438Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "pedroivorbgrodrigues": {
+      "last_processed": "2025-09-14T07:56:32.044Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "ZaeBallsa": {
+      "last_processed": "2025-09-14T07:56:37.652Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "alexanderndev": {
+      "last_processed": "2025-09-14T07:56:43.583Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Hardcore-fs": {
+      "last_processed": "2025-09-14T07:57:28.906Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "Willdiedog": {
+      "last_processed": "2025-09-14T08:25:37.176Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "scarecr0w12": {
+      "last_processed": "2025-09-14T08:32:29.460Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "CyberSys": {
+      "last_processed": "2025-09-14T13:10:31.815Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (6445)"
+    },
+    "Rahulsinghz": {
+      "last_processed": "2025-09-14T13:12:09.923Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "rustafied": {
+      "last_processed": "2025-09-14T13:12:42.847Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "ads102003": {
+      "last_processed": "2025-09-14T13:13:14.180Z",
+      "repositories_found": 7,
+      "success": true
+    },
+    "13dasd123": {
+      "last_processed": "2025-09-14T13:17:56.245Z",
+      "repositories_found": 13,
+      "success": true
+    },
+    "Ghenghis": {
+      "last_processed": "2025-09-14T13:18:05.408Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (316)"
+    },
+    "Remod-org": {
+      "last_processed": "2025-09-14T13:20:11.305Z",
+      "repositories_found": 82,
+      "success": true
+    },
+    "Jake-Rich": {
+      "last_processed": "2025-09-14T13:21:38.610Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "bmgjet": {
+      "last_processed": "2025-09-14T13:21:42.163Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (109)"
+    },
+    "yetzt": {
+      "last_processed": "2025-09-14T13:21:45.430Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (156)"
+    },
+    "skulidropek": {
+      "last_processed": "2025-09-14T13:26:34.882Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "mkojoa": {
+      "last_processed": "2025-09-14T13:30:29.125Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "MeziGit": {
+      "last_processed": "2025-09-14T13:31:23.173Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "williamtrelawny": {
+      "last_processed": "2025-09-14T13:33:31.326Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Zer0x89A": {
+      "last_processed": "2025-09-14T13:33:54.264Z",
+      "repositories_found": 16,
+      "success": true
+    },
+    "MrBlue": {
+      "last_processed": "2025-09-14T13:34:55.418Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "notpeelz": {
+      "last_processed": "2025-09-14T13:35:00.678Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (120)"
+    },
+    "Tryhard999": {
+      "last_processed": "2025-09-14T13:35:53.696Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "ApocDev": {
+      "last_processed": "2025-09-14T13:38:06.635Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "scorteanucosmin": {
+      "last_processed": "2025-09-14T13:39:16.070Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Slut": {
+      "last_processed": "2025-09-14T13:39:24.896Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "derekbking": {
+      "last_processed": "2025-09-14T13:40:20.795Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "Ragonz2": {
+      "last_processed": "2025-09-14T13:40:58.626Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "BurntRouter": {
+      "last_processed": "2025-09-14T13:41:53.601Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "safer-bot": {
+      "last_processed": "2025-09-14T13:42:44.992Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (2172)"
+    },
+    "MSylvia": {
+      "last_processed": "2025-09-14T13:43:01.093Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (1008)"
+    },
+    "rustcommunity": {
+      "last_processed": "2025-09-14T13:43:05.224Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Crushedice": {
+      "last_processed": "2025-09-14T13:44:03.679Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "MyhreDev": {
+      "last_processed": "2025-09-14T13:44:15.638Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "DeXGaming": {
+      "last_processed": "2025-09-14T13:44:25.934Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "c-harris": {
+      "last_processed": "2025-09-14T13:48:34.491Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "TurkLee": {
+      "last_processed": "2025-09-14T13:51:58.815Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "heymeepo": {
+      "last_processed": "2025-09-14T13:52:30.202Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "koenrad": {
+      "last_processed": "2025-09-14T13:54:39.812Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Kirollos": {
+      "last_processed": "2025-09-14T13:55:20.815Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "xuan2261": {
+      "last_processed": "2025-09-14T13:55:49.994Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (1195)"
+    },
+    "potaetobag": {
+      "last_processed": "2025-09-14T13:55:56.622Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "yovecio18": {
+      "last_processed": "2025-09-14T13:56:30.802Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "Flash-Ticker": {
+      "last_processed": "2025-09-14T13:57:04.101Z",
+      "repositories_found": 10,
+      "success": true
+    },
+    "Dpendable": {
+      "last_processed": "2025-09-14T13:58:25.968Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "netch-dev": {
+      "last_processed": "2025-09-14T13:58:45.428Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "AsielElaouare": {
+      "last_processed": "2025-09-14T14:00:04.517Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "brandonnorsworthy": {
+      "last_processed": "2025-09-14T14:05:27.377Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "flutessources": {
+      "last_processed": "2025-09-14T14:06:13.048Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "shady14u": {
+      "last_processed": "2025-09-14T14:06:41.021Z",
+      "repositories_found": 8,
+      "success": true
+    },
+    "Psystec": {
+      "last_processed": "2025-09-14T14:07:01.564Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "kop7er": {
+      "last_processed": "2025-09-14T14:07:36.332Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "badw000lf": {
+      "last_processed": "2025-09-14T14:07:42.678Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Anus228331": {
+      "last_processed": "2025-09-14T14:08:26.432Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "nbistrov255": {
+      "last_processed": "2025-09-14T14:08:30.149Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "l0cks-acab": {
+      "last_processed": "2025-09-14T14:09:05.683Z",
+      "repositories_found": 19,
+      "success": true
+    },
+    "ToastyToast25": {
+      "last_processed": "2025-09-14T14:09:52.692Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "achrafthedev": {
+      "last_processed": "2025-09-14T14:14:44.506Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "EReis0": {
+      "last_processed": "2025-09-14T14:15:05.591Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "UB1AFU": {
+      "last_processed": "2025-09-14T14:15:10.902Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (132)"
+    },
+    "ThePitereq": {
+      "last_processed": "2025-09-14T14:15:54.839Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "thenetimp": {
+      "last_processed": "2025-09-14T14:19:29.360Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Visagalis": {
+      "last_processed": "2025-09-14T14:20:16.897Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RustopiaOfficial": {
+      "last_processed": "2025-09-14T14:20:59.007Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "atlas-rust-servers": {
+      "last_processed": "2025-09-14T14:21:14.616Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "izatrix": {
+      "last_processed": "2025-09-14T14:21:32.520Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "I4IgO32": {
+      "last_processed": "2025-09-14T14:21:41.338Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "YaMang0w0": {
+      "last_processed": "2025-09-14T14:21:51.357Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "WeirdPhrog": {
+      "last_processed": "2025-09-14T14:21:58.351Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "ch3rn1k": {
+      "last_processed": "2025-09-14T14:22:06.327Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "hugil": {
+      "last_processed": "2025-09-14T14:22:48.511Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "ZockiRR": {
+      "last_processed": "2025-09-14T14:23:22.861Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "5Dev24": {
+      "last_processed": "2025-09-14T14:24:04.464Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "hoppel": {
+      "last_processed": "2025-09-14T14:25:04.522Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "LeagueRaINi": {
+      "last_processed": "2025-09-14T14:26:15.314Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "nosoylito": {
+      "last_processed": "2025-09-14T14:26:22.840Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "QuakeShots": {
+      "last_processed": "2025-09-14T14:26:26.893Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Murgator": {
+      "last_processed": "2025-09-14T14:26:34.372Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "MaltrzD": {
+      "last_processed": "2025-09-14T14:26:46.987Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Mr-Dead2": {
+      "last_processed": "2025-09-14T14:27:07.911Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "gettakaro": {
+      "last_processed": "2025-09-14T14:27:58.125Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "david7-dev": {
+      "last_processed": "2025-09-14T14:28:06.835Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "shadowfearzxc": {
+      "last_processed": "2025-09-14T14:28:26.083Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "SettLe1": {
+      "last_processed": "2025-09-14T14:28:47.949Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "kwamaking": {
+      "last_processed": "2025-09-14T14:29:06.331Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "fenderrex": {
+      "last_processed": "2025-09-14T14:34:01.753Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Whitecandor": {
+      "last_processed": "2025-09-14T14:34:05.565Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "a-downing": {
+      "last_processed": "2025-09-14T14:35:09.231Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "jonaslagoni": {
+      "last_processed": "2025-09-14T14:39:17.738Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "tebexio": {
+      "last_processed": "2025-09-14T14:40:29.099Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "HandyS11": {
+      "last_processed": "2025-09-14T14:42:50.614Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "CraftingStore": {
+      "last_processed": "2025-09-14T14:43:02.924Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "UncleMle": {
+      "last_processed": "2025-09-14T14:44:06.777Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "oleduc": {
+      "last_processed": "2025-09-14T14:47:09.032Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "IIIaKa": {
+      "last_processed": "2025-09-14T14:47:23.181Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "danielgnh": {
+      "last_processed": "2025-09-14T14:48:01.491Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "UltraRust": {
+      "last_processed": "2025-09-14T14:48:12.758Z",
+      "repositories_found": 7,
+      "success": true
+    },
+    "setfps": {
+      "last_processed": "2025-09-14T14:48:22.494Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "sknchan": {
+      "last_processed": "2025-09-14T14:51:47.074Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "sami3737": {
+      "last_processed": "2025-09-14T14:53:44.093Z",
+      "repositories_found": 21,
+      "success": true
+    },
+    "fuflik52": {
+      "last_processed": "2025-09-14T14:53:49.652Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "seanmb0": {
+      "last_processed": "2025-09-14T14:53:56.386Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "kisuka": {
+      "last_processed": "2025-09-14T14:56:36.220Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "xmxv": {
+      "last_processed": "2025-09-14T14:56:53.178Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Killa4": {
+      "last_processed": "2025-09-14T14:57:01.965Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "gmh5225": {
+      "last_processed": "2025-09-14T15:11:16.851Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (32411)"
+    },
+    "ImKiri86": {
+      "last_processed": "2025-09-14T15:13:07.597Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "John-Willikers": {
+      "last_processed": "2025-09-14T15:14:59.738Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "upperking": {
+      "last_processed": "2025-09-14T15:16:10.007Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Substrata1": {
+      "last_processed": "2025-09-14T15:16:20.307Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "bradygaster": {
+      "last_processed": "2025-09-14T15:19:01.709Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "TOWUK": {
+      "last_processed": "2025-09-14T15:19:06.751Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Vladimir123123123": {
+      "last_processed": "2025-09-14T15:19:23.856Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "yacvaguer": {
+      "last_processed": "2025-09-14T15:19:36.989Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "connorrichlen": {
+      "last_processed": "2025-09-14T15:20:22.247Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "FireIce7": {
+      "last_processed": "2025-09-14T15:21:04.506Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "romgerman": {
+      "last_processed": "2025-09-14T15:23:13.358Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "xaray": {
+      "last_processed": "2025-09-14T15:23:17.002Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "dcodeIO": {
+      "last_processed": "2025-09-14T15:25:48.122Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "peter-r-g": {
+      "last_processed": "2025-09-14T15:30:31.064Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "nuGGGz": {
+      "last_processed": "2025-09-14T15:30:37.199Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Feverr92": {
+      "last_processed": "2025-09-14T15:30:44.718Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "SkiTee3000": {
+      "last_processed": "2025-09-14T15:31:20.941Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Mike-Baks": {
+      "last_processed": "2025-09-14T15:31:27.222Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Kulltero": {
+      "last_processed": "2025-09-14T15:31:55.866Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "devhyper": {
+      "last_processed": "2025-09-14T15:34:54.435Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "dbteku": {
+      "last_processed": "2025-09-14T15:36:12.300Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "soerr": {
+      "last_processed": "2025-09-14T15:36:27.252Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "razorfish-sl": {
+      "last_processed": "2025-09-14T15:36:32.965Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "TebexOllie": {
+      "last_processed": "2025-09-14T15:36:46.056Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "liam-wiltshire": {
+      "last_processed": "2025-09-14T15:39:13.913Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Naaathan": {
+      "last_processed": "2025-09-14T15:39:21.439Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "collectVood": {
+      "last_processed": "2025-09-14T15:40:21.106Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "benhamiltonpro": {
+      "last_processed": "2025-09-14T15:41:29.762Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "nurdism": {
+      "last_processed": "2025-09-14T15:46:47.871Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "mohamedyassine-benmiled": {
+      "last_processed": "2025-09-14T15:47:48.855Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "mleem97": {
+      "last_processed": "2025-09-14T15:48:18.594Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Xairooo": {
+      "last_processed": "2025-09-14T15:48:23.832Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (129)"
+    },
+    "GFLClan": {
+      "last_processed": "2025-09-14T15:49:09.167Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "txnitxnichopper": {
+      "last_processed": "2025-09-14T15:50:56.942Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "ailishev": {
+      "last_processed": "2025-09-14T15:53:50.800Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Azuriom": {
+      "last_processed": "2025-09-14T15:54:25.035Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "osirislab": {
+      "last_processed": "2025-09-14T16:08:11.044Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "Ghostyenc": {
+      "last_processed": "2025-09-14T16:08:35.988Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "spencermcw": {
+      "last_processed": "2025-09-14T16:09:57.516Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RelFost": {
+      "last_processed": "2025-09-14T16:10:21.203Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "Mentol0408": {
+      "last_processed": "2025-09-14T16:10:30.299Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "LauraRozier": {
+      "last_processed": "2025-09-14T16:15:06.349Z",
+      "repositories_found": 8,
+      "success": true
+    },
+    "DevGonzi": {
+      "last_processed": "2025-09-14T16:15:58.587Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "rust-app-io": {
+      "last_processed": "2025-09-14T16:16:03.701Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "admin4eg": {
+      "last_processed": "2025-09-14T16:16:57.919Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "FtuoilXelrash": {
+      "last_processed": "2025-09-14T16:18:22.112Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "rustmy": {
+      "last_processed": "2025-09-14T16:20:22.448Z",
+      "repositories_found": 21,
+      "success": true
+    },
+    "alfredo-leonelli": {
+      "last_processed": "2025-09-14T16:20:41.971Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "NemoAM7": {
+      "last_processed": "2025-09-14T16:21:30.672Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "compscidr": {
+      "last_processed": "2025-09-14T16:26:06.083Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "bawNg": {
+      "last_processed": "2025-09-14T16:27:36.992Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "gamemann": {
+      "last_processed": "2025-09-14T16:27:41.515Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (173)"
+    },
+    "sixmybad": {
+      "last_processed": "2025-09-14T16:27:43.176Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "stoneharry": {
+      "last_processed": "2025-09-14T16:30:39.119Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "MrDesedresh": {
+      "last_processed": "2025-09-14T16:31:00.848Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "RedizGG": {
+      "last_processed": "2025-09-14T16:31:34.403Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Lootvoet": {
+      "last_processed": "2025-09-14T16:31:44.027Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "haggbart": {
+      "last_processed": "2025-09-14T16:33:22.289Z",
+      "repositories_found": 8,
+      "success": true
+    },
+    "LostStormX": {
+      "last_processed": "2025-09-14T16:33:29.654Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "ay4t": {
+      "last_processed": "2025-09-14T16:34:41.889Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Zand3rsCode": {
+      "last_processed": "2025-09-14T16:34:52.257Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "AntiKnox": {
+      "last_processed": "2025-09-14T16:34:58.707Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "bengreenier-archive": {
+      "last_processed": "2025-09-14T16:35:03.406Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (108)"
+    },
+    "cornholio21": {
+      "last_processed": "2025-09-14T16:35:08.073Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Comm512-1": {
+      "last_processed": "2025-09-14T16:35:23.105Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "aethyriion": {
+      "last_processed": "2025-09-14T16:38:38.211Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "dusty-modding": {
+      "last_processed": "2025-09-14T16:38:54.873Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Feramor": {
+      "last_processed": "2025-09-14T16:40:15.096Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Juliiiian": {
+      "last_processed": "2025-09-14T16:40:39.005Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RMODHosting": {
+      "last_processed": "2025-09-14T16:40:46.839Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "ServerArmour": {
+      "last_processed": "2025-09-14T16:40:50.545Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "jkole4": {
+      "last_processed": "2025-09-14T16:41:48.094Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "PsixXxrus": {
+      "last_processed": "2025-09-14T16:41:55.801Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Nikedemos": {
+      "last_processed": "2025-09-14T16:44:09.289Z",
+      "repositories_found": 7,
+      "success": true
+    },
+    "ZacharyWolfe": {
+      "last_processed": "2025-09-14T16:44:43.609Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "molokatanPrivate": {
+      "last_processed": "2025-09-14T16:44:54.806Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "moscow-ovh": {
+      "last_processed": "2025-09-14T16:45:01.157Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "LucienMP": {
+      "last_processed": "2025-09-14T16:46:41.328Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Spookywooky3": {
+      "last_processed": "2025-09-14T16:47:13.161Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "CatMeat": {
+      "last_processed": "2025-09-14T16:47:28.828Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "theblobinc": {
+      "last_processed": "2025-09-14T16:47:33.955Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (118)"
+    },
+    "GTJono": {
+      "last_processed": "2025-09-14T16:47:49.297Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "firemandave6024": {
+      "last_processed": "2025-09-14T16:47:55.959Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "NeewMeta88": {
+      "last_processed": "2025-09-14T16:48:52.553Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "1337-create": {
+      "last_processed": "2025-09-14T16:49:15.321Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Dids": {
+      "last_processed": "2025-09-14T16:49:20.201Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (115)"
+    },
+    "OhItsDiiTz": {
+      "last_processed": "2025-09-14T16:52:25.492Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "dennib": {
+      "last_processed": "2025-09-14T16:52:46.701Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "robbie-williams": {
+      "last_processed": "2025-09-14T16:53:11.761Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "notadevasian": {
+      "last_processed": "2025-09-14T16:53:26.811Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "leaderos-net": {
+      "last_processed": "2025-09-14T16:53:47.787Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Ardivaba": {
+      "last_processed": "2025-09-14T16:55:54.079Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "saramindra": {
+      "last_processed": "2025-09-14T16:56:58.604Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "J-Pster": {
+      "last_processed": "2025-09-14T16:57:46.597Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Venedas": {
+      "last_processed": "2025-09-14T16:59:22.801Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "jacobmstein": {
+      "last_processed": "2025-09-14T17:00:37.131Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "teamgamesllc": {
+      "last_processed": "2025-09-14T17:00:49.148Z",
+      "repositories_found": 0,
+      "success": false,
+      "error": "fetch failed"
+    },
+    "ItzNxthaniel": {
+      "last_processed": "2025-09-14T17:01:32.434Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "RustServers-gg": {
+      "last_processed": "2025-09-14T17:01:39.461Z",
+      "repositories_found": 2,
+      "success": true
+    },
+    "Navio1430": {
+      "last_processed": "2025-09-14T17:01:58.401Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "xoxfaby": {
+      "last_processed": "2025-09-14T17:05:30.150Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "ErikGrischuk": {
+      "last_processed": "2025-09-14T17:05:36.392Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Steamcord": {
+      "last_processed": "2025-09-14T17:05:46.249Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "heronj2703": {
+      "last_processed": "2025-09-14T17:05:59.769Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "granis": {
+      "last_processed": "2025-09-14T17:08:27.909Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "weedz": {
+      "last_processed": "2025-09-14T17:09:53.047Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "michaelpeterswa": {
+      "last_processed": "2025-09-14T17:09:58.983Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (212)"
+    },
+    "MoonpieBD": {
+      "last_processed": "2025-09-14T17:10:05.342Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "Mheetu": {
+      "last_processed": "2025-09-14T17:10:39.292Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Randactyl": {
+      "last_processed": "2025-09-14T17:11:56.645Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "msharp19": {
+      "last_processed": "2025-09-14T17:12:47.881Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "headtapper": {
+      "last_processed": "2025-09-14T17:12:59.085Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "Vlad-00003": {
+      "last_processed": "2025-09-14T17:13:31.323Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "AeonLucid": {
+      "last_processed": "2025-09-14T17:13:36.296Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (131)"
+    },
+    "jackchapm": {
+      "last_processed": "2025-09-14T17:13:58.426Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "InfamousVague": {
+      "last_processed": "2025-09-14T17:15:49.319Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "EgorBlagov": {
+      "last_processed": "2025-09-14T17:16:59.226Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "noxtgm": {
+      "last_processed": "2025-09-14T17:17:34.784Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "milestorme": {
+      "last_processed": "2025-09-14T17:17:40.081Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (144)"
+    },
+    "Pho3niX90": {
+      "last_processed": "2025-09-14T17:21:53.182Z",
+      "repositories_found": 4,
+      "success": true
+    },
+    "davereed": {
+      "last_processed": "2025-09-14T17:22:19.954Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "sinmastv": {
+      "last_processed": "2025-09-14T17:22:56.573Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "oculus42": {
+      "last_processed": "2025-09-14T17:25:06.774Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Fayozjon": {
+      "last_processed": "2025-09-14T17:31:28.030Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "seanbyrne88": {
+      "last_processed": "2025-09-14T17:31:49.289Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "electrikbox": {
+      "last_processed": "2025-09-14T17:32:36.559Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "matbyte-com": {
+      "last_processed": "2025-09-14T17:33:02.403Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "pilate": {
+      "last_processed": "2025-09-14T17:36:11.100Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RuchirRajOld": {
+      "last_processed": "2025-09-14T17:36:25.034Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (525)"
+    },
+    "Timestorm": {
+      "last_processed": "2025-09-14T17:37:15.933Z",
+      "repositories_found": 0,
+      "success": true
+    },
+    "TheNeo2k": {
+      "last_processed": "2025-09-14T17:38:09.686Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "Buzgero": {
+      "last_processed": "2025-09-14T17:38:14.840Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "lbgcomm": {
+      "last_processed": "2025-09-14T17:38:28.762Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "hixio-mh": {
+      "last_processed": "2025-09-14T17:39:55.104Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (6919)"
+    },
+    "Swishhyy": {
+      "last_processed": "2025-09-14T17:40:39.829Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "atlasrustservers": {
+      "last_processed": "2025-09-14T17:40:43.554Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "RazoRRustPlugins": {
+      "last_processed": "2025-09-14T17:40:59.926Z",
+      "repositories_found": 5,
+      "success": true
+    }
+  },
+  "discovered_repositories": [
+    "djimbou92/FastSupplyDrop",
+    "djimbou92/SimpleScrapShop",
+    "MONaH-Rasta/AdminRadar",
+    "MONaH-Rasta/AntiSpam",
+    "MONaH-Rasta/AutoDoors",
+    "MONaH-Rasta/AutoPlant",
+    "MONaH-Rasta/BaseRepair",
+    "MONaH-Rasta/BetterChat",
+    "MONaH-Rasta/BuildingGrades",
+    "MONaH-Rasta/BuildingWorkbench",
+    "MONaH-Rasta/ChestStackMultiplier",
+    "MONaH-Rasta/ChillFuel",
+    "MONaH-Rasta/Clans",
+    "MONaH-Rasta/CopyPaste",
+    "MONaH-Rasta/DangerousTreasures",
+    "MONaH-Rasta/DiscordLogger-uMod",
+    "MONaH-Rasta/DiscordWipe",
+    "MONaH-Rasta/InstantUntie",
+    "MONaH-Rasta/InventoryBackup",
+    "MONaH-Rasta/InventoryViewer",
+    "MONaH-Rasta/Kits",
+    "MONaH-Rasta/LootBouncer",
+    "MONaH-Rasta/LootDefender",
+    "MONaH-Rasta/NightVision",
+    "MONaH-Rasta/NoCrashFlyingVehicles",
+    "MONaH-Rasta/NTeleportation",
+    "MONaH-Rasta/OilRigDoorsFix",
+    "MONaH-Rasta/QuickSort",
+    "MONaH-Rasta/RemoverTool",
+    "MONaH-Rasta/RustTranslationAPI",
+    "MONaH-Rasta/ServerRewards",
+    "MONaH-Rasta/SignArtist",
+    "MONaH-Rasta/Skins",
+    "MONaH-Rasta/TeamSaver",
+    "MONaH-Rasta/TruePVE",
+    "MONaH-Rasta/Vanish",
+    "MONaH-Rasta/VehicleLicence",
+    "MONaH-Rasta/WaterWorks",
+    "MONaH-Rasta/ZLevelsRemastered",
+    "Wrecks830/RaidableShelters",
+    "Wrecks830/rustplugin-scraponomics",
+    "Wrecks830/WhatIsIt",
+    "Yorboot/MessagePlugin",
+    "LaserHydra/AdminChat",
+    "LaserHydra/AdminChatroom",
+    "LaserHydra/Backpacks",
+    "LaserHydra/BetterChat",
+    "LaserHydra/BetterChatMute",
+    "LaserHydra/CapsNoCaps",
+    "LaserHydra/ChatImpersonator",
+    "LaserHydra/DeathNotes",
+    "LaserHydra/DeathNotesGui",
+    "LaserHydra/HWTeleportation",
+    "LaserHydra/SleeperGuard",
+    "LaserHydra/TimedPermissions",
+    "LaserHydra/UpdateChecker",
+    "oddbunchmedia/pverust",
+    "oddbunchmedia/ruststatus",
+    "HunterZ/MonumentAddons",
+    "HunterZ/rustmods",
+    "Wakanda1519/RUST-Plugins-from-AI",
+    "0xz00m/test",
+    "Rust-Haus/ai-death-feed",
+    "Rust-Haus/RustGPT",
+    "read-0nly/Oxide.Rust",
+    "read-0nly/RustMods",
+    "CarbonCommunity/Carbon.Common",
+    "CarbonCommunity/Carbon.Oxide",
+    "publicrust/MapProtection",
+    "publicrust/rust-plugins",
+    "publicrust/rust-template",
+    "publicrust/rust-template-177",
+    "publicrust/rust-template-240",
+    "publicrust/rust-template-266",
+    "publicrust/umod-pluigns-dataset",
+    "ilovepatatos-rust/console-extension",
+    "ilovepatatos-rust/gizmos-extension",
+    "ilovepatatos-rust/MiniCopterOptions",
+    "ilovepatatos-rust/oxide-csharp",
+    "ilovepatatos-rust/Oxide.Core",
+    "Tacman1981/Connect-Log-Parser",
+    "Tacman1981/Rust-Plugins",
+    "st-little/rust-plugin-development",
+    "abolfazl3133/leaked_new_rust_plugins_AI_Dumped",
+    "RustyyTown/plugins",
+    "PenisBlistashiq/Rust-plugins-236-240-dev",
+    "Cl1cker0/lua-scripts",
+    "DanielHenderson-17/PrivateMessageRustPlugin",
+    "0xBlitzmachine/Rust-Tools",
+    "codefling-0xf/cui-library",
+    "JorgeCayetano1/peruhurt-hw-server",
+    "DemoNiMa/RS-project",
+    "KajWithAJ/DungProtector",
+    "KajWithAJ/EMInterface",
+    "KajWithAJ/EventManager",
+    "KajWithAJ/PveAdmin",
+    "KajWithAJ/TollButtons",
+    "KajWithAJ/Watchdog",
+    "KajWithAJ/YouveGotMail",
+    "dassjosh/DeathNotes",
+    "dassjosh/DiscordExtensionBeta",
+    "dassjosh/Oxide.Core",
+    "dassjosh/Oxide.CSharp",
+    "dassjosh/Oxide.Rust",
+    "dassjosh/Plugin.DiscordChat",
+    "dassjosh/Plugin.DiscordCore",
+    "dassjosh/Plugin.DiscordCustomCommands",
+    "dassjosh/Plugin.DiscordPlayers",
+    "dassjosh/Plugin.DiscordPM",
+    "dassjosh/Plugin.DiscordPresence",
+    "dassjosh/Plugin.DiscordRoles",
+    "dassjosh/Rust.DiscordSignLogger",
+    "Warri0r007/Rust-plugins",
+    "VisEntities/AirdropSettings",
+    "VisEntities/AirdropTurrets",
+    "VisEntities/AlwaysDriverSeat",
+    "VisEntities/AlwaysInflatedBalloons",
+    "VisEntities/AntiQuickLeaver",
+    "VisEntities/AutoBagRenamer",
+    "VisEntities/AutoCatapultFeeder",
+    "VisEntities/AutomatedStashTraps",
+    "VisEntities/AutoTeamUp",
+    "VisEntities/BalloonStayOn",
+    "VisEntities/BarrelHealth",
+    "VisEntities/BarricadeToWall",
+    "VisEntities/BetterCharcoal",
+    "VisEntities/BetterDroppedItemStacker",
+    "VisEntities/BetterHealing",
+    "VisEntities/BetterLineOfSightTeleport",
+    "VisEntities/BloodBags",
+    "VisEntities/BouncyC4",
+    "VisEntities/BoxedPlayerSpawn",
+    "VisEntities/BradleyCCTV",
+    "VisEntities/BradleyControl",
+    "VisEntities/BradleyKillCooldown",
+    "VisEntities/BuildRefund",
+    "VisEntities/ButtonCommands",
+    "VisEntities/ClanTagFirst",
+    "VisEntities/ConsistentWindPower",
+    "VisEntities/Countdown",
+    "VisEntities/CupboardAcceptsAnything",
+    "VisEntities/CustomGatherRates",
+    "VisEntities/CustomLootSpawns",
+    "VisEntities/CustomUnwrapRewards",
+    "VisEntities/DancingNPC",
+    "VisEntities/DangerousCollectibles",
+    "VisEntities/DefaultItemSkinChanger",
+    "VisEntities/DooredSiegeTowers",
+    "VisEntities/DraggableCorpses",
+    "VisEntities/DurableAttachments",
+    "VisEntities/DynamicThirdPerson",
+    "VisEntities/ExplosionsWithoutFireballs",
+    "VisEntities/ExtendedDemolish",
+    "VisEntities/ExternalWallStacker",
+    "VisEntities/FailedCodeAlert",
+    "VisEntities/FallenTreeRemains",
+    "VisEntities/FarmingRestriction",
+    "VisEntities/FirstTryChainsaw",
+    "VisEntities/ForeverRipe",
+    "VisEntities/ForgivenUponRespawn",
+    "VisEntities/FoundationOnlyDeployables",
+    "VisEntities/FullWaterCatchers",
+    "VisEntities/FurnaceGoBrrr",
+    "VisEntities/GearCore",
+    "VisEntities/GlowingEyes",
+    "VisEntities/GunStats",
+    "VisEntities/HalfLootedEmptier",
+    "VisEntities/HarvestableVehicles",
+    "VisEntities/HealthyGuns",
+    "VisEntities/HorseEquipment",
+    "VisEntities/HouseKeys",
+    "VisEntities/IgnitableMixingTables",
+    "VisEntities/InfiniteWaterBucket",
+    "VisEntities/InstantCrops",
+    "VisEntities/InstantSiegeDeploy",
+    "VisEntities/InstantSiegeReload",
+    "VisEntities/InstantTeamJoin",
+    "VisEntities/InventoryLock",
+    "VisEntities/ItemlessPlayerSpawn",
+    "VisEntities/KillAwards",
+    "VisEntities/LaptopCrateHack",
+    "VisEntities/LeaderlessTeamDisband",
+    "VisEntities/LegacyAirdrops",
+    "VisEntities/LimitedSiegeBombDeploy",
+    "VisEntities/LuckyBarrel",
+    "VisEntities/MapMarkerTeleport",
+    "VisEntities/MinigunReloadAnywhere",
+    "VisEntities/ModMail",
+    "VisEntities/NamelessPlayers",
+    "VisEntities/NerfedRaidBuilding",
+    "VisEntities/NeverTeamless",
+    "VisEntities/NoAFKRecycler",
+    "VisEntities/NoCaveBuilding",
+    "VisEntities/NoChinookCratePileup",
+    "VisEntities/NoDistanceBasedTemperature",
+    "VisEntities/NoEventMarkers",
+    "VisEntities/NoExcavatorAirdrops",
+    "VisEntities/NoGibs",
+    "VisEntities/NoLocks",
+    "VisEntities/NoMonumentBarricades",
+    "VisEntities/NoPickupPenalty",
+    "VisEntities/NoRaidDebris",
+    "VisEntities/NoRespawnCooldown",
+    "VisEntities/NoSignsOnDeployables",
+    "VisEntities/NoStuckArrows",
+    "VisEntities/NoSuicideCooldown",
+    "VisEntities/NotEnoughBradleyScientists",
+    "VisEntities/NoUnderwaterVending",
+    "VisEntities/NoWaterSleep",
+    "VisEntities/NPCLoadouts",
+    "VisEntities/NPCRotator",
+    "VisEntities/OfflineFurnaces",
+    "VisEntities/OfflineRaidingWeakened",
+    "VisEntities/OnePushBoat",
+    "VisEntities/OneSeatVehicle",
+    "VisEntities/OneTimeBag",
+    "VisEntities/OneTimeParachute",
+    "VisEntities/OrphanedItemRemover",
+    "VisEntities/OutOfCombatHeal",
+    "VisEntities/OverflowToBackpack",
+    "VisEntities/OwnerPickupOnly",
+    "VisEntities/PatrolHeliCantFlare",
+    "VisEntities/PatrolHeliCrashDontRetire",
+    "VisEntities/PatrolHeliCrashSites",
+    "VisEntities/PatrolHeliNoGoMonuments",
+    "VisEntities/PatrolHeliSams",
+    "VisEntities/PlaytimeTracker",
+    "VisEntities/Pop",
+    "VisEntities/PumpAnywhere",
+    "VisEntities/QuarryHealth",
+    "VisEntities/QuarryLock",
+    "VisEntities/QuarryRepair",
+    "VisEntities/RaidableShelters",
+    "VisEntities/RandomKit",
+    "VisEntities/RealisticDeathPhysics",
+    "VisEntities/Reforestation",
+    "VisEntities/ReloadHotbar",
+    "VisEntities/Remineration",
+    "VisEntities/ReviveArrows",
+    "VisEntities/RotatingGear",
+    "VisEntities/SafeHeliLanding",
+    "VisEntities/SafeRespawn",
+    "VisEntities/SafetyBarrel",
+    "VisEntities/SafeZoneCommands",
+    "VisEntities/SeedlessFood",
+    "VisEntities/SidecarStorage",
+    "VisEntities/SilentBuildingBlocks",
+    "VisEntities/SkinIt",
+    "VisEntities/StorageUpgrade",
+    "VisEntities/SupplySignalCommands",
+    "VisEntities/SuspiciousCodeUnlock",
+    "VisEntities/TCBan",
+    "VisEntities/TrueSmokeRockets",
+    "VisEntities/TwigCantStay",
+    "VisEntities/UnarmedParachuting",
+    "VisEntities/UndyingCandles",
+    "VisEntities/UndyingWallTorches",
+    "VisEntities/WaterWellSettings",
+    "VisEntities/WeaponlessVehicles",
+    "VisEntities/WetGunsGoJam",
+    "VisEntities/WorkbenchEquipOnly",
+    "VisEntities/YouShallNotSpawn",
+    "VFlov/RustMod",
+    "VFlov/RustPlugins",
+    "dakkinbyte/ClanTeam",
+    "illRalli/ImportSkins",
+    "illRalli/Trade-Rust",
+    "flintmonkey/DeathNotes",
+    "flintmonkey/MonumentLogger",
+    "jerkypaisen/AnimalRock",
+    "jerkypaisen/AutoGroup",
+    "jerkypaisen/BlueprintUnlockManager",
+    "jerkypaisen/CassetteTapeDump",
+    "jerkypaisen/ChippyKing",
+    "jerkypaisen/code-memo",
+    "jerkypaisen/CreativityDump",
+    "jerkypaisen/CustomBpDropOnly",
+    "jerkypaisen/EggArtist",
+    "jerkypaisen/EzBpDropOnly",
+    "jerkypaisen/ItemOwnerShipEdit",
+    "jerkypaisen/MyCaravan",
+    "jerkypaisen/MyFran",
+    "jerkypaisen/NpcDropTag",
+    "jerkypaisen/PlayMovieButtons",
+    "jerkypaisen/SpearOfLonginus",
+    "jerkypaisen/StreamerVoiceOnly",
+    "jerkypaisen/TcItemCounter",
+    "jerkypaisen/ToastMessage",
+    "jerkypaisen/WaterGunHeal",
+    "ViolationHandler-exe/Backpacks",
+    "ViolationHandler-exe/BetterChat",
+    "ViolationHandler-exe/BGrade",
+    "ViolationHandler-exe/BlockUsers",
+    "ViolationHandler-exe/BombTrucks",
+    "ViolationHandler-exe/Economics",
+    "ViolationHandler-exe/Free-Driving-Vehicles",
+    "ViolationHandler-exe/Friends-or-BlockedUsers-Plugin",
+    "ViolationHandler-exe/Ignore-and-Blocked",
+    "ViolationHandler-exe/NTeleportation-Blocking",
+    "ViolationHandler-exe/PerformanceMonitor",
+    "ViolationHandler-exe/Suicide-Cooldown",
+    "ViolationHandler-exe/Timed-Permissions",
+    "ViolationHandler-exe/VehicleLicense",
+    "Mabel8686/RustPlugins",
+    "Mabel8686/VehicleLicense",
+    "Mabel8686/VehicleStorage",
+    "cipeaX/travelling-vendor-data",
+    "rube200/Oxide.Ext.DllLoader",
+    "CaptainBlake/RaidMe",
+    "CaptainBlake/ServerCommands",
+    "mvanzanten/docker-rust-server",
+    "PRISM-Servers/plugins_public",
+    "greggianbayocboc/rust-simple-mods",
+    "RustWipeDay/RustWipeDay",
+    "mjmfighter/RustPlugins",
+    "RebeccaStevens/oxide-Plugin-AutoCode",
+    "RebeccaStevens/oxide-Plugin-UiBuilderLibrary",
+    "RebeccaStevens/Oxide.Rust",
+    "RebeccaStevens/uMod-Fork-CopyPaste",
+    "RebeccaStevens/uMod-Rust-Plugin-GatherManager",
+    "Limmek/MStats-for-rust",
+    "Limmek/MySql-Chat-Log-for-Rust",
+    "Limmek/ZLevelsRemastered-MySQL",
+    "Eoin-McCartan/Rust.HarmonyMods",
+    "Eoin-McCartan/RustyRockets",
+    "DocValerian/rust-plugins",
+    "drakar-bit/PrismCart_plugin",
+    "WheteThunger/AllowBackpacksInLockers",
+    "WheteThunger/AlwaysLootableTurrets",
+    "WheteThunger/AutoEngineParts",
+    "WheteThunger/AutoFlipDrones",
+    "WheteThunger/AutomatedWorkcartNotifications",
+    "WheteThunger/AutomatedWorkcarts",
+    "WheteThunger/BackpackButton",
+    "WheteThunger/Backpacks",
+    "WheteThunger/BackpacksRequireParachutes",
+    "WheteThunger/BetterChinookPatrol",
+    "WheteThunger/BetterDroneCollision",
+    "WheteThunger/BetterElevators",
+    "WheteThunger/BetterRootCombiners",
+    "WheteThunger/BetterTurretAim",
+    "WheteThunger/BlockItemActions",
+    "WheteThunger/BombTrucks",
+    "WheteThunger/BoomboxDurability",
+    "WheteThunger/CarLockUI",
+    "WheteThunger/CarSpawnSettings",
+    "WheteThunger/CarTurrets",
+    "WheteThunger/ClaimVehicle",
+    "WheteThunger/CorpseLocker",
+    "WheteThunger/CraftChassis",
+    "WheteThunger/CustomNetworkRange",
+    "WheteThunger/CustomVendingSetup",
+    "WheteThunger/DebugHookCalls",
+    "WheteThunger/DebugMissingParentEntity",
+    "WheteThunger/DisableBackpacksInZones",
+    "WheteThunger/DroneBoombox",
+    "WheteThunger/DroneEffects",
+    "WheteThunger/DroneHover",
+    "WheteThunger/DroneLights",
+    "WheteThunger/DroneScaleManager",
+    "WheteThunger/DroneSettings",
+    "WheteThunger/DroneStorage",
+    "WheteThunger/DroneTurrets",
+    "WheteThunger/DropBackpackInDynamicPVPZone",
+    "WheteThunger/DynamicWireColors",
+    "WheteThunger/ElevatorCounters",
+    "WheteThunger/ElevatorFallFix",
+    "WheteThunger/EnginePartsDurability",
+    "WheteThunger/EntityScaleManager",
+    "WheteThunger/FastRepair",
+    "WheteThunger/Free-Build",
+    "WheteThunger/GatherRates",
+    "WheteThunger/HeliSams",
+    "WheteThunger/IODebug",
+    "WheteThunger/ItemRetriever",
+    "WheteThunger/KitGroups",
+    "WheteThunger/LimitedDroneHeight",
+    "WheteThunger/LimitedDroneRange",
+    "WheteThunger/LimitTrainLength",
+    "WheteThunger/MegaDrones",
+    "WheteThunger/MiniCopterOptions",
+    "WheteThunger/MLRSRespawner",
+    "WheteThunger/ModularCarCodeLocks",
+    "WheteThunger/MonumentAddons",
+    "WheteThunger/MonumentAddonsRemovals",
+    "WheteThunger/MonumentAddonsSafeZones",
+    "WheteThunger/MonumentFinder",
+    "WheteThunger/NoBuildInNoclip",
+    "WheteThunger/NoDroneSway",
+    "WheteThunger/NoEngineParts",
+    "WheteThunger/NoRestoreInDynamicPVPZone",
+    "WheteThunger/NoSupplyDropLights",
+    "WheteThunger/NoTechTree",
+    "WheteThunger/NoTunnelSpawn",
+    "WheteThunger/Oxide.Rust",
+    "WheteThunger/ParentedEntityRenderFix",
+    "WheteThunger/PlayerAdministration",
+    "WheteThunger/PowerlessElectronics",
+    "WheteThunger/QuickSmelt",
+    "WheteThunger/RCIdentifierFix",
+    "WheteThunger/Recycle",
+    "WheteThunger/RecycleManager",
+    "WheteThunger/ResetHostileOnDeath",
+    "WheteThunger/RidableDrones",
+    "WheteThunger/rust-imperium",
+    "WheteThunger/rustplugin-samsiteauth",
+    "WheteThunger/SharingAPI",
+    "WheteThunger/SkipZeroDamage",
+    "WheteThunger/SortButton",
+    "WheteThunger/SpawnHeli",
+    "WheteThunger/SpawnLoadouts",
+    "WheteThunger/SpawnModularCar",
+    "WheteThunger/StackSizeController",
+    "WheteThunger/StorageMonitorControl",
+    "WheteThunger/TargetableDrones",
+    "WheteThunger/TechTreeControl",
+    "WheteThunger/Telekinesis",
+    "WheteThunger/TrainCollisionDebug",
+    "WheteThunger/TurretLoadouts",
+    "WheteThunger/UnderwaterVehicles",
+    "WheteThunger/UnlimitedDroneRange",
+    "WheteThunger/UpkeepDisplayFix",
+    "WheteThunger/VehicleDecayProtection",
+    "WheteThunger/VehicleDeployedLocks",
+    "WheteThunger/VehicleStorage",
+    "WheteThunger/VehicleVendorOptions",
+    "WheteThunger/VirtualItems",
+    "WheteThunger/WorkcartCardReaders",
+    "WheteThunger/WorkcartSafeZones",
+    "WheteThunger/WoundedFix",
+    "famus0v/Rust-Plugins",
+    "Tyler-Lopez/Rust-Factions-Plugin",
+    "Tyler-Lopez/RUSTDynasty",
+    "Tyler-Lopez/RustPluginTemplate",
+    "Tyler-Lopez/SignUploadAPI",
+    "bugrakaann/MurderGameMode",
+    "bugrakaann/TeamIdentifier",
+    "john-clark/rust-oxide-umod",
+    "jchernin4/AimTraining",
+    "jchernin4/Stats",
+    "erikmoch/OxidePlugins",
+    "Orhidea-Development/WishRivals",
+    "JesseMH/rust_tides",
+    "manuelbpc/ALTF4-Rust",
+    "Kaidoz/Rust-NoSteam",
+    "rustireland/groupclear",
+    "rustireland/notcblockentity",
+    "rustireland/notifycations",
+    "rustireland/startupcommands",
+    "rustireland/wipecountdownannounce",
+    "mattwilshire/Oxide.Ext.WebSocket",
+    "johnmcclumpha/DeathNotes",
+    "johnmcclumpha/RustDeathNotices",
+    "johnmcclumpha/RustPlaguedMurderers",
+    "OxideMod/Oxide.Core",
+    "OxideMod/Oxide.CSharp",
+    "OxideMod/Oxide.Hurtworld",
+    "OxideMod/Oxide.ReignOfKings",
+    "OxideMod/Oxide.Rust",
+    "OxideMod/Oxide.RustLegacy",
+    "OxideMod/Oxide.SevenDaysToDie",
+    "OxideMod/Oxide.TheForest",
+    "tbdscripts/cosmo-rust",
+    "MitchBriles/RustPlugins",
+    "TheFriendlyChap/NikoWeather",
+    "TheFriendlyChap/OpenNexusFC",
+    "TheFriendlyChap/oxideplugins",
+    "TheFriendlyChap/RustPlugins",
+    "TheFriendlyChap/SafeSpace",
+    "TheFriendlyChap/SpaceyDrop",
+    "2chevskii/Plugins-uMod",
+    "Joe90384/syncPipes",
+    "ElliotRedhead/EntityHealth",
+    "kiloOhm/rustsurvival-plugins-GUICreator",
+    "kiloOhm/rustsurvival-plugins-shop",
+    "kiloOhm/rustsurvival-plugins-skinit",
+    "Cannabis-CFG/Backpacks",
+    "Cannabis-CFG/Oxide",
+    "Cannabis-CFG/OxidePlugins",
+    "codeStev/Rust-Plugin-Basics",
+    "Grimston/PVELoot",
+    "Grimston/RemoteRcon",
+    "k1lly0u/EventManager",
+    "k1lly0u/HideHoldOut",
+    "k1lly0u/Oxide",
+    "k1lly0u/Oxide.Core",
+    "k1lly0u/Oxide.CSharp",
+    "k1lly0u/Oxide.Ext.RustEdit",
+    "k1lly0u/Oxide.Rust",
+    "MorganSkilly/Unity-Discord-Webhook-System",
+    "decaydev/drops",
+    "decaydev/loot",
+    "kus/rust-modded-server",
+    "eandersson/rustarena",
+    "eandersson/RustWars",
+    "SpencerSharkey/rustcord",
+    "tVeratti/rust-meter",
+    "Calytic/Give",
+    "Calytic/Night-Zombies",
+    "Calytic/oxideplugins",
+    "Calytic/Recycle",
+    "Calytic/Rewards",
+    "PierreAnken/ROK_Plugins",
+    "MrGraversen/DeathNotes",
+    "MrGraversen/rust-rcon",
+    "unet-dev/Decompiled-Assemblies",
+    "chucklenugget/auth-groups",
+    "chucklenugget/imperium",
+    "chucklenugget/miscellaneous-plugins",
+    "chucklenugget/mjolnir",
+    "chucklenugget/zombie-attack",
+    "niekschoemaker/Backpacks",
+    "niekschoemaker/blueprintguardian",
+    "niekschoemaker/CopyPaste",
+    "niekschoemaker/helicontrol",
+    "niekschoemaker/LootConfig",
+    "niekschoemaker/OxideK1lly0u",
+    "niekschoemaker/puzzlechainrepair",
+    "niekschoemaker/timezones",
+    "BattleSheep94/AutoFuel",
+    "BattleSheep94/CloudflareUpdater-Plugin",
+    "BattleSheep94/Rust-Plugin-Collection",
+    "vick-kumar/pubrust",
+    "RustServers-IO/oxideplugins",
+    "RustServers-IO/rustplugins",
+    "openmailbox/RustExamples",
+    "openmailbox/RustMods",
+    "jacobcoughenour/jpipes-legacy",
+    "jacobcoughenour/Jtech",
+    "jacobcoughenour/JtechTrashCan",
+    "PsychoTea/CloudflareUpdater-Plugin",
+    "PsychoTea/Oxide.CSharp",
+    "PsychoTea/Oxide.Rust",
+    "PsychoTea/Oxide.RustLegacy",
+    "PsychoTea/RustArena",
+    "diametric/oxide-plugins",
+    "diametric/Oxide.CSharp",
+    "Ryan-J-D/NoRaid",
+    "Ryan-J-D/Oxide",
+    "Ryan-J-D/Oxide.Rust",
+    "Ryan-J-D/Rust-Item-IDs",
+    "Ryan-J-D/Vanish",
+    "i-love-code/PublicRustPlugins",
+    "i-love-code/seedery.io-mapgen",
+    "Skippeh/calcrust.com-backend",
+    "Skippeh/Oxide-Plugins",
+    "Skippeh/Oxide.Ext.ServerManager",
+    "byome/ByomeConnect",
+    "byome/oxide-configuration",
+    "zanderwar/oxide-statlogger",
+    "davidc538/rust-oxide-aimbots",
+    "davidc538/Zombies",
+    "DeusProx/Share",
+    "DeusProx/SkinZ",
+    "Hallonkaka/OxidePlugins",
+    "Nogrod/OxidePlugins",
+    "tolland/incursion",
+    "strykes/Oxide",
+    "strykes/Oxide2Plugins",
+    "ternpixel/plugins",
+    "JonathanPorta/rust-server-cookbook",
+    "scorpyon/plugins",
+    "QuetzalQatl/RustPluginManual",
+    "pedroivorbgrodrigues/hunt",
+    "pedroivorbgrodrigues/Oxide",
+    "ZaeBallsa/oxideplugins",
+    "alexanderndev/oxideplugins",
+    "Hardcore-fs/oxideplugins",
+    "Hardcore-fs/PlayerAdministration",
+    "Hardcore-fs/Tebex-Oxide",
+    "Willdiedog/oxideplugins",
+    "scarecr0w12/rust-imperium",
+    "Rahulsinghz/Oxide2Plugins",
+    "Rahulsinghz/oxideplugins",
+    "ads102003/Oxide.Core",
+    "ads102003/Oxide.CSharp",
+    "ads102003/Oxide.Hurtworld",
+    "ads102003/Oxide.ReignOfKings",
+    "ads102003/Oxide.Rust",
+    "ads102003/Oxide.SevenDaysToDie",
+    "ads102003/Oxide.TheForest",
+    "13dasd123/-1-TheRustBay",
+    "13dasd123/-DayzRust",
+    "13dasd123/asdasd",
+    "13dasd123/asdsaadarust-template",
+    "13dasd123/Fat-plant",
+    "13dasd123/oxideplugins",
+    "13dasd123/rust-free-plugins",
+    "13dasd123/Rust-School-Plugins",
+    "13dasd123/rust-template",
+    "13dasd123/rust-template-private",
+    "13dasd123/RustPluginsDirectLeaks",
+    "13dasd123/sunshine-assembly",
+    "13dasd123/umod-pluigns-dataset",
+    "Remod-org/AcidRain",
+    "Remod-org/AggressiveAnimals",
+    "Remod-org/AirwolfVendorFix",
+    "Remod-org/AnimalTurret",
+    "Remod-org/AutoFurnace",
+    "Remod-org/AuxidePlugins",
+    "Remod-org/BikeClaim",
+    "Remod-org/BowShield",
+    "Remod-org/CCTVControl",
+    "Remod-org/ChatBot",
+    "Remod-org/ChuteManager",
+    "Remod-org/CoffinLock",
+    "Remod-org/CompoundOptions",
+    "Remod-org/CookStorage",
+    "Remod-org/Cornucopia",
+    "Remod-org/DeathSpawn",
+    "Remod-org/DronePatrol",
+    "Remod-org/ElectricFridge",
+    "Remod-org/ElectricOven",
+    "Remod-org/ElectroLock",
+    "Remod-org/FlyingCarpet",
+    "Remod-org/FlyingKayak",
+    "Remod-org/FlyingPiano",
+    "Remod-org/ForestryZones",
+    "Remod-org/ForeverBackpack",
+    "Remod-org/Gesture-Wheel",
+    "Remod-org/GrillPickup",
+    "Remod-org/Horses",
+    "Remod-org/HumanNPC",
+    "Remod-org/HumanNPCGUI",
+    "Remod-org/Humanoids",
+    "Remod-org/IceBox",
+    "Remod-org/InstaWear",
+    "Remod-org/JunkPileSci",
+    "Remod-org/JustEat",
+    "Remod-org/LootProtect",
+    "Remod-org/LOTL",
+    "Remod-org/MagazinBoost",
+    "Remod-org/MiningOutpostQuarries",
+    "Remod-org/MonBots",
+    "Remod-org/MonumentNPC",
+    "Remod-org/MyAttackCopter",
+    "Remod-org/MyMiniCopter",
+    "Remod-org/NextGenPVE",
+    "Remod-org/NoDecay",
+    "Remod-org/NoOffline",
+    "Remod-org/NREHook",
+    "Remod-org/OldSchoolResearch",
+    "Remod-org/Omnibus",
+    "Remod-org/Oxide.Ext.LocalFiles",
+    "Remod-org/PathFinding",
+    "Remod-org/Photog",
+    "Remod-org/Plagued",
+    "Remod-org/PlayerAdministration",
+    "Remod-org/Portals",
+    "Remod-org/PowerWalk",
+    "Remod-org/PushIt",
+    "Remod-org/QRadar",
+    "Remod-org/Quests",
+    "Remod-org/RealPortals",
+    "Remod-org/RecycleBP",
+    "Remod-org/RecycleCost",
+    "Remod-org/ReJack",
+    "Remod-org/RemLoad",
+    "Remod-org/Replicator",
+    "Remod-org/RoadFinder",
+    "Remod-org/RProtect",
+    "Remod-org/RTeleportation",
+    "Remod-org/SAMTargeting",
+    "Remod-org/SignArtist",
+    "Remod-org/SimpleLight",
+    "Remod-org/Stacks",
+    "Remod-org/SteamFriends",
+    "Remod-org/Stumped",
+    "Remod-org/TCGui",
+    "Remod-org/Telekinesis",
+    "Remod-org/Teleportication",
+    "Remod-org/Tides",
+    "Remod-org/TimedExecuteV2",
+    "Remod-org/TinCanBoom",
+    "Remod-org/Toilette",
+    "Remod-org/Waypoints",
+    "Jake-Rich/Oxide",
+    "Jake-Rich/Oxide.CSharp",
+    "Jake-Rich/seedery.io-mapgen",
+    "skulidropek/leaked_new_rust_plugins_AI_Dumped",
+    "skulidropek/MapProtection",
+    "skulidropek/oxideplugins",
+    "skulidropek/Rust-Dedicated-Server",
+    "skulidropek/rust-template-240",
+    "skulidropek/umod-pluigns-dataset",
+    "mkojoa/Oxide2Plugins",
+    "MeziGit/Oxide.Core.Tests",
+    "williamtrelawny/Oxide.Core",
+    "Zer0x89A/Attachment-Blocker",
+    "Zer0x89A/Auto-Fuel",
+    "Zer0x89A/Auto-Takeoff",
+    "Zer0x89A/Entity-Item-Picker",
+    "Zer0x89A/Free-Build",
+    "Zer0x89A/Helicopter-Hover",
+    "Zer0x89A/Neutral-Animals",
+    "Zer0x89A/Night-Zombies",
+    "Zer0x89A/No-Decay",
+    "Zer0x89A/No-Fireworks-On-Terrain",
+    "Zer0x89A/Oxide.Core",
+    "Zer0x89A/Oxide.Rust",
+    "Zer0x89A/Pvp-Toggle",
+    "Zer0x89A/Runaway-Boats",
+    "Zer0x89A/Tool-Cupboard-Turrets",
+    "Zer0x89A/Vending-Machine-Timeout",
+    "MrBlue/CopyPaste",
+    "MrBlue/Oxide.Core",
+    "MrBlue/Oxide.Hurtworld",
+    "MrBlue/Oxide.Rust",
+    "Tryhard999/Carbon.Common",
+    "Tryhard999/NoHeliFire",
+    "Tryhard999/NoSunGlare",
+    "Tryhard999/Oxide.Rust",
+    "ApocDev/Oxide",
+    "scorteanucosmin/Oxide.Core",
+    "scorteanucosmin/Oxide.CSharp",
+    "Slut/Oxide.Core",
+    "Slut/Oxide.CSharp",
+    "Slut/Oxide.Rust",
+    "Ragonz2/Oxide",
+    "BurntRouter/rust-rcon",
+    "rustcommunity/EasyVoteExtended",
+    "rustcommunity/OxidePlugins",
+    "Crushedice/LatestPlugins",
+    "Crushedice/Rust-NoSteam",
+    "Crushedice/Rust_Plugins",
+    "MyhreDev/uMod.Test",
+    "DeXGaming/Oxide.SevenDaysToDie",
+    "DeXGaming/rust-plugins",
+    "c-harris/PublicRustPlugins",
+    "TurkLee/Decompiled-Assemblies",
+    "heymeepo/Decompiled-Assemblies",
+    "koenrad/Oxide-2.0-Plugins",
+    "Kirollos/Oxide.Ext.IRC",
+    "potaetobag/RustRoyale",
+    "Flash-Ticker/AdminLootProtection",
+    "Flash-Ticker/BarDoorCloser",
+    "Flash-Ticker/CompanyManagement",
+    "Flash-Ticker/GoldenScrap",
+    "Flash-Ticker/MyNotify",
+    "Flash-Ticker/NoPowerXmasLights",
+    "Flash-Ticker/SafeZoneVehicle",
+    "Flash-Ticker/SkinFinder",
+    "Flash-Ticker/SwimmingDrops",
+    "Flash-Ticker/XmasTreeGifts",
+    "netch-dev/Rust.UIFramework",
+    "AsielElaouare/blueprintmanager-rust",
+    "flutessources/Oxide.Ext.CustomNpc",
+    "flutessources/Oxide.Rust",
+    "shady14u/ExtraLoot",
+    "shady14u/GatherRewards",
+    "shady14u/Hotel",
+    "shady14u/imperium",
+    "shady14u/oxideplugins",
+    "shady14u/SteamChecks",
+    "shady14u/TimedPermissions",
+    "shady14u/Trapper",
+    "Psystec/RUST-Update-Notice",
+    "Psystec/uMod-Chat-To-Discord-Relay",
+    "Psystec/uMod-Chat-To-Telegram-Relay",
+    "kop7er/ModdedWorkCarts",
+    "kop7er/Player-Poop",
+    "kop7er/Private-Messages",
+    "kop7er/Taser",
+    "badw000lf/Accepted-Workshop-Skins-config-for-Skins-by-misticos",
+    "nbistrov255/lightrp",
+    "l0cks-acab/BlackJackGamble",
+    "l0cks-acab/BMChecker",
+    "l0cks-acab/ChickenGun",
+    "l0cks-acab/ClanWebhook",
+    "l0cks-acab/EnderChest",
+    "l0cks-acab/EnderFlare",
+    "l0cks-acab/EntCleanup",
+    "l0cks-acab/GamblingStats",
+    "l0cks-acab/KOTH",
+    "l0cks-acab/LogiDetection",
+    "l0cks-acab/LuckyBox",
+    "l0cks-acab/MagicKits",
+    "l0cks-acab/MagicRanks",
+    "l0cks-acab/MailBomber",
+    "l0cks-acab/MyHorse",
+    "l0cks-acab/RustyReef",
+    "l0cks-acab/SAMSiteReach",
+    "l0cks-acab/SpawnHorde",
+    "l0cks-acab/StatTracker",
+    "ToastyToast25/Skinbox",
+    "achrafthedev/Oxide.Rust",
+    "EReis0/Oxide.Rust",
+    "ThePitereq/Carbon.Common",
+    "ThePitereq/Oxide.Rust",
+    "thenetimp/NoNameChange",
+    "thenetimp/Rust_SystemNotifications",
+    "Visagalis/Oxide.Rust",
+    "RustopiaOfficial/DisableIndustrialConveyors",
+    "RustopiaOfficial/Oxide.Rust",
+    "RustopiaOfficial/paynow-rust-plugin",
+    "atlas-rust-servers/console-extension",
+    "atlas-rust-servers/gizmos-extension",
+    "izatrix/EventManager",
+    "izatrix/HideHoldOut",
+    "izatrix/Oxide",
+    "I4IgO32/Rust-NoSteam",
+    "YaMang0w0/OwnPlugins",
+    "WeirdPhrog/plugin",
+    "ch3rn1k/rustapp-plugin",
+    "hugil/Oxide.CSharp",
+    "hugil/TimedPermissions",
+    "ZockiRR/Carbon.Common",
+    "ZockiRR/Oxide.Core",
+    "ZockiRR/RustSirens",
+    "ZockiRR/RustTaser",
+    "5Dev24/Recycle",
+    "5Dev24/ScheduledBuilding",
+    "hoppel/Bloodtrail",
+    "hoppel/CommandWalls",
+    "hoppel/NoBackpacks",
+    "hoppel/Oxide.Rust",
+    "hoppel/PlayerReportGUI",
+    "hoppel/ToolsGatherManager",
+    "LeagueRaINi/OxidePlugins",
+    "nosoylito/GatherContainers",
+    "nosoylito/OfflineRaidDefenders",
+    "nosoylito/RandomFaction",
+    "nosoylito/WantedBountyHunt",
+    "QuakeShots/Rust",
+    "Murgator/rust-donation-plugin-tip4serv",
+    "MaltrzD/SteamVoiceEncoder",
+    "Mr-Dead2/newsbroadcaster",
+    "gettakaro/rust-mods",
+    "david7-dev/ExtraGatherBonuses",
+    "shadowfearzxc/RustExtended-plugins",
+    "SettLe1/BadPrefabsCleaner",
+    "kwamaking/AntiCodeRaid",
+    "kwamaking/AutoBuy",
+    "kwamaking/AutoLoadOut",
+    "kwamaking/AutoSkin",
+    "kwamaking/CompoundTeleport",
+    "fenderrex/Oxide.Ext.RustEdit",
+    "Whitecandor/Oxide.Rust",
+    "a-downing/MiniCopterDrone",
+    "a-downing/uMod.Rust",
+    "a-downing/uModTestStuff",
+    "jonaslagoni/Oxide.Rust",
+    "tebexio/Tebex-Oxide",
+    "tebexio/Tebex-Rust",
+    "HandyS11/PopCommand",
+    "HandyS11/RebootScheduler",
+    "HandyS11/RUST-Update-Notice",
+    "HandyS11/RustPluginsWorkplace",
+    "HandyS11/RustPluginTemplate",
+    "CraftingStore/OxidePlugin",
+    "UncleMle/Rust-Ban-System",
+    "oleduc/Oxide-Plagued",
+    "IIIaKa/FreeRT",
+    "IIIaKa/MonumentsWatcher",
+    "IIIaKa/Oxide.Core",
+    "IIIaKa/Oxide.Rust",
+    "IIIaKa/SilentItemsGive",
+    "IIIaKa/TemporaryPermissions",
+    "danielgnh/plugins_oxide",
+    "UltraRust/Anti-Spam-Names",
+    "UltraRust/CargoShip-no-scientists-bug-fix",
+    "UltraRust/CH47-no-scientists-bug-fix",
+    "UltraRust/Ent-Kill-Loot-Keeper",
+    "UltraRust/Fog-Voting",
+    "UltraRust/No-Decay-Candles-Ultra",
+    "UltraRust/Supply-Alert",
+    "setfps/rust-devblog-nosteam",
+    "sknchan/Oxide.RustLegacy",
+    "sami3737/BanCleaner",
+    "sami3737/BlueprintShare",
+    "sami3737/Claimer",
+    "sami3737/ClassSelector",
+    "sami3737/CrateLocker",
+    "sami3737/CreativeCraft",
+    "sami3737/DailyRewards",
+    "sami3737/DiscordBoost",
+    "sami3737/EasyAccess",
+    "sami3737/Exchanger",
+    "sami3737/FridgeFood",
+    "sami3737/GiveUI",
+    "sami3737/InventoryTransfer",
+    "sami3737/Loadout",
+    "sami3737/NoStability",
+    "sami3737/PlayerDeath",
+    "sami3737/Running-Man",
+    "sami3737/Rust-Lottery",
+    "sami3737/SmartChat",
+    "sami3737/Social",
+    "sami3737/Voter",
+    "seanmb0/rustmap",
+    "kisuka/RustPlugins",
+    "xmxv/admin-map-Rust-",
+    "xmxv/backpacks-rust",
+    "ImKiri86/VIPPlaytime",
+    "John-Willikers/RustCircuitBoss",
+    "upperking/Old-Rust-Legacy-Plugins",
+    "Substrata1/ClothedMurderers",
+    "Substrata1/Inbound",
+    "Substrata1/MiscRustPlugins",
+    "Substrata1/Oxide.Rust",
+    "Substrata1/WaterCatcherBoost",
+    "bradygaster/Aspire.Hosting.Facepunch.Rust",
+    "bradygaster/RustMods",
+    "TOWUK/test",
+    "Vladimir123123123/rust-template",
+    "yacvaguer/FirstAidPatches",
+    "yacvaguer/simple-patrol-signal",
+    "yacvaguer/SteamProfiles",
+    "yacvaguer/uav-signal",
+    "connorrichlen/BetterChatFilter",
+    "connorrichlen/BetterChatMute",
+    "connorrichlen/GUIAnnouncements",
+    "connorrichlen/SkipNightUI",
+    "FireIce7/BaseFixer",
+    "romgerman/CGUI",
+    "romgerman/RustPlugins",
+    "romgerman/uMod",
+    "xaray/RustStaticPlayers",
+    "dcodeIO/Friends",
+    "peter-r-g/uMod.RulesManager",
+    "peter-r-g/uMod.ScheduledMessages",
+    "nuGGGz/npc-tag-rewards",
+    "Feverr92/kits",
+    "Feverr92/QuickSmelt",
+    "Feverr92/Trade-Rust",
+    "Feverr92/WarriorShop",
+    "SkiTee3000/Oxide.Core",
+    "SkiTee3000/Oxide.Rust",
+    "Mike-Baks/Oxide.Rust",
+    "Kulltero/Carbon.Core",
+    "Kulltero/Oxide.Rust",
+    "devhyper/Oxide.Rust",
+    "dbteku/UMod.Rust.BetterElectricty",
+    "dbteku/UMod.Rust.SharedDoors",
+    "soerr/github-to-rust",
+    "razorfish-sl/PlayerAdministration-1",
+    "TebexOllie/Tebex-Oxide",
+    "liam-wiltshire/Tebex-Oxide",
+    "Naaathan/Tebex-Oxide",
+    "collectVood/Oxide.Core",
+    "collectVood/Oxide.Rust",
+    "collectVood/Stations",
+    "collectVood/uMod-Plugins",
+    "collectVood/uModPlugins",
+    "nurdism/Nations",
+    "mohamedyassine-benmiled/uMod-DiscordStatus",
+    "mleem97/DeathcounterIP",
+    "mleem97/UnburnableMeat",
+    "GFLClan/Rust-User-Management",
+    "txnitxnichopper/Oxide.Rust",
+    "ailishev/rust-template-177",
+    "Azuriom/AzLink-CSharp",
+    "Ghostyenc/FurnacePlug-v1",
+    "Ghostyenc/Gamble",
+    "Ghostyenc/NoRecyclerEfficiency",
+    "Ghostyenc/PerformancePlus",
+    "Ghostyenc/ProtectTeslaCoils",
+    "Ghostyenc/VehicleSpawner",
+    "spencermcw/rust-land-claim",
+    "Mentol0408/Test",
+    "LauraRozier/BanSync",
+    "LauraRozier/EnforceSingleResourceExtractor",
+    "LauraRozier/ItemSkinSetter",
+    "LauraRozier/Oxide.Core",
+    "LauraRozier/Oxide.Rust",
+    "LauraRozier/PlayerAdministration",
+    "LauraRozier/uMod-Project-Template",
+    "LauraRozier/VerificationGatekeeper",
+    "DevGonzi/uMod-Build",
+    "DevGonzi/uMod-ChatPrefix",
+    "DevGonzi/uMod-DiscordStatus",
+    "DevGonzi/uMod-InfoPanel",
+    "DevGonzi/uMod-Quests",
+    "DevGonzi/uMod-TeamPing",
+    "rust-app-io/plugin",
+    "admin4eg/survivalshop-rust",
+    "FtuoilXelrash/CelestialBarrage",
+    "FtuoilXelrash/rPop",
+    "FtuoilXelrash/rServerMessages",
+    "rustmy/DonationCredits",
+    "rustmy/HelicopterStatistics",
+    "rustmy/incursion",
+    "rustmy/JakeOxidePlugins",
+    "rustmy/Oxide-Plugins-1",
+    "rustmy/oxide-plugins-2",
+    "rustmy/oxide-plugins-3",
+    "rustmy/oxide-plugins-4",
+    "rustmy/Oxide-Plugins-5",
+    "rustmy/Oxide2Plugins",
+    "rustmy/oxideplugins",
+    "rustmy/oxideplugins-1",
+    "rustmy/OxidePlugins-2",
+    "rustmy/OxidePlugins-3",
+    "rustmy/rust-oxide-aimbots",
+    "rustmy/rustifac",
+    "rustmy/RustPlugins",
+    "rustmy/RustPlugins-1",
+    "rustmy/rustylife",
+    "rustmy/seedery.io-mapgen",
+    "rustmy/SkinZ",
+    "alfredo-leonelli/ClanTeamSync",
+    "alfredo-leonelli/ComunidadHispanoRustAPI",
+    "alfredo-leonelli/RaidAlert",
+    "alfredo-leonelli/ServerPop",
+    "NemoAM7/Rust-Terminal-Hack-Plugin",
+    "compscidr/iac",
+    "bawNg/HookDispatch",
+    "bawNg/Oxide",
+    "bawNg/Rust",
+    "sixmybad/SimplePVPStats",
+    "stoneharry/rust-game-server",
+    "MrDesedresh/plug",
+    "MrDesedresh/plugin",
+    "MrDesedresh/plugin2",
+    "MrDesedresh/TB",
+    "RedizGG/AttachmentBlocker",
+    "RedizGG/Creative_Images",
+    "Lootvoet/DiscordCoreRewards",
+    "haggbart/Oxide.Rust",
+    "haggbart/rustplugin-autoturretauth",
+    "haggbart/rustplugin-boxsorterlite",
+    "haggbart/rustplugin-raidalarm",
+    "haggbart/rustplugin-realtime",
+    "haggbart/rustplugin-samsiteauth",
+    "haggbart/rustplugin-scraponomics",
+    "haggbart/rustplugin-stashwarning",
+    "LostStormX/NPCEvents-Plugin",
+    "ay4t/oxideplugins",
+    "ay4t/rust-foundation-wipe",
+    "Zand3rsCode/CountdownPlugin",
+    "AntiKnox/antiknox-rust-plugin",
+    "cornholio21/chairtrap",
+    "cornholio21/ScrapMultiplier",
+    "Comm512-1/RustPlugins",
+    "aethyriion/gaming-platform",
+    "dusty-modding/OxidePlugins",
+    "Feramor/Oxide",
+    "Juliiiian/RocketPlugin",
+    "ServerArmour/ServerArmour",
+    "jkole4/AntiNoobRaid",
+    "jkole4/BrightNight",
+    "jkole4/FPSRestart",
+    "jkole4/MovableCCTV",
+    "jkole4/SAM-Site-Authorization",
+    "PsixXxrus/MyTask",
+    "Nikedemos/Custom-Entities",
+    "Nikedemos/HumanNPC",
+    "Nikedemos/InventoryCleaner",
+    "Nikedemos/Lone.DesignUpdateChecker",
+    "Nikedemos/Oxide.Rust",
+    "Nikedemos/SignArtist",
+    "Nikedemos/Skin-Preloader",
+    "ZacharyWolfe/CSharpDotNet",
+    "molokatanPrivate/advanced-item-crafting",
+    "molokatanPrivate/advanced-player-metabolism",
+    "molokatanPrivate/Rust-PlanterQuality",
+    "moscow-ovh/BanSystem",
+    "moscow-ovh/RustStats",
+    "moscow-ovh/RustStore",
+    "LucienMP/Rust-Voice-Streaming-Plugin",
+    "Spookywooky3/HeliDamage",
+    "Spookywooky3/SpawnHeli",
+    "CatMeat/DynamicPVP",
+    "GTJono/RustChess",
+    "firemandave6024/sqllogger",
+    "NeewMeta88/Rust-game-Plugin",
+    "1337-create/simple-link-discord-steam-linking-system",
+    "OhItsDiiTz/RustPlugin",
+    "dennib/NightLantern",
+    "robbie-williams/rust-server-docker",
+    "notadevasian/Rust-Discord-Link",
+    "leaderos-net/rust-leaderos-connect",
+    "Ardivaba/CodeSamples",
+    "J-Pster/InventoryCleaner",
+    "jacobmstein/Kits",
+    "jacobmstein/Oxide.Core",
+    "ItzNxthaniel/RestrictPlacement",
+    "ItzNxthaniel/TrueWelcomer",
+    "RustServers-gg/EasyVote",
+    "RustServers-gg/Voting-Rewards",
+    "Navio1430/AntiRoofCamp",
+    "xoxfaby/Rust-Oxide-Y-Position-Info-UI",
+    "ErikGrischuk/Entity-Cleaner",
+    "Steamcord/steamcord-rust",
+    "heronj2703/RustPlugin-SimpleGather",
+    "granis/RustItemDumper",
+    "weedz/oxide_rustextras",
+    "MoonpieBD/BlueprintPrestige",
+    "MoonpieBD/SimplePatrolSignal",
+    "MoonpieBD/skipnight",
+    "MoonpieBD/Voter",
+    "Mheetu/RustVoiceActivity",
+    "Randactyl/Salvage",
+    "msharp19/rust-skinzoneitems",
+    "msharp19/RustBangBangAirdropPlugin",
+    "msharp19/RustStarterKitPlugin",
+    "headtapper/ClearInventory",
+    "headtapper/FireworksLogger",
+    "headtapper/FishingRewards",
+    "headtapper/InvasivePlants",
+    "headtapper/NameFilter",
+    "headtapper/UnlimitedFuel",
+    "Vlad-00003/Backpacks",
+    "Vlad-00003/Oxide.Rust",
+    "Vlad-00003/oxideplugins",
+    "Vlad-00003/PluginsWorkspace",
+    "jackchapm/eu-roam-events-discord",
+    "InfamousVague/rust-nuke",
+    "EgorBlagov/rust-discord",
+    "noxtgm/wipe-timer",
+    "Pho3niX90/ExtraSeating",
+    "Pho3niX90/MiniCopterOptions",
+    "Pho3niX90/PlayerAdministration",
+    "Pho3niX90/PoliticalSurvival",
+    "davereed/AutoDoors",
+    "oculus42/Inbound",
+    "Fayozjon/BanSystem",
+    "seanbyrne88/RustPlugins",
+    "electrikbox/VIPElectrik",
+    "matbyte-com/vyhub-umod",
+    "pilate/WorkingMan",
+    "TheNeo2k/Kits",
+    "Buzgero/HumanNPC",
+    "lbgcomm/Rust-User-Management",
+    "Swishhyy/Night-Zombies",
+    "atlasrustservers/JERRYSun",
+    "RazoRRustPlugins/AdminMenu-1.3.1",
+    "RazoRRustPlugins/Airfield-Event-1.5.3",
+    "RazoRRustPlugins/Armored-Train-1.8.2",
+    "RazoRRustPlugins/Battlepass-1.37.3",
+    "RazoRRustPlugins/Convoy-Reforged-2.8.1"
+  ]
+}
