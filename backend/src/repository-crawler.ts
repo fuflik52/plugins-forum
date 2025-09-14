@@ -305,6 +305,36 @@ class RepositoryCrawler {
         console.warn("Failed to load manual repositories:", error);
       }
     }
+
+    // Load repositories discovered by author-repository-finder
+    const authorDiscoveredPath = path.join(this.outputDir, "author_discovered_repositories.json");
+    let authorFinderRepos: string[] = [];
+    if (fs.existsSync(authorDiscoveredPath)) {
+      try {
+        const authorDiscoveredData: { repositories: string[]; count: number } = JSON.parse(
+          fs.readFileSync(authorDiscoveredPath, "utf-8")
+        );
+        
+        authorFinderRepos = authorDiscoveredData.repositories;
+        const existingRepoSet = new Set(uniqueRepositories);
+        const newReposFromAuthorFinder = authorFinderRepos.filter(repo => !existingRepoSet.has(repo));
+        
+        uniqueRepositories = [...uniqueRepositories, ...authorFinderRepos];
+        
+        console.log(`📋 Author-repository-finder data:`);
+        console.log(`   Total repositories: ${authorFinderRepos.length}`);
+        console.log(`   New repositories: ${newReposFromAuthorFinder.length}`);
+        
+        if (newReposFromAuthorFinder.length > 0) {
+          console.log(`   🆕 New from author-finder: ${newReposFromAuthorFinder.slice(0, 5).join(', ')}${newReposFromAuthorFinder.length > 5 ? '...' : ''}`);
+        }
+        
+      } catch (error) {
+        console.warn("Failed to load author discovered repositories:", error);
+      }
+    } else {
+      console.log("📋 Author-repository-finder data: not found (author-finder hasn't run yet)");
+    }
     
     if (uniqueRepositories.length === 0) {
       console.error("No repositories found in oxide_plugins.json or manual-repositories.json!");

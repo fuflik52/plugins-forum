@@ -52,5 +52,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "chore(index): update plugins index [skip ci]"
+            git pull --rebase origin main || true
             git push
           fi

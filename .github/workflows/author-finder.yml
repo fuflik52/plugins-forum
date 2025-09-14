@@ -1,0 +1,62 @@
+name: Author Repository Finder
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:  # Allow manual trigger
+
+concurrency:
+  group: author-repository-finder
+  cancel-in-progress: false
+
+jobs:
+  author-finder:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed for push
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          check-latest: true
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Run author-repository-finder with timeout
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONTINUOUS: "false"
+        run: timeout 20m npm run author-finder || true
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          if git diff --quiet HEAD -- output/author_discovered_repositories.json output/author_finder_state.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changed == 'true'
+        working-directory: .
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backend/output/author_discovered_repositories.json backend/output/author_finder_state.json
+          git commit -m "chore(author-finder): update discovered repositories [skip ci]" || exit 0
+          git pull --rebase origin main || true
+          git push

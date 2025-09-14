@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { AuthorRepositoryFinder } from "./author-repository-finder.js";
 
 // Core types
 type GitHubCodeSearchItem = {
@@ -538,18 +539,43 @@ async function runOnce(): Promise<void> {
   console.log(`Completed scan. Total: ${existingMap.size} entries, New: ${newEntries}`);
 }
 
+async function runAuthorRepositoryFinder(): Promise<void> {
+  try {
+    console.log("Starting Author Repository Finder...");
+    const finder = new AuthorRepositoryFinder(GITHUB_TOKEN);
+    await finder.processAuthors();
+  } catch (err) {
+    console.error("Author Repository Finder error:", err);
+  }
+}
+
 async function run(): Promise<void> {
   if (!CONTINUOUS) {
     await runOnce();
+    
+    // After initial scan, run the author repository finder once
+    console.log("\n=== Running Author Repository Finder ===");
+    await runAuthorRepositoryFinder();
     return;
   }
   
   let cycle = 0;
+  let lastAuthorFinderRun = 0;
+  const AUTHOR_FINDER_INTERVAL_CYCLES = 24; // Run author finder every 24 cycles (about 6 hours if cycles are 15 min)
+  
   while (true) {
     cycle += 1;
     console.log(`\n=== Continuous cycle ${cycle} ===`);
     try {
       await runOnce();
+      
+      // Run author repository finder periodically
+      if (cycle - lastAuthorFinderRun >= AUTHOR_FINDER_INTERVAL_CYCLES) {
+        console.log(`\n=== Running Author Repository Finder (cycle ${cycle}) ===`);
+        await runAuthorRepositoryFinder();
+        lastAuthorFinderRun = cycle;
+      }
+      
     } catch (err) {
       console.error("Cycle error:", err);
     }

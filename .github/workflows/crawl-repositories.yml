@@ -49,4 +49,5 @@ jobs:
         git config --local user.name "GitHub Action"
         git add backend/output/crawled_plugins.json backend/output/crawler_state.json
         git commit -m "chore(crawl): update crawled plugins [skip ci]" || exit 0
+        git pull --rebase origin main || true
         git push

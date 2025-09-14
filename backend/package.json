@@ -8,7 +8,9 @@
     "build": "tsc -p .",
     "start": "node dist/index.js",
     "crawl-repos": "tsc -p . && node dist/repository-crawler.js",
-    "crawl": "npm run crawl-repos"
+    "crawl": "npm run crawl-repos",
+    "author-finder": "tsc -p . && node dist/author-repository-finder.js",
+    "author-finder-continuous": "CONTINUOUS=true tsc -p . && CONTINUOUS=true node dist/author-repository-finder.js"
   },
   "engines": {
     "node": ">=18"
