@@ -23,7 +23,7 @@ export const StatisticsPageWrapper: React.FC = () => {
       }
     };
 
-    loadPlugins();
+    void loadPlugins();
   }, []);
 
   if (error) {

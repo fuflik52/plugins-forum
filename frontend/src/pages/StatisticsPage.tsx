@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import type { IndexedPlugin } from '../types/plugin';
 import { BarChart3, Users, Package, GitFork, Star, Calendar, TrendingUp, Database } from 'lucide-react';
 
@@ -178,18 +179,18 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ plugins, loading
           
           {/* Navigation Links */}
           <div className="flex items-center justify-center space-x-4">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 transition-all duration-200 text-sm font-medium"
             >
               🏠 Home
-            </a>
-            <a
-              href="/statistics"
+            </Link>
+            <Link
+              to="/statistics"
               className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium"
             >
               📊 Statistics
-            </a>
+            </Link>
           </div>
         </div>
 
