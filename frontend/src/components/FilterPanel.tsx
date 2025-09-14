@@ -297,10 +297,30 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
       return 0;
     });
 
+    // Sort authors by count (most plugins first), then alphabetically
+    const sortedAuthors = Array.from(options.plugin_author).sort((a, b) => {
+      const countA = options.authorCounts.get(a) || 0;
+      const countB = options.authorCounts.get(b) || 0;
+      if (countA !== countB) {
+        return countB - countA; // Higher count first
+      }
+      return a.localeCompare(b); // Alphabetical for same count
+    });
+
+    // Sort repository owners by count (most plugins first), then alphabetically  
+    const sortedOwners = Array.from(options.repo_owner).sort((a, b) => {
+      const countA = options.ownerCounts.get(a) || 0;
+      const countB = options.ownerCounts.get(b) || 0;
+      if (countA !== countB) {
+        return countB - countA; // Higher count first
+      }
+      return a.localeCompare(b); // Alphabetical for same count
+    });
+
     return {
-      plugin_author: Array.from(options.plugin_author).sort(),
+      plugin_author: sortedAuthors,
       plugin_version: sortedVersions,
-      repo_owner: Array.from(options.repo_owner).sort(),
+      repo_owner: sortedOwners,
       // O(1) count lookup maps
       counts: {
         plugin_author: options.authorCounts,
