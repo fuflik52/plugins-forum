@@ -21,6 +21,7 @@ import { Pagination } from './components/Pagination';
 import { useUrlState } from './hooks/useUrlState';
 import { getPluginTimestamp } from './utils/dateUtils';
 import { debugSortOrder } from './utils/debugSort';
+import { Analytics } from './utils/analytics';
 
 // Mathematical optimization: Single Source of Truth pattern
 // Memory complexity: O(1) for state, O(n) for data where n = plugin count
@@ -97,6 +98,11 @@ function App(): React.JSX.Element {
     const finalItems = activeFilters.length > 0
       ? FilterService.applyFilters(searchFiltered.items, activeFilters)
       : searchFiltered.items;
+    
+    // Track search events (debounced via useMemo)
+    if (searchQuery.trim()) {
+      Analytics.trackPluginSearch(searchQuery.trim(), finalItems.length);
+    }
     
     return {
       searchFiltered: searchFiltered.items,

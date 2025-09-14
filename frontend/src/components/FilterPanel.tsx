@@ -4,6 +4,7 @@ import type { FilterValue } from '../services/filterService';
 import { FilterService } from '../services/filterService';
 import { Filter, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { FilterSearchInput } from './FilterSearchInput';
+import { Analytics } from '../utils/analytics';
 
 interface FilterPanelProps {
   plugins: IndexedPlugin[];
@@ -350,6 +351,8 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
     const exists = activeFilters.some(f => f.field === field && f.value === value);
     if (!exists) {
       onFiltersChange([...activeFilters, { field, value }]);
+      // Track filter usage
+      Analytics.trackFilterUse(field, value);
     }
   };
 

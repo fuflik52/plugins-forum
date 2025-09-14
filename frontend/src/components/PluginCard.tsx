@@ -12,6 +12,7 @@ import {
   Clock,
   Database,
 } from "lucide-react";
+import { Analytics } from "../utils/analytics";
 
 interface PluginCardProps {
   plugin: IndexedPlugin;
@@ -188,6 +189,7 @@ export const PluginCard: React.FC<PluginCardProps> = React.memo(
             {pluginIndex !== undefined && (
               <button
                 onClick={() => {
+                  Analytics.trackPluginView(plugin.plugin_name || 'Unknown', plugin.repository.full_name);
                   void navigate(`/plugin/${pluginIndex}`);
                 }}
                 title="Подробная информация"
@@ -204,6 +206,7 @@ export const PluginCard: React.FC<PluginCardProps> = React.memo(
                 target="_blank"
                 rel="noopener noreferrer"
                 title="View Repository"
+                onClick={() => Analytics.trackExternalLink(plugin.repository.html_url, 'github')}
                 className="flex items-center justify-center w-10 h-10 bg-gray-900 hover:bg-gray-800 
                        text-white rounded-lg transition-all duration-200 hover:scale-105"
               >
@@ -217,6 +220,7 @@ export const PluginCard: React.FC<PluginCardProps> = React.memo(
                 target="_blank"
                 rel="noopener noreferrer"
                 title="View Source Code"
+                onClick={() => Analytics.trackExternalLink(plugin.file.html_url, 'github')}
                 className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 
                        text-white rounded-lg transition-all duration-200 hover:scale-105"
               >
