@@ -5,6 +5,7 @@ import { ErrorBoundary } from "./ErrorBoundary";
 import { ChevronDown, ChevronRight, Package, Users } from "lucide-react";
 import { getPluginTimestamp } from "../utils/dateUtils";
 import { findPluginGlobalIndex } from "../utils/pluginUtils";
+import { sortPluginsByVersion } from "../utils/versionUtils";
 
 interface GroupedPluginViewProps {
   plugins: IndexedPlugin[];
@@ -54,20 +55,30 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
     // Convert to array and sort groups by the latest plugin in each group
     return Object.entries(groups)
       .map(([name, pluginList]) => {
-        // Sort plugins within each group by the same criteria
-        const sortedPlugins = [...pluginList].sort((a, b) => {
-          const ta = getPluginTimestamp(a, field);
-          const tb = getPluginTimestamp(b, field);
-          const diff = tb - ta;
-          return dir === "asc" ? -diff : diff;
+        // First sort by version (newest first), then by the selected criteria
+        const versionSorted = sortPluginsByVersion(pluginList);
+        
+        
+        // If there are multiple plugins with same version or no versions,
+        // use the selected sorting criteria as secondary sort
+        const finalSorted = [...versionSorted].sort((a, b) => {
+          // Primary sort by version is already done
+          // Secondary sort by selected criteria only if versions are equal
+          if (a.plugin_version === b.plugin_version) {
+            const ta = getPluginTimestamp(a, field);
+            const tb = getPluginTimestamp(b, field);
+            const diff = tb - ta;
+            return dir === "asc" ? -diff : diff;
+          }
+          return 0; // Keep version sort order
         });
 
-        // Get the representative plugin (first one after sorting)
-        const representativePlugin = sortedPlugins[0];
+        // Get the representative plugin (first one after sorting - latest version)
+        const representativePlugin = finalSorted[0];
 
         return {
           name,
-          plugins: sortedPlugins,
+          plugins: finalSorted,
           count: pluginList.length,
           representativePlugin,
         };

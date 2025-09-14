@@ -1,7 +1,7 @@
 import type { IndexedPlugin } from '../types/plugin';
 import { getPluginTimestamp } from './dateUtils';
 
-export function debugSortOrder(plugins: IndexedPlugin[]) {
+export function debugSortOrder(plugins: IndexedPlugin[]): void {
   console.log('=== DEBUG SORT ORDER ===');
   
   plugins.slice(0, 10).forEach((plugin, index) => {
@@ -13,7 +13,7 @@ export function debugSortOrder(plugins: IndexedPlugin[]) {
     console.log(`   Created: ${createdDate.toISOString()} (${createdTimestamp})`);
     console.log(`   Repo created_at: ${plugin.repository.created_at}`);
     console.log(`   Indexed_at: ${plugin.indexed_at}`);
-    console.log(`   Commits.created: ${plugin.commits?.created?.committed_at || 'N/A'}`);
+    console.log(`   Commits: ${plugin.commits ? 'Available' : 'N/A'}`);
     console.log('---');
   });
 }

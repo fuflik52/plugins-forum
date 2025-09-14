@@ -3,6 +3,7 @@ import type { IndexedPlugin } from "../types/plugin";
 import { PluginCard } from "./PluginCard";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { findPluginGlobalIndex } from "../utils/pluginUtils";
+import { groupAndSortPluginsByVersion } from "../utils/versionUtils";
 
 interface PluginGridProps {
   plugins: IndexedPlugin[];
@@ -15,6 +16,19 @@ export const PluginGrid: React.FC<PluginGridProps> = ({
   loading = false,
   allPlugins,
 }) => {
+  // Sort plugins by version within each group (same name)
+  const sortedPlugins = React.useMemo(() => {
+    const groups = groupAndSortPluginsByVersion(plugins);
+    
+    
+    // Flatten back to array while maintaining version sort within groups
+    const result: IndexedPlugin[] = [];
+    Object.values(groups).forEach(groupPlugins => {
+      result.push(...groupPlugins);
+    });
+    
+    return result;
+  }, [plugins]);
   if (loading) {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -53,7 +67,7 @@ export const PluginGrid: React.FC<PluginGridProps> = ({
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {plugins.map((plugin, index) => {
+      {sortedPlugins.map((plugin, index) => {
         // Find the global index of this plugin in the original array
         const globalIndex = allPlugins
           ? findPluginGlobalIndex(plugin, allPlugins)
