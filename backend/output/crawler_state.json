@@ -1,8 +1,8 @@
 {
-  "last_updated": "2025-09-14T08:01:41.360Z",
-  "total_repositories_processed": 694,
-  "successful_crawls": 690,
-  "failed_crawls": 4,
+  "last_updated": "2025-09-14T18:38:47.024Z",
+  "total_repositories_processed": 1224,
+  "successful_crawls": 1219,
+  "failed_crawls": 5,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
       "last_crawled": "2025-09-11T06:50:09.702Z",
@@ -4175,24 +4175,3206 @@
       "plugins_count": 1663,
       "success": true,
       "errors": []
+    },
+    "13dasd123/asdasd": {
+      "last_crawled": "2025-09-14T18:29:57.510Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/oxideplugins": {
+      "last_crawled": "2025-09-14T18:29:59.098Z",
+      "plugins_count": 682,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/rust-template": {
+      "last_crawled": "2025-09-14T18:30:06.162Z",
+      "plugins_count": 8,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/rust-template-private": {
+      "last_crawled": "2025-09-14T18:30:12.812Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/umod-pluigns-dataset": {
+      "last_crawled": "2025-09-14T18:30:14.746Z",
+      "plugins_count": 1508,
+      "success": true,
+      "errors": []
+    },
+    "5Dev24/ScheduledBuilding": {
+      "last_crawled": "2025-09-14T18:30:15.972Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "BattleSheep94/AutoFuel": {
+      "last_crawled": "2025-09-14T18:30:16.869Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "BattleSheep94/CloudflareUpdater-Plugin": {
+      "last_crawled": "2025-09-14T18:30:17.851Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "CarbonCommunity/Carbon.Oxide": {
+      "last_crawled": "2025-09-14T18:30:18.774Z",
+      "plugins_count": 7,
+      "success": true,
+      "errors": []
+    },
+    "Crushedice/LatestPlugins": {
+      "last_crawled": "2025-09-14T18:30:20.230Z",
+      "plugins_count": 685,
+      "success": true,
+      "errors": []
+    },
+    "Crushedice/Rust_Plugins": {
+      "last_crawled": "2025-09-14T18:30:21.194Z",
+      "plugins_count": 20,
+      "success": true,
+      "errors": []
+    },
+    "DeXGaming/Oxide.SevenDaysToDie": {
+      "last_crawled": "2025-09-14T18:30:22.144Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "DevGonzi/uMod-Build": {
+      "last_crawled": "2025-09-14T18:30:23.028Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "DevGonzi/uMod-ChatPrefix": {
+      "last_crawled": "2025-09-14T18:30:23.921Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "DevGonzi/uMod-DiscordStatus": {
+      "last_crawled": "2025-09-14T18:30:24.787Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "DevGonzi/uMod-Quests": {
+      "last_crawled": "2025-09-14T18:30:25.666Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "DevGonzi/uMod-TeamPing": {
+      "last_crawled": "2025-09-14T18:30:26.555Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Feramor/Oxide": {
+      "last_crawled": "2025-09-14T18:30:28.204Z",
+      "plugins_count": 8,
+      "success": true,
+      "errors": []
+    },
+    "Feverr92/QuickSmelt": {
+      "last_crawled": "2025-09-14T18:30:29.077Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Feverr92/Trade-Rust": {
+      "last_crawled": "2025-09-14T18:30:29.991Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Flash-Ticker/AdminLootProtection": {
+      "last_crawled": "2025-09-14T18:30:31.015Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Flash-Ticker/CompanyManagement": {
+      "last_crawled": "2025-09-14T18:30:31.970Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Flash-Ticker/MyNotify": {
+      "last_crawled": "2025-09-14T18:30:32.970Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Flash-Ticker/NoPowerXmasLights": {
+      "last_crawled": "2025-09-14T18:30:34.012Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Flash-Ticker/SafeZoneVehicle": {
+      "last_crawled": "2025-09-14T18:30:34.968Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Flash-Ticker/SkinFinder": {
+      "last_crawled": "2025-09-14T18:30:35.953Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "FtuoilXelrash/rPop": {
+      "last_crawled": "2025-09-14T18:30:36.920Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "FtuoilXelrash/rServerMessages": {
+      "last_crawled": "2025-09-14T18:30:37.876Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Ghostyenc/NoRecyclerEfficiency": {
+      "last_crawled": "2025-09-14T18:30:38.744Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Ghostyenc/PerformancePlus": {
+      "last_crawled": "2025-09-14T18:30:39.662Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Ghostyenc/ProtectTeslaCoils": {
+      "last_crawled": "2025-09-14T18:30:40.517Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Ghostyenc/VehicleSpawner": {
+      "last_crawled": "2025-09-14T18:30:41.422Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Grimston/PVELoot": {
+      "last_crawled": "2025-09-14T18:30:42.341Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "HandyS11/RUST-Update-Notice": {
+      "last_crawled": "2025-09-14T18:30:43.263Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "HunterZ/MonumentAddons": {
+      "last_crawled": "2025-09-14T18:30:44.217Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "IIIaKa/MonumentsWatcher": {
+      "last_crawled": "2025-09-14T18:30:45.118Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "IIIaKa/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:30:46.094Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "IIIaKa/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:30:47.368Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "IIIaKa/SilentItemsGive": {
+      "last_crawled": "2025-09-14T18:30:48.239Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ItzNxthaniel/RestrictPlacement": {
+      "last_crawled": "2025-09-14T18:30:49.084Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Juliiiian/RocketPlugin": {
+      "last_crawled": "2025-09-14T18:30:49.966Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "KajWithAJ/EMInterface": {
+      "last_crawled": "2025-09-14T18:30:50.884Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "KajWithAJ/EventManager": {
+      "last_crawled": "2025-09-14T18:30:51.760Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "KajWithAJ/PveAdmin": {
+      "last_crawled": "2025-09-14T18:30:52.657Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "KajWithAJ/TollButtons": {
+      "last_crawled": "2025-09-14T18:30:53.564Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "KajWithAJ/Watchdog": {
+      "last_crawled": "2025-09-14T18:30:54.400Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Kirollos/Oxide.Ext.IRC": {
+      "last_crawled": "2025-09-14T18:30:55.253Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Kulltero/Carbon.Core": {
+      "last_crawled": "2025-09-14T18:30:56.388Z",
+      "plugins_count": 5,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/AdminChat": {
+      "last_crawled": "2025-09-14T18:30:57.251Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/AdminChatroom": {
+      "last_crawled": "2025-09-14T18:30:58.130Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/BetterChatMute": {
+      "last_crawled": "2025-09-14T18:30:59.027Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/CapsNoCaps": {
+      "last_crawled": "2025-09-14T18:30:59.876Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/ChatImpersonator": {
+      "last_crawled": "2025-09-14T18:31:00.754Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/DeathNotesGui": {
+      "last_crawled": "2025-09-14T18:31:01.626Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/HWTeleportation": {
+      "last_crawled": "2025-09-14T18:31:02.477Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/SleeperGuard": {
+      "last_crawled": "2025-09-14T18:31:03.343Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/TimedPermissions": {
+      "last_crawled": "2025-09-14T18:31:04.229Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/UpdateChecker": {
+      "last_crawled": "2025-09-14T18:31:05.085Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LauraRozier/BanSync": {
+      "last_crawled": "2025-09-14T18:31:05.984Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LauraRozier/EnforceSingleResourceExtractor": {
+      "last_crawled": "2025-09-14T18:31:06.861Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LauraRozier/ItemSkinSetter": {
+      "last_crawled": "2025-09-14T18:31:07.719Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LauraRozier/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:31:08.656Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LauraRozier/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:31:09.654Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LauraRozier/uMod-Project-Template": {
+      "last_crawled": "2025-09-14T18:31:10.481Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "Limmek/MySql-Chat-Log-for-Rust": {
+      "last_crawled": "2025-09-14T18:31:11.441Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/AutoDoors": {
+      "last_crawled": "2025-09-14T18:31:12.331Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/BetterChat": {
+      "last_crawled": "2025-09-14T18:31:13.234Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/BuildingGrades": {
+      "last_crawled": "2025-09-14T18:31:14.111Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/ChillFuel": {
+      "last_crawled": "2025-09-14T18:31:14.991Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/Clans": {
+      "last_crawled": "2025-09-14T18:31:15.876Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/InstantUntie": {
+      "last_crawled": "2025-09-14T18:31:16.760Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/InventoryBackup": {
+      "last_crawled": "2025-09-14T18:31:17.640Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/InventoryViewer": {
+      "last_crawled": "2025-09-14T18:31:18.507Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/LootBouncer": {
+      "last_crawled": "2025-09-14T18:31:19.397Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/NTeleportation": {
+      "last_crawled": "2025-09-14T18:31:20.362Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/NightVision": {
+      "last_crawled": "2025-09-14T18:31:21.207Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/NoCrashFlyingVehicles": {
+      "last_crawled": "2025-09-14T18:31:22.095Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/RustTranslationAPI": {
+      "last_crawled": "2025-09-14T18:31:22.968Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/ServerRewards": {
+      "last_crawled": "2025-09-14T18:31:23.854Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/SignArtist": {
+      "last_crawled": "2025-09-14T18:31:24.732Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/Vanish": {
+      "last_crawled": "2025-09-14T18:31:25.622Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/VehicleLicence": {
+      "last_crawled": "2025-09-14T18:31:26.518Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MONaH-Rasta/WaterWorks": {
+      "last_crawled": "2025-09-14T18:31:27.387Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Mabel8686/VehicleLicense": {
+      "last_crawled": "2025-09-14T18:31:28.313Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "Mabel8686/VehicleStorage": {
+      "last_crawled": "2025-09-14T18:31:29.185Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MoonpieBD/BlueprintPrestige": {
+      "last_crawled": "2025-09-14T18:31:30.395Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MoonpieBD/SimplePatrolSignal": {
+      "last_crawled": "2025-09-14T18:31:31.340Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MoonpieBD/Voter": {
+      "last_crawled": "2025-09-14T18:31:32.260Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MrDesedresh/TB": {
+      "last_crawled": "2025-09-14T18:31:33.202Z",
+      "plugins_count": 8,
+      "success": true,
+      "errors": []
+    },
+    "MrDesedresh/plugin": {
+      "last_crawled": "2025-09-14T18:31:34.095Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "MrGraversen/DeathNotes": {
+      "last_crawled": "2025-09-14T18:31:34.952Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Nikedemos/HumanNPC": {
+      "last_crawled": "2025-09-14T18:31:35.849Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Nikedemos/InventoryCleaner": {
+      "last_crawled": "2025-09-14T18:31:36.778Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Nikedemos/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:31:37.748Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Nikedemos/SignArtist": {
+      "last_crawled": "2025-09-14T18:31:38.790Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Nikedemos/Skin-Preloader": {
+      "last_crawled": "2025-09-14T18:31:39.704Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "OxideMod/Oxide.RustLegacy": {
+      "last_crawled": "2025-09-14T18:31:40.707Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Pho3niX90/MiniCopterOptions": {
+      "last_crawled": "2025-09-14T18:31:41.596Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Pho3niX90/PlayerAdministration": {
+      "last_crawled": "2025-09-14T18:31:42.725Z",
+      "plugins_count": 182,
+      "success": true,
+      "errors": []
+    },
+    "Pho3niX90/PoliticalSurvival": {
+      "last_crawled": "2025-09-14T18:31:43.600Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Psystec/RUST-Update-Notice": {
+      "last_crawled": "2025-09-14T18:31:44.546Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Psystec/uMod-Chat-To-Telegram-Relay": {
+      "last_crawled": "2025-09-14T18:31:45.517Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Rahulsinghz/Oxide2Plugins": {
+      "last_crawled": "2025-09-14T18:31:46.505Z",
+      "plugins_count": 59,
+      "success": true,
+      "errors": []
+    },
+    "RazoRRustPlugins/AdminMenu-1.3.1": {
+      "last_crawled": "2025-09-14T18:31:47.616Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "RazoRRustPlugins/Battlepass-1.37.3": {
+      "last_crawled": "2025-09-14T18:31:48.684Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "RebeccaStevens/oxide-Plugin-AutoCode": {
+      "last_crawled": "2025-09-14T18:31:50.498Z",
+      "plugins_count": 0,
+      "success": false,
+      "errors": [
+        "Failed to crawl: Error: Failed to clone repository: Error: Command failed: git clone --depth 1 \"https://github.com/RebeccaStevens/oxide-Plugin-AutoCode.git\" \"/home/runner/work/plugins-forum/plugins-forum/backend/temp_repos/RebeccaStevens_oxide-Plugin-AutoCode\"\nCloning into '/home/runner/work/plugins-forum/plugins-forum/backend/temp_repos/RebeccaStevens_oxide-Plugin-AutoCode'...\nfatal: could not read Username for 'https://github.com': No such device or address\nDownloading assets/icon.ai (403 KB)\nfatal: could not read Username for 'https://github.com': No such device or address\nError downloading object: assets/icon.ai (8a6c9b8): Smudge error: Error downloading assets/icon.ai (8a6c9b8b5dd7af9b5ae95fb009aaa44fc93dc85a303c1221ed5ddd87f0498573): batch response: Git credentials for https://github.com/RebeccaStevens/oxide-Plugin-AutoCode.git not found.\n\nErrors logged to '/home/runner/work/plugins-forum/plugins-forum/backend/temp_repos/RebeccaStevens_oxide-Plugin-AutoCode/.git/lfs/logs/20250914T183150.493075984.log'.\nUse `git lfs logs last` to view the log.\nerror: external filter 'git-lfs filter-process' failed\nfatal: assets/icon.ai: smudge filter lfs failed\nwarning: Clone succeeded, but checkout failed.\nYou can inspect what was checked out with 'git status'\nand retry with 'git restore --source=HEAD :/'\n\n"
+      ]
+    },
+    "Remod-org/AcidRain": {
+      "last_crawled": "2025-09-14T18:31:51.377Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/AggressiveAnimals": {
+      "last_crawled": "2025-09-14T18:31:52.394Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/AirwolfVendorFix": {
+      "last_crawled": "2025-09-14T18:31:53.325Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/AnimalTurret": {
+      "last_crawled": "2025-09-14T18:31:54.190Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/AutoFurnace": {
+      "last_crawled": "2025-09-14T18:31:55.041Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/BowShield": {
+      "last_crawled": "2025-09-14T18:31:55.923Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/CCTVControl": {
+      "last_crawled": "2025-09-14T18:31:56.833Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/ChatBot": {
+      "last_crawled": "2025-09-14T18:31:57.755Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/ChuteManager": {
+      "last_crawled": "2025-09-14T18:31:58.731Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/CoffinLock": {
+      "last_crawled": "2025-09-14T18:31:59.599Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/CompoundOptions": {
+      "last_crawled": "2025-09-14T18:32:00.501Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/CookStorage": {
+      "last_crawled": "2025-09-14T18:32:01.394Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Cornucopia": {
+      "last_crawled": "2025-09-14T18:32:02.262Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/DeathSpawn": {
+      "last_crawled": "2025-09-14T18:32:03.129Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/DronePatrol": {
+      "last_crawled": "2025-09-14T18:32:04.064Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/ElectricFridge": {
+      "last_crawled": "2025-09-14T18:32:05.033Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/ElectricOven": {
+      "last_crawled": "2025-09-14T18:32:05.887Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/ElectroLock": {
+      "last_crawled": "2025-09-14T18:32:06.766Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/FlyingKayak": {
+      "last_crawled": "2025-09-14T18:32:07.641Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/FlyingPiano": {
+      "last_crawled": "2025-09-14T18:32:08.583Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/ForestryZones": {
+      "last_crawled": "2025-09-14T18:32:09.426Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Gesture-Wheel": {
+      "last_crawled": "2025-09-14T18:32:10.272Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/GrillPickup": {
+      "last_crawled": "2025-09-14T18:32:11.161Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/HumanNPCGUI": {
+      "last_crawled": "2025-09-14T18:32:12.007Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Humanoids": {
+      "last_crawled": "2025-09-14T18:32:12.875Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/IceBox": {
+      "last_crawled": "2025-09-14T18:32:13.793Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/InstaWear": {
+      "last_crawled": "2025-09-14T18:32:14.691Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/JunkPileSci": {
+      "last_crawled": "2025-09-14T18:32:15.531Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/JustEat": {
+      "last_crawled": "2025-09-14T18:32:16.375Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/LOTL": {
+      "last_crawled": "2025-09-14T18:32:17.266Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/MagazinBoost": {
+      "last_crawled": "2025-09-14T18:32:18.159Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/MiningOutpostQuarries": {
+      "last_crawled": "2025-09-14T18:32:19.054Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/MonBots": {
+      "last_crawled": "2025-09-14T18:32:19.940Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/MonumentNPC": {
+      "last_crawled": "2025-09-14T18:32:20.782Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/MyAttackCopter": {
+      "last_crawled": "2025-09-14T18:32:21.712Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/NREHook": {
+      "last_crawled": "2025-09-14T18:32:22.570Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/NoOffline": {
+      "last_crawled": "2025-09-14T18:32:23.460Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/OldSchoolResearch": {
+      "last_crawled": "2025-09-14T18:32:24.375Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Oxide.Ext.LocalFiles": {
+      "last_crawled": "2025-09-14T18:32:25.337Z",
+      "plugins_count": 4,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/PathFinding": {
+      "last_crawled": "2025-09-14T18:32:26.176Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Photog": {
+      "last_crawled": "2025-09-14T18:32:27.046Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Plagued": {
+      "last_crawled": "2025-09-14T18:32:27.941Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/PlayerAdministration": {
+      "last_crawled": "2025-09-14T18:32:28.916Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Portals": {
+      "last_crawled": "2025-09-14T18:32:29.853Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/PowerWalk": {
+      "last_crawled": "2025-09-14T18:32:30.751Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/PushIt": {
+      "last_crawled": "2025-09-14T18:32:31.613Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/QRadar": {
+      "last_crawled": "2025-09-14T18:32:32.556Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Quests": {
+      "last_crawled": "2025-09-14T18:32:33.436Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/RProtect": {
+      "last_crawled": "2025-09-14T18:32:34.289Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/RTeleportation": {
+      "last_crawled": "2025-09-14T18:32:35.199Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/ReJack": {
+      "last_crawled": "2025-09-14T18:32:36.118Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/RealPortals": {
+      "last_crawled": "2025-09-14T18:32:37.021Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/RecycleBP": {
+      "last_crawled": "2025-09-14T18:32:37.869Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/RecycleCost": {
+      "last_crawled": "2025-09-14T18:32:38.752Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/RemLoad": {
+      "last_crawled": "2025-09-14T18:32:39.694Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Replicator": {
+      "last_crawled": "2025-09-14T18:32:40.656Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/RoadFinder": {
+      "last_crawled": "2025-09-14T18:32:41.523Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/SAMTargeting": {
+      "last_crawled": "2025-09-14T18:32:42.403Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/SignArtist": {
+      "last_crawled": "2025-09-14T18:32:43.356Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/SimpleLight": {
+      "last_crawled": "2025-09-14T18:32:44.234Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Stacks": {
+      "last_crawled": "2025-09-14T18:32:45.124Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/SteamFriends": {
+      "last_crawled": "2025-09-14T18:32:46.021Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Stumped": {
+      "last_crawled": "2025-09-14T18:32:46.966Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/TCGui": {
+      "last_crawled": "2025-09-14T18:32:47.876Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Telekinesis": {
+      "last_crawled": "2025-09-14T18:32:48.720Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Teleportication": {
+      "last_crawled": "2025-09-14T18:32:49.635Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Tides": {
+      "last_crawled": "2025-09-14T18:32:50.506Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/TimedExecuteV2": {
+      "last_crawled": "2025-09-14T18:32:51.403Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/TinCanBoom": {
+      "last_crawled": "2025-09-14T18:32:52.248Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Toilette": {
+      "last_crawled": "2025-09-14T18:32:53.149Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Remod-org/Waypoints": {
+      "last_crawled": "2025-09-14T18:32:54.085Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Rust-Haus/ai-death-feed": {
+      "last_crawled": "2025-09-14T18:32:55.004Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "RustServers-gg/EasyVote": {
+      "last_crawled": "2025-09-14T18:32:55.896Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "RustopiaOfficial/DisableIndustrialConveyors": {
+      "last_crawled": "2025-09-14T18:32:56.769Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "RustopiaOfficial/paynow-rust-plugin": {
+      "last_crawled": "2025-09-14T18:32:57.646Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Slut/Oxide.CSharp": {
+      "last_crawled": "2025-09-14T18:32:58.581Z",
+      "plugins_count": 10,
+      "success": true,
+      "errors": []
+    },
+    "Spookywooky3/HeliDamage": {
+      "last_crawled": "2025-09-14T18:32:59.403Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Substrata1/ClothedMurderers": {
+      "last_crawled": "2025-09-14T18:33:00.274Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Substrata1/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:33:01.269Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "Substrata1/WaterCatcherBoost": {
+      "last_crawled": "2025-09-14T18:33:02.122Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "TheFriendlyChap/NikoWeather": {
+      "last_crawled": "2025-09-14T18:33:02.972Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "TheFriendlyChap/OpenNexusFC": {
+      "last_crawled": "2025-09-14T18:33:03.868Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "TheFriendlyChap/SafeSpace": {
+      "last_crawled": "2025-09-14T18:33:04.927Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "TheFriendlyChap/SpaceyDrop": {
+      "last_crawled": "2025-09-14T18:33:05.821Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "TheFriendlyChap/oxideplugins": {
+      "last_crawled": "2025-09-14T18:33:07.607Z",
+      "plugins_count": 682,
+      "success": true,
+      "errors": []
+    },
+    "ThePitereq/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:33:08.588Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Tryhard999/NoHeliFire": {
+      "last_crawled": "2025-09-14T18:33:09.498Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Tryhard999/NoSunGlare": {
+      "last_crawled": "2025-09-14T18:33:10.359Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Tyler-Lopez/RustPluginTemplate": {
+      "last_crawled": "2025-09-14T18:33:11.869Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "UltraRust/Anti-Spam-Names": {
+      "last_crawled": "2025-09-14T18:33:12.763Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "UltraRust/CargoShip-no-scientists-bug-fix": {
+      "last_crawled": "2025-09-14T18:33:13.665Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "UltraRust/Ent-Kill-Loot-Keeper": {
+      "last_crawled": "2025-09-14T18:33:14.648Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "UltraRust/Fog-Voting": {
+      "last_crawled": "2025-09-14T18:33:15.486Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "UltraRust/No-Decay-Candles-Ultra": {
+      "last_crawled": "2025-09-14T18:33:16.389Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "UltraRust/Supply-Alert": {
+      "last_crawled": "2025-09-14T18:33:17.302Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VFlov/RustMod": {
+      "last_crawled": "2025-09-14T18:33:18.182Z",
+      "plugins_count": 3,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/BGrade": {
+      "last_crawled": "2025-09-14T18:33:19.063Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/Backpacks": {
+      "last_crawled": "2025-09-14T18:33:20.030Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/BetterChat": {
+      "last_crawled": "2025-09-14T18:33:21.047Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/BlockUsers": {
+      "last_crawled": "2025-09-14T18:33:21.964Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/BombTrucks": {
+      "last_crawled": "2025-09-14T18:33:22.883Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/Economics": {
+      "last_crawled": "2025-09-14T18:33:23.774Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/Free-Driving-Vehicles": {
+      "last_crawled": "2025-09-14T18:33:24.679Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/Friends-or-BlockedUsers-Plugin": {
+      "last_crawled": "2025-09-14T18:33:25.616Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/Ignore-and-Blocked": {
+      "last_crawled": "2025-09-14T18:33:26.476Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/NTeleportation-Blocking": {
+      "last_crawled": "2025-09-14T18:33:27.650Z",
+      "plugins_count": 3,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/PerformanceMonitor": {
+      "last_crawled": "2025-09-14T18:33:28.534Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ViolationHandler-exe/Suicide-Cooldown": {
+      "last_crawled": "2025-09-14T18:33:29.390Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/AutoCatapultFeeder": {
+      "last_crawled": "2025-09-14T18:33:30.267Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/AutoTeamUp": {
+      "last_crawled": "2025-09-14T18:33:31.141Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/AutomatedStashTraps": {
+      "last_crawled": "2025-09-14T18:33:32.022Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BarrelHealth": {
+      "last_crawled": "2025-09-14T18:33:32.948Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BarricadeToWall": {
+      "last_crawled": "2025-09-14T18:33:33.902Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BetterCharcoal": {
+      "last_crawled": "2025-09-14T18:33:34.772Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BetterDroppedItemStacker": {
+      "last_crawled": "2025-09-14T18:33:35.675Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BetterHealing": {
+      "last_crawled": "2025-09-14T18:33:36.573Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BetterLineOfSightTeleport": {
+      "last_crawled": "2025-09-14T18:33:37.414Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BloodBags": {
+      "last_crawled": "2025-09-14T18:33:38.353Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BouncyC4": {
+      "last_crawled": "2025-09-14T18:33:39.233Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BradleyCCTV": {
+      "last_crawled": "2025-09-14T18:33:40.243Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BradleyControl": {
+      "last_crawled": "2025-09-14T18:33:41.194Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BradleyKillCooldown": {
+      "last_crawled": "2025-09-14T18:33:42.055Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/BuildRefund": {
+      "last_crawled": "2025-09-14T18:33:42.926Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ButtonCommands": {
+      "last_crawled": "2025-09-14T18:33:43.806Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ClanTagFirst": {
+      "last_crawled": "2025-09-14T18:33:44.655Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ConsistentWindPower": {
+      "last_crawled": "2025-09-14T18:33:45.515Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/CupboardAcceptsAnything": {
+      "last_crawled": "2025-09-14T18:33:46.562Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/CustomGatherRates": {
+      "last_crawled": "2025-09-14T18:33:47.454Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/CustomUnwrapRewards": {
+      "last_crawled": "2025-09-14T18:33:48.340Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/DangerousCollectibles": {
+      "last_crawled": "2025-09-14T18:33:49.249Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/DefaultItemSkinChanger": {
+      "last_crawled": "2025-09-14T18:33:50.143Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/DooredSiegeTowers": {
+      "last_crawled": "2025-09-14T18:33:51.045Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/DraggableCorpses": {
+      "last_crawled": "2025-09-14T18:33:51.935Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/DurableAttachments": {
+      "last_crawled": "2025-09-14T18:33:52.922Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/DynamicThirdPerson": {
+      "last_crawled": "2025-09-14T18:33:53.777Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ExplosionsWithoutFireballs": {
+      "last_crawled": "2025-09-14T18:33:54.653Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ExtendedDemolish": {
+      "last_crawled": "2025-09-14T18:33:55.543Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ExternalWallStacker": {
+      "last_crawled": "2025-09-14T18:33:56.418Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/FailedCodeAlert": {
+      "last_crawled": "2025-09-14T18:33:57.344Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/FallenTreeRemains": {
+      "last_crawled": "2025-09-14T18:33:58.254Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/FarmingRestriction": {
+      "last_crawled": "2025-09-14T18:33:59.240Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/FirstTryChainsaw": {
+      "last_crawled": "2025-09-14T18:34:00.122Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ForeverRipe": {
+      "last_crawled": "2025-09-14T18:34:01.013Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ForgivenUponRespawn": {
+      "last_crawled": "2025-09-14T18:34:01.900Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/FullWaterCatchers": {
+      "last_crawled": "2025-09-14T18:34:02.792Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/FurnaceGoBrrr": {
+      "last_crawled": "2025-09-14T18:34:03.695Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/GearCore": {
+      "last_crawled": "2025-09-14T18:34:04.545Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/HalfLootedEmptier": {
+      "last_crawled": "2025-09-14T18:34:05.552Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/HarvestableVehicles": {
+      "last_crawled": "2025-09-14T18:34:06.433Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/HealthyGuns": {
+      "last_crawled": "2025-09-14T18:34:07.303Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/HorseEquipment": {
+      "last_crawled": "2025-09-14T18:34:08.212Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/IgnitableMixingTables": {
+      "last_crawled": "2025-09-14T18:34:09.098Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/InstantCrops": {
+      "last_crawled": "2025-09-14T18:34:09.949Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/InstantSiegeDeploy": {
+      "last_crawled": "2025-09-14T18:34:10.850Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/InstantSiegeReload": {
+      "last_crawled": "2025-09-14T18:34:11.823Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/InventoryLock": {
+      "last_crawled": "2025-09-14T18:34:12.684Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ItemlessPlayerSpawn": {
+      "last_crawled": "2025-09-14T18:34:13.599Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/LaptopCrateHack": {
+      "last_crawled": "2025-09-14T18:34:14.544Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/LegacyAirdrops": {
+      "last_crawled": "2025-09-14T18:34:15.389Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/LimitedSiegeBombDeploy": {
+      "last_crawled": "2025-09-14T18:34:16.281Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/LuckyBarrel": {
+      "last_crawled": "2025-09-14T18:34:17.166Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/MinigunReloadAnywhere": {
+      "last_crawled": "2025-09-14T18:34:18.220Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ModMail": {
+      "last_crawled": "2025-09-14T18:34:19.129Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NPCRotator": {
+      "last_crawled": "2025-09-14T18:34:20.018Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NamelessPlayers": {
+      "last_crawled": "2025-09-14T18:34:20.893Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NerfedRaidBuilding": {
+      "last_crawled": "2025-09-14T18:34:21.783Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NeverTeamless": {
+      "last_crawled": "2025-09-14T18:34:22.680Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoCaveBuilding": {
+      "last_crawled": "2025-09-14T18:34:23.552Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoDistanceBasedTemperature": {
+      "last_crawled": "2025-09-14T18:34:24.555Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoExcavatorAirdrops": {
+      "last_crawled": "2025-09-14T18:34:25.469Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoLocks": {
+      "last_crawled": "2025-09-14T18:34:26.358Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoMonumentBarricades": {
+      "last_crawled": "2025-09-14T18:34:27.262Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoPickupPenalty": {
+      "last_crawled": "2025-09-14T18:34:28.147Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoSignsOnDeployables": {
+      "last_crawled": "2025-09-14T18:34:28.976Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoStuckArrows": {
+      "last_crawled": "2025-09-14T18:34:29.854Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoSuicideCooldown": {
+      "last_crawled": "2025-09-14T18:34:30.799Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoUnderwaterVending": {
+      "last_crawled": "2025-09-14T18:34:31.645Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NoWaterSleep": {
+      "last_crawled": "2025-09-14T18:34:32.553Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/NotEnoughBradleyScientists": {
+      "last_crawled": "2025-09-14T18:34:33.437Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OfflineFurnaces": {
+      "last_crawled": "2025-09-14T18:34:34.320Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OfflineRaidingWeakened": {
+      "last_crawled": "2025-09-14T18:34:35.210Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OneSeatVehicle": {
+      "last_crawled": "2025-09-14T18:34:36.057Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OneTimeBag": {
+      "last_crawled": "2025-09-14T18:34:37.020Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OrphanedItemRemover": {
+      "last_crawled": "2025-09-14T18:34:37.901Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OutOfCombatHeal": {
+      "last_crawled": "2025-09-14T18:34:38.764Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OverflowToBackpack": {
+      "last_crawled": "2025-09-14T18:34:39.711Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/OwnerPickupOnly": {
+      "last_crawled": "2025-09-14T18:34:40.637Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/PatrolHeliCantFlare": {
+      "last_crawled": "2025-09-14T18:34:41.510Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/PatrolHeliCrashDontRetire": {
+      "last_crawled": "2025-09-14T18:34:42.360Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/PatrolHeliCrashSites": {
+      "last_crawled": "2025-09-14T18:34:43.415Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/PatrolHeliNoGoMonuments": {
+      "last_crawled": "2025-09-14T18:34:44.285Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/PatrolHeliSams": {
+      "last_crawled": "2025-09-14T18:34:45.169Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/Pop": {
+      "last_crawled": "2025-09-14T18:34:46.075Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/PumpAnywhere": {
+      "last_crawled": "2025-09-14T18:34:46.945Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/QuarryHealth": {
+      "last_crawled": "2025-09-14T18:34:47.833Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/QuarryRepair": {
+      "last_crawled": "2025-09-14T18:34:48.746Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/RandomKit": {
+      "last_crawled": "2025-09-14T18:34:49.746Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/RealisticDeathPhysics": {
+      "last_crawled": "2025-09-14T18:34:50.631Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ReloadHotbar": {
+      "last_crawled": "2025-09-14T18:34:51.570Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/Remineration": {
+      "last_crawled": "2025-09-14T18:34:52.451Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/ReviveArrows": {
+      "last_crawled": "2025-09-14T18:34:53.324Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/RotatingGear": {
+      "last_crawled": "2025-09-14T18:34:54.237Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SafeZoneCommands": {
+      "last_crawled": "2025-09-14T18:34:55.092Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SafetyBarrel": {
+      "last_crawled": "2025-09-14T18:34:56.095Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SeedlessFood": {
+      "last_crawled": "2025-09-14T18:34:57.001Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SidecarStorage": {
+      "last_crawled": "2025-09-14T18:34:57.852Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SilentBuildingBlocks": {
+      "last_crawled": "2025-09-14T18:34:58.721Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SkinIt": {
+      "last_crawled": "2025-09-14T18:34:59.591Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/StorageUpgrade": {
+      "last_crawled": "2025-09-14T18:35:00.498Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SupplySignalCommands": {
+      "last_crawled": "2025-09-14T18:35:01.362Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/SuspiciousCodeUnlock": {
+      "last_crawled": "2025-09-14T18:35:02.346Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/TCBan": {
+      "last_crawled": "2025-09-14T18:35:03.223Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/TrueSmokeRockets": {
+      "last_crawled": "2025-09-14T18:35:04.103Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/TwigCantStay": {
+      "last_crawled": "2025-09-14T18:35:04.997Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/UndyingCandles": {
+      "last_crawled": "2025-09-14T18:35:05.922Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/UndyingWallTorches": {
+      "last_crawled": "2025-09-14T18:35:06.805Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/WetGunsGoJam": {
+      "last_crawled": "2025-09-14T18:35:07.697Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/WorkbenchEquipOnly": {
+      "last_crawled": "2025-09-14T18:35:08.712Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "VisEntities/YouShallNotSpawn": {
+      "last_crawled": "2025-09-14T18:35:09.567Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Vlad-00003/Backpacks": {
+      "last_crawled": "2025-09-14T18:35:10.495Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Vlad-00003/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:35:11.461Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Vlad-00003/oxideplugins": {
+      "last_crawled": "2025-09-14T18:35:13.019Z",
+      "plugins_count": 682,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/AllowBackpacksInLockers": {
+      "last_crawled": "2025-09-14T18:35:13.994Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/AutoEngineParts": {
+      "last_crawled": "2025-09-14T18:35:14.900Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/AutomatedWorkcartNotifications": {
+      "last_crawled": "2025-09-14T18:35:15.810Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/BackpacksRequireParachutes": {
+      "last_crawled": "2025-09-14T18:35:16.687Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/BetterDroneCollision": {
+      "last_crawled": "2025-09-14T18:35:17.582Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/BetterRootCombiners": {
+      "last_crawled": "2025-09-14T18:35:18.567Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/BetterTurretAim": {
+      "last_crawled": "2025-09-14T18:35:19.470Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/CarSpawnSettings": {
+      "last_crawled": "2025-09-14T18:35:20.465Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/CraftChassis": {
+      "last_crawled": "2025-09-14T18:35:21.383Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/DebugHookCalls": {
+      "last_crawled": "2025-09-14T18:35:22.264Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/DisableBackpacksInZones": {
+      "last_crawled": "2025-09-14T18:35:23.152Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/DroneSettings": {
+      "last_crawled": "2025-09-14T18:35:24.060Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/DropBackpackInDynamicPVPZone": {
+      "last_crawled": "2025-09-14T18:35:25.083Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/Free-Build": {
+      "last_crawled": "2025-09-14T18:35:25.964Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/LimitTrainLength": {
+      "last_crawled": "2025-09-14T18:35:26.876Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/LimitedDroneRange": {
+      "last_crawled": "2025-09-14T18:35:27.808Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/MonumentAddonsRemovals": {
+      "last_crawled": "2025-09-14T18:35:28.697Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/MonumentAddonsSafeZones": {
+      "last_crawled": "2025-09-14T18:35:29.739Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/ParentedEntityRenderFix": {
+      "last_crawled": "2025-09-14T18:35:30.652Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/QuickSmelt": {
+      "last_crawled": "2025-09-14T18:35:31.503Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/RCIdentifierFix": {
+      "last_crawled": "2025-09-14T18:35:32.344Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/StorageMonitorControl": {
+      "last_crawled": "2025-09-14T18:35:33.257Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/TargetableDrones": {
+      "last_crawled": "2025-09-14T18:35:34.181Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/TechTreeControl": {
+      "last_crawled": "2025-09-14T18:35:35.065Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/Telekinesis": {
+      "last_crawled": "2025-09-14T18:35:36.103Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/UnderwaterVehicles": {
+      "last_crawled": "2025-09-14T18:35:37.032Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/UpkeepDisplayFix": {
+      "last_crawled": "2025-09-14T18:35:37.922Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/WorkcartCardReaders": {
+      "last_crawled": "2025-09-14T18:35:38.805Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/WorkcartSafeZones": {
+      "last_crawled": "2025-09-14T18:35:39.729Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "WheteThunger/rust-imperium": {
+      "last_crawled": "2025-09-14T18:35:41.493Z",
+      "plugins_count": 5,
+      "success": true,
+      "errors": []
+    },
+    "Wrecks830/RaidableShelters": {
+      "last_crawled": "2025-09-14T18:35:42.402Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Wrecks830/rustplugin-scraponomics": {
+      "last_crawled": "2025-09-14T18:35:43.332Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Zer0x89A/Attachment-Blocker": {
+      "last_crawled": "2025-09-14T18:35:44.216Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Zer0x89A/Helicopter-Hover": {
+      "last_crawled": "2025-09-14T18:35:45.131Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ZockiRR/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:35:46.067Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ZockiRR/RustSirens": {
+      "last_crawled": "2025-09-14T18:35:47.173Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ZockiRR/RustTaser": {
+      "last_crawled": "2025-09-14T18:35:48.106Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "a-downing/MiniCopterDrone": {
+      "last_crawled": "2025-09-14T18:35:49.010Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "a-downing/uModTestStuff": {
+      "last_crawled": "2025-09-14T18:35:49.897Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "alfredo-leonelli/ServerPop": {
+      "last_crawled": "2025-09-14T18:35:50.777Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ay4t/oxideplugins": {
+      "last_crawled": "2025-09-14T18:35:52.393Z",
+      "plugins_count": 682,
+      "success": true,
+      "errors": []
+    },
+    "bawNg/HookDispatch": {
+      "last_crawled": "2025-09-14T18:35:53.336Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "bawNg/Oxide": {
+      "last_crawled": "2025-09-14T18:35:59.840Z",
+      "plugins_count": 31,
+      "success": true,
+      "errors": []
+    },
+    "bugrakaann/TeamIdentifier": {
+      "last_crawled": "2025-09-14T18:36:00.912Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "chucklenugget/auth-groups": {
+      "last_crawled": "2025-09-14T18:36:02.009Z",
+      "plugins_count": 29,
+      "success": true,
+      "errors": []
+    },
+    "chucklenugget/miscellaneous-plugins": {
+      "last_crawled": "2025-09-14T18:36:03.162Z",
+      "plugins_count": 6,
+      "success": true,
+      "errors": []
+    },
+    "chucklenugget/zombie-attack": {
+      "last_crawled": "2025-09-14T18:36:04.298Z",
+      "plugins_count": 13,
+      "success": true,
+      "errors": []
+    },
+    "collectVood/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:36:05.273Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "collectVood/Stations": {
+      "last_crawled": "2025-09-14T18:36:06.284Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "collectVood/uMod-Plugins": {
+      "last_crawled": "2025-09-14T18:36:07.240Z",
+      "plugins_count": 7,
+      "success": true,
+      "errors": []
+    },
+    "collectVood/uModPlugins": {
+      "last_crawled": "2025-09-14T18:36:08.260Z",
+      "plugins_count": 39,
+      "success": true,
+      "errors": []
+    },
+    "connorrichlen/BetterChatFilter": {
+      "last_crawled": "2025-09-14T18:36:09.157Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "connorrichlen/GUIAnnouncements": {
+      "last_crawled": "2025-09-14T18:36:10.095Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "connorrichlen/SkipNightUI": {
+      "last_crawled": "2025-09-14T18:36:11.001Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "cornholio21/chairtrap": {
+      "last_crawled": "2025-09-14T18:36:11.894Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "dassjosh/DeathNotes": {
+      "last_crawled": "2025-09-14T18:36:12.835Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "dassjosh/Oxide.CSharp": {
+      "last_crawled": "2025-09-14T18:36:13.805Z",
+      "plugins_count": 12,
+      "success": true,
+      "errors": []
+    },
+    "dassjosh/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:36:14.749Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "dassjosh/Plugin.DiscordCustomCommands": {
+      "last_crawled": "2025-09-14T18:36:16.006Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "dassjosh/Plugin.DiscordPlayers": {
+      "last_crawled": "2025-09-14T18:36:17.547Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "dassjosh/Plugin.DiscordPresence": {
+      "last_crawled": "2025-09-14T18:36:18.924Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "dassjosh/Plugin.DiscordRoles": {
+      "last_crawled": "2025-09-14T18:36:20.295Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "eandersson/rustarena": {
+      "last_crawled": "2025-09-14T18:36:21.295Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "flintmonkey/DeathNotes": {
+      "last_crawled": "2025-09-14T18:36:22.272Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "flutessources/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:36:23.278Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "haggbart/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:36:24.248Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "haggbart/rustplugin-autoturretauth": {
+      "last_crawled": "2025-09-14T18:36:25.160Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "haggbart/rustplugin-boxsorterlite": {
+      "last_crawled": "2025-09-14T18:36:26.069Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "haggbart/rustplugin-realtime": {
+      "last_crawled": "2025-09-14T18:36:26.984Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "haggbart/rustplugin-scraponomics": {
+      "last_crawled": "2025-09-14T18:36:27.871Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "haggbart/rustplugin-stashwarning": {
+      "last_crawled": "2025-09-14T18:36:28.784Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "headtapper/ClearInventory": {
+      "last_crawled": "2025-09-14T18:36:29.663Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "headtapper/FishingRewards": {
+      "last_crawled": "2025-09-14T18:36:30.581Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "headtapper/InvasivePlants": {
+      "last_crawled": "2025-09-14T18:36:31.439Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "headtapper/NameFilter": {
+      "last_crawled": "2025-09-14T18:36:32.363Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "headtapper/UnlimitedFuel": {
+      "last_crawled": "2025-09-14T18:36:33.278Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "hoppel/Bloodtrail": {
+      "last_crawled": "2025-09-14T18:36:34.199Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "hoppel/NoBackpacks": {
+      "last_crawled": "2025-09-14T18:36:35.063Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "hoppel/PlayerReportGUI": {
+      "last_crawled": "2025-09-14T18:36:36.043Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "hoppel/ToolsGatherManager": {
+      "last_crawled": "2025-09-14T18:36:36.947Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "illRalli/ImportSkins": {
+      "last_crawled": "2025-09-14T18:36:37.883Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ilovepatatos-rust/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:36:38.809Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ilovepatatos-rust/console-extension": {
+      "last_crawled": "2025-09-14T18:36:39.703Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "ilovepatatos-rust/oxide-csharp": {
+      "last_crawled": "2025-09-14T18:36:40.663Z",
+      "plugins_count": 10,
+      "success": true,
+      "errors": []
+    },
+    "izatrix/EventManager": {
+      "last_crawled": "2025-09-14T18:36:41.640Z",
+      "plugins_count": 10,
+      "success": true,
+      "errors": []
+    },
+    "izatrix/Oxide": {
+      "last_crawled": "2025-09-14T18:36:43.059Z",
+      "plugins_count": 72,
+      "success": true,
+      "errors": []
+    },
+    "jacobmstein/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:36:44.033Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/AnimalRock": {
+      "last_crawled": "2025-09-14T18:36:44.914Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/BlueprintUnlockManager": {
+      "last_crawled": "2025-09-14T18:36:45.857Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/CassetteTapeDump": {
+      "last_crawled": "2025-09-14T18:36:46.750Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/CreativityDump": {
+      "last_crawled": "2025-09-14T18:36:47.705Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/CustomBpDropOnly": {
+      "last_crawled": "2025-09-14T18:36:48.639Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/EggArtist": {
+      "last_crawled": "2025-09-14T18:36:49.556Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/ItemOwnerShipEdit": {
+      "last_crawled": "2025-09-14T18:36:50.409Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/MyCaravan": {
+      "last_crawled": "2025-09-14T18:36:51.301Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/MyFran": {
+      "last_crawled": "2025-09-14T18:36:52.221Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/PlayMovieButtons": {
+      "last_crawled": "2025-09-14T18:36:53.144Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/TcItemCounter": {
+      "last_crawled": "2025-09-14T18:36:54.013Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/ToastMessage": {
+      "last_crawled": "2025-09-14T18:36:54.920Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jerkypaisen/code-memo": {
+      "last_crawled": "2025-09-14T18:36:55.809Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jkole4/BrightNight": {
+      "last_crawled": "2025-09-14T18:36:56.734Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jkole4/FPSRestart": {
+      "last_crawled": "2025-09-14T18:36:57.623Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jkole4/MovableCCTV": {
+      "last_crawled": "2025-09-14T18:36:58.489Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "jkole4/SAM-Site-Authorization": {
+      "last_crawled": "2025-09-14T18:36:59.371Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "johnmcclumpha/DeathNotes": {
+      "last_crawled": "2025-09-14T18:37:00.278Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "johnmcclumpha/RustDeathNotices": {
+      "last_crawled": "2025-09-14T18:37:01.247Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "k1lly0u/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:37:02.204Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "koenrad/Oxide-2.0-Plugins": {
+      "last_crawled": "2025-09-14T18:37:03.157Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "kop7er/ModdedWorkCarts": {
+      "last_crawled": "2025-09-14T18:37:04.085Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "kop7er/Private-Messages": {
+      "last_crawled": "2025-09-14T18:37:04.986Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "kwamaking/AntiCodeRaid": {
+      "last_crawled": "2025-09-14T18:37:05.871Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "kwamaking/AutoBuy": {
+      "last_crawled": "2025-09-14T18:37:06.777Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "kwamaking/AutoLoadOut": {
+      "last_crawled": "2025-09-14T18:37:07.722Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "kwamaking/AutoSkin": {
+      "last_crawled": "2025-09-14T18:37:08.598Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "kwamaking/CompoundTeleport": {
+      "last_crawled": "2025-09-14T18:37:09.615Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/BMChecker": {
+      "last_crawled": "2025-09-14T18:37:10.537Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/BlackJackGamble": {
+      "last_crawled": "2025-09-14T18:37:11.476Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/ChickenGun": {
+      "last_crawled": "2025-09-14T18:37:12.365Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/ClanWebhook": {
+      "last_crawled": "2025-09-14T18:37:13.263Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/EnderChest": {
+      "last_crawled": "2025-09-14T18:37:14.179Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/EnderFlare": {
+      "last_crawled": "2025-09-14T18:37:15.104Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/EntCleanup": {
+      "last_crawled": "2025-09-14T18:37:15.962Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/GamblingStats": {
+      "last_crawled": "2025-09-14T18:37:16.836Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/KOTH": {
+      "last_crawled": "2025-09-14T18:37:17.750Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/LogiDetection": {
+      "last_crawled": "2025-09-14T18:37:18.687Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/LuckyBox": {
+      "last_crawled": "2025-09-14T18:37:19.597Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/MagicKits": {
+      "last_crawled": "2025-09-14T18:37:20.479Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/MailBomber": {
+      "last_crawled": "2025-09-14T18:37:21.382Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/MyHorse": {
+      "last_crawled": "2025-09-14T18:37:22.304Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/RustyReef": {
+      "last_crawled": "2025-09-14T18:37:23.193Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/SpawnHorde": {
+      "last_crawled": "2025-09-14T18:37:24.090Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "l0cks-acab/StatTracker": {
+      "last_crawled": "2025-09-14T18:37:24.997Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "molokatanPrivate/Rust-PlanterQuality": {
+      "last_crawled": "2025-09-14T18:37:25.938Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "molokatanPrivate/advanced-player-metabolism": {
+      "last_crawled": "2025-09-14T18:37:26.844Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "moscow-ovh/BanSystem": {
+      "last_crawled": "2025-09-14T18:37:27.719Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "moscow-ovh/RustStore": {
+      "last_crawled": "2025-09-14T18:37:28.634Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "msharp19/RustBangBangAirdropPlugin": {
+      "last_crawled": "2025-09-14T18:37:29.927Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "msharp19/RustStarterKitPlugin": {
+      "last_crawled": "2025-09-14T18:37:31.286Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "niekschoemaker/blueprintguardian": {
+      "last_crawled": "2025-09-14T18:37:32.158Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "nosoylito/OfflineRaidDefenders": {
+      "last_crawled": "2025-09-14T18:37:33.036Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "oddbunchmedia/pverust": {
+      "last_crawled": "2025-09-14T18:37:33.926Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "pedroivorbgrodrigues/Oxide": {
+      "last_crawled": "2025-09-14T18:37:35.926Z",
+      "plugins_count": 14,
+      "success": true,
+      "errors": []
+    },
+    "publicrust/MapProtection": {
+      "last_crawled": "2025-09-14T18:37:36.996Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "publicrust/rust-plugins": {
+      "last_crawled": "2025-09-14T18:37:37.931Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "publicrust/rust-template-177": {
+      "last_crawled": "2025-09-14T18:37:39.237Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "publicrust/rust-template-266": {
+      "last_crawled": "2025-09-14T18:37:41.149Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "read-0nly/Oxide.Rust": {
+      "last_crawled": "2025-09-14T18:37:42.133Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "read-0nly/RustMods": {
+      "last_crawled": "2025-09-14T18:37:43.103Z",
+      "plugins_count": 26,
+      "success": true,
+      "errors": []
+    },
+    "romgerman/CGUI": {
+      "last_crawled": "2025-09-14T18:37:44.001Z",
+      "plugins_count": 3,
+      "success": true,
+      "errors": []
+    },
+    "romgerman/uMod": {
+      "last_crawled": "2025-09-14T18:37:44.942Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "rustcommunity/EasyVoteExtended": {
+      "last_crawled": "2025-09-14T18:37:45.799Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustireland/groupclear": {
+      "last_crawled": "2025-09-14T18:37:46.826Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustireland/notifycations": {
+      "last_crawled": "2025-09-14T18:37:47.859Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustireland/startupcommands": {
+      "last_crawled": "2025-09-14T18:37:48.764Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/DonationCredits": {
+      "last_crawled": "2025-09-14T18:37:49.818Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/HelicopterStatistics": {
+      "last_crawled": "2025-09-14T18:37:50.836Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/JakeOxidePlugins": {
+      "last_crawled": "2025-09-14T18:37:51.712Z",
+      "plugins_count": 5,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/Oxide-Plugins-1": {
+      "last_crawled": "2025-09-14T18:37:52.625Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/Oxide-Plugins-5": {
+      "last_crawled": "2025-09-14T18:37:53.712Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/Oxide2Plugins": {
+      "last_crawled": "2025-09-14T18:37:54.808Z",
+      "plugins_count": 77,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/OxidePlugins-3": {
+      "last_crawled": "2025-09-14T18:37:55.851Z",
+      "plugins_count": 11,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/RustPlugins": {
+      "last_crawled": "2025-09-14T18:37:56.746Z",
+      "plugins_count": 4,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/RustPlugins-1": {
+      "last_crawled": "2025-09-14T18:37:57.674Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/SkinZ": {
+      "last_crawled": "2025-09-14T18:37:58.639Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/incursion": {
+      "last_crawled": "2025-09-14T18:37:59.617Z",
+      "plugins_count": 12,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/oxide-plugins-2": {
+      "last_crawled": "2025-09-14T18:38:00.818Z",
+      "plugins_count": 72,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/oxide-plugins-3": {
+      "last_crawled": "2025-09-14T18:38:01.936Z",
+      "plugins_count": 53,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/oxide-plugins-4": {
+      "last_crawled": "2025-09-14T18:38:02.892Z",
+      "plugins_count": 7,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/oxideplugins": {
+      "last_crawled": "2025-09-14T18:38:04.491Z",
+      "plugins_count": 682,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/oxideplugins-1": {
+      "last_crawled": "2025-09-14T18:38:05.768Z",
+      "plugins_count": 468,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/rust-oxide-aimbots": {
+      "last_crawled": "2025-09-14T18:38:06.669Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/rustifac": {
+      "last_crawled": "2025-09-14T18:38:07.597Z",
+      "plugins_count": 6,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/rustylife": {
+      "last_crawled": "2025-09-14T18:38:08.639Z",
+      "plugins_count": 96,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/seedery.io-mapgen": {
+      "last_crawled": "2025-09-14T18:38:09.557Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/BanCleaner": {
+      "last_crawled": "2025-09-14T18:38:10.462Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/BlueprintShare": {
+      "last_crawled": "2025-09-14T18:38:11.432Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/Claimer": {
+      "last_crawled": "2025-09-14T18:38:12.371Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/ClassSelector": {
+      "last_crawled": "2025-09-14T18:38:13.313Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/DiscordBoost": {
+      "last_crawled": "2025-09-14T18:38:14.219Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/EasyAccess": {
+      "last_crawled": "2025-09-14T18:38:15.168Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/FridgeFood": {
+      "last_crawled": "2025-09-14T18:38:16.071Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/InventoryTransfer": {
+      "last_crawled": "2025-09-14T18:38:16.999Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/PlayerDeath": {
+      "last_crawled": "2025-09-14T18:38:18.048Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/SmartChat": {
+      "last_crawled": "2025-09-14T18:38:18.941Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/Social": {
+      "last_crawled": "2025-09-14T18:38:20.234Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/Voter": {
+      "last_crawled": "2025-09-14T18:38:21.259Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "scarecr0w12/rust-imperium": {
+      "last_crawled": "2025-09-14T18:38:23.076Z",
+      "plugins_count": 5,
+      "success": true,
+      "errors": []
+    },
+    "scorteanucosmin/Oxide.Core": {
+      "last_crawled": "2025-09-14T18:38:24.055Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "shady14u/ExtraLoot": {
+      "last_crawled": "2025-09-14T18:38:25.018Z",
+      "plugins_count": 10,
+      "success": true,
+      "errors": []
+    },
+    "shady14u/SteamChecks": {
+      "last_crawled": "2025-09-14T18:38:25.985Z",
+      "plugins_count": 20,
+      "success": true,
+      "errors": []
+    },
+    "shady14u/TimedPermissions": {
+      "last_crawled": "2025-09-14T18:38:26.927Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "shady14u/Trapper": {
+      "last_crawled": "2025-09-14T18:38:27.820Z",
+      "plugins_count": 10,
+      "success": true,
+      "errors": []
+    },
+    "shady14u/imperium": {
+      "last_crawled": "2025-09-14T18:38:29.065Z",
+      "plugins_count": 123,
+      "success": true,
+      "errors": []
+    },
+    "shady14u/oxideplugins": {
+      "last_crawled": "2025-09-14T18:38:30.723Z",
+      "plugins_count": 682,
+      "success": true,
+      "errors": []
+    },
+    "skulidropek/MapProtection": {
+      "last_crawled": "2025-09-14T18:38:31.791Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "skulidropek/oxideplugins": {
+      "last_crawled": "2025-09-14T18:38:33.359Z",
+      "plugins_count": 682,
+      "success": true,
+      "errors": []
+    },
+    "skulidropek/rust-template-240": {
+      "last_crawled": "2025-09-14T18:38:36.689Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "skulidropek/umod-pluigns-dataset": {
+      "last_crawled": "2025-09-14T18:38:38.628Z",
+      "plugins_count": 1508,
+      "success": true,
+      "errors": []
+    },
+    "strykes/Oxide": {
+      "last_crawled": "2025-09-14T18:38:43.774Z",
+      "plugins_count": 37,
+      "success": true,
+      "errors": []
+    },
+    "yacvaguer/FirstAidPatches": {
+      "last_crawled": "2025-09-14T18:38:45.034Z",
+      "plugins_count": 40,
+      "success": true,
+      "errors": []
+    },
+    "yacvaguer/SteamProfiles": {
+      "last_crawled": "2025-09-14T18:38:46.060Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "yacvaguer/simple-patrol-signal": {
+      "last_crawled": "2025-09-14T18:38:47.020Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-14T04:07:28.935Z",
-      "completed_at": "2025-09-14T04:07:32.304Z",
-      "duration_ms": 3369
+      "started_at": "2025-09-14T18:29:55.977Z",
+      "completed_at": "2025-09-14T18:38:46.272Z",
+      "duration_ms": 530295
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 688,
-      "newly_processed": 3,
-      "successful": 3,
-      "failed": 0
+      "already_processed": 694,
+      "newly_processed": 529,
+      "successful": 528,
+      "failed": 1
     },
     "plugins": {
-      "total_found": 15,
-      "new_plugins": 2
+      "total_found": 10616,
+      "new_plugins": 1
     }
   }
 }
