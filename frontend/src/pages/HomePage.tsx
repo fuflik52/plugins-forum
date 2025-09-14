@@ -24,6 +24,28 @@ import { getPluginTimestamp } from '../utils/dateUtils';
 import { debugSortOrder } from '../utils/debugSort';
 import { Analytics } from '../utils/analytics';
 
+// Analytics tracking helpers
+const trackViewModeChange = (mode: 'grid' | 'grouped') => {
+  Analytics.trackEvent('view_mode_change', {
+    view_mode: mode,
+    event_category: 'interface'
+  });
+};
+
+const trackSortChange = (sortBy: string) => {
+  Analytics.trackEvent('sort_change', {
+    sort_by: sortBy,
+    event_category: 'interface'
+  });
+};
+
+const trackPageSizeChange = (pageSize: number) => {
+  Analytics.trackEvent('page_size_change', {
+    page_size: pageSize,
+    event_category: 'interface'
+  });
+};
+
 export const HomePage: React.FC = () => {
   const [pluginIndex, setPluginIndex] = useState<PluginIndex | null>(null);
   const [loading, setLoading] = useState(true);
@@ -313,6 +335,7 @@ export const HomePage: React.FC = () => {
             options={searchOptions}
             onOptionsChange={setSearchOptions}
             placeholder="Search by plugin name, author, repository, or description..."
+            resultCount={filteredData?.filteredCount || 0}
           />
         </div>
       </header>
@@ -357,7 +380,10 @@ export const HomePage: React.FC = () => {
                       <span className="text-gray-600">View:</span>
                       <div className="flex rounded-lg border border-gray-300 overflow-hidden">
                         <button
-                          onClick={() => setViewMode('grid')}
+                          onClick={() => {
+                            setViewMode('grid');
+                            trackViewModeChange('grid');
+                          }}
                           className={`px-3 py-1 flex items-center gap-1 transition-colors ${
                             viewMode === 'grid'
                               ? 'bg-blue-500 text-white'
@@ -368,7 +394,10 @@ export const HomePage: React.FC = () => {
                           Grid
                         </button>
                         <button
-                          onClick={() => setViewMode('grouped')}
+                          onClick={() => {
+                            setViewMode('grouped');
+                            trackViewModeChange('grouped');
+                          }}
                           className={`px-3 py-1 flex items-center gap-1 transition-colors border-l border-gray-300 ${
                             viewMode === 'grouped'
                               ? 'bg-blue-500 text-white'
@@ -384,7 +413,11 @@ export const HomePage: React.FC = () => {
                       <span className="text-gray-600">Sort:</span>
                       <select
                         value={sortBy}
-                        onChange={(e): void => setSortBy(e.target.value as 'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc')}
+                        onChange={(e): void => {
+                          const newSortBy = e.target.value as 'updated_desc' | 'updated_asc' | 'created_desc' | 'created_asc' | 'indexed_desc' | 'indexed_asc';
+                          setSortBy(newSortBy);
+                          trackSortChange(newSortBy);
+                        }}
                         className="border border-gray-300 rounded-md px-2 py-1 bg-white"
                       >
                         <option value="updated_desc">Last updated — newest</option>
@@ -400,7 +433,11 @@ export const HomePage: React.FC = () => {
                         <span className="text-gray-600">Per page:</span>
                         <select
                           value={pageSize}
-                          onChange={(e) => setPageSize(Number(e.target.value))}
+                          onChange={(e) => {
+                            const newPageSize = Number(e.target.value);
+                            setPageSize(newPageSize);
+                            trackPageSizeChange(newPageSize);
+                          }}
                           className="border border-gray-300 rounded-md px-2 py-1 bg-white"
                         >
                           <option value={12}>12</option>

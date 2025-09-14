@@ -22,7 +22,10 @@ type PluginEventParameters = GtagEventParameters & {
 
 type SearchEventParameters = GtagEventParameters & {
   readonly search_term: string;
-  readonly result_count: number;
+  readonly result_count?: number;
+  readonly search_length?: number;
+  readonly search_fields?: string;
+  readonly search_mode?: string;
   readonly event_category: 'search';
 };
 
@@ -39,12 +42,20 @@ type LinkEventParameters = GtagEventParameters & {
   readonly outbound: true;
 };
 
+type InterfaceEventParameters = GtagEventParameters & {
+  readonly view_mode?: string;
+  readonly sort_by?: string;
+  readonly page_size?: number;
+  readonly event_category: 'interface';
+};
+
 // Mathematical proof: Union type ensures all possible event parameters are covered
 type EventParameters =
   | PluginEventParameters
   | SearchEventParameters
   | FilterEventParameters
-  | LinkEventParameters;
+  | LinkEventParameters
+  | InterfaceEventParameters;
 
 declare global {
   interface Window {
@@ -81,6 +92,16 @@ export class Analytics {
     };
 
     window.gtag('config', 'G-CKP8G29QS3', config);
+  }
+
+  /**
+   * Mathematical proof: Universal event tracking with type safety
+   * Precondition: eventName ∈ String, parameters ∈ EventParameters
+   * Postcondition: Type-safe event tracking guaranteed at compile time
+   */
+  static trackEvent(eventName: string, parameters: EventParameters): void {
+    if (!this.isEnabled()) return;
+    window.gtag('event', eventName, parameters);
   }
 
   /**
