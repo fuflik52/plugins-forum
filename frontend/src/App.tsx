@@ -321,9 +321,25 @@ function App(): React.JSX.Element {
                 Rust Oxide Plugins
               </h1>
             </div>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-4">
               Discover and explore the best Rust plugins from GitHub repositories
             </p>
+            
+            {/* Navigation Links */}
+            <div className="flex items-center justify-center space-x-4">
+              <a
+                href="/"
+                className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white hover:bg-white/30 transition-all duration-200 text-sm font-medium"
+              >
+                🏠 Home
+              </a>
+              <a
+                href="/statistics"
+                className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white hover:bg-white/30 transition-all duration-200 text-sm font-medium"
+              >
+                📊 Statistics
+              </a>
+            </div>
           </div>
           
           <SearchBar
