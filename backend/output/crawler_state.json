@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-14T07:19:21.117Z",
-  "total_repositories_processed": 693,
-  "successful_crawls": 689,
+  "last_updated": "2025-09-14T08:01:41.360Z",
+  "total_repositories_processed": 694,
+  "successful_crawls": 690,
   "failed_crawls": 4,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -4167,6 +4167,12 @@
     "13dasd123/SlivPlugins": {
       "last_crawled": "2025-09-14T07:19:20.640Z",
       "plugins_count": 782,
+      "success": true,
+      "errors": []
+    },
+    "CherrySofts/https-slivrust-plugin.ru-": {
+      "last_crawled": "2025-09-14T08:01:41.197Z",
+      "plugins_count": 1663,
       "success": true,
       "errors": []
     }
