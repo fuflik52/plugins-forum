@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-14T04:07:33.320Z",
-  "total_repositories_processed": 692,
-  "successful_crawls": 688,
+  "last_updated": "2025-09-14T07:19:21.117Z",
+  "total_repositories_processed": 693,
+  "successful_crawls": 689,
   "failed_crawls": 4,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -4161,6 +4161,12 @@
     "RazoRRustPlugins/Armored-Train-1.8.2": {
       "last_crawled": "2025-09-14T04:07:33.316Z",
       "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/SlivPlugins": {
+      "last_crawled": "2025-09-14T07:19:20.640Z",
+      "plugins_count": 782,
       "success": true,
       "errors": []
     }
