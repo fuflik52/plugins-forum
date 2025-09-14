@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-13T03:40:42.565Z",
-  "total_repositories_processed": 688,
-  "successful_crawls": 684,
+  "last_updated": "2025-09-14T04:07:33.320Z",
+  "total_repositories_processed": 692,
+  "successful_crawls": 688,
   "failed_crawls": 4,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -4139,24 +4139,48 @@
       "plugins_count": 1,
       "success": true,
       "errors": []
+    },
+    "13dasd123/RustPluginsDirectLeaks": {
+      "last_crawled": "2025-09-14T04:07:29.976Z",
+      "plugins_count": 12,
+      "success": true,
+      "errors": []
+    },
+    "RazoRRustPlugins/Airfield-Event-1.5.3": {
+      "last_crawled": "2025-09-14T04:07:31.054Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "RazoRRustPlugins/Convoy-Reforged-2.8.1": {
+      "last_crawled": "2025-09-14T04:07:32.171Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "RazoRRustPlugins/Armored-Train-1.8.2": {
+      "last_crawled": "2025-09-14T04:07:33.316Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-12T22:19:32.041Z",
-      "completed_at": "2025-09-12T22:19:34.457Z",
-      "duration_ms": 2416
+      "started_at": "2025-09-14T04:07:28.935Z",
+      "completed_at": "2025-09-14T04:07:32.304Z",
+      "duration_ms": 3369
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 685,
-      "newly_processed": 1,
-      "successful": 1,
+      "already_processed": 688,
+      "newly_processed": 3,
+      "successful": 3,
       "failed": 0
     },
     "plugins": {
-      "total_found": 64,
-      "new_plugins": 64
+      "total_found": 15,
+      "new_plugins": 2
     }
   }
 }
