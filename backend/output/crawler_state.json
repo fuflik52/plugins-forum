@@ -1,8 +1,8 @@
 {
-  "last_updated": "2025-09-14T18:38:47.024Z",
-  "total_repositories_processed": 1224,
-  "successful_crawls": 1219,
-  "failed_crawls": 5,
+  "last_updated": "2025-09-15T06:35:15.378Z",
+  "total_repositories_processed": 1226,
+  "successful_crawls": 1220,
+  "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
       "last_crawled": "2025-09-11T06:50:09.702Z",
@@ -7357,24 +7357,38 @@
       "plugins_count": 1,
       "success": true,
       "errors": []
+    },
+    "muxira/RustPlugins": {
+      "last_crawled": "2025-09-15T06:35:14.755Z",
+      "plugins_count": 33,
+      "success": true,
+      "errors": []
+    },
+    "muxira/MyMiniPRO": {
+      "last_crawled": "2025-09-15T06:35:15.377Z",
+      "plugins_count": 0,
+      "success": false,
+      "errors": [
+        "Failed to crawl: Error: Failed to clone repository: Error: Command failed: git clone --depth 1 \"https://github.com/muxira/MyMiniPRO.git\" \"/home/runner/work/plugins-forum/plugins-forum/backend/temp_repos/muxira_MyMiniPRO\"\nCloning into '/home/runner/work/plugins-forum/plugins-forum/backend/temp_repos/muxira_MyMiniPRO'...\nfatal: could not read Username for 'https://github.com': No such device or address\n"
+      ]
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-14T18:29:55.977Z",
-      "completed_at": "2025-09-14T18:38:46.272Z",
-      "duration_ms": 530295
+      "started_at": "2025-09-15T06:35:14.352Z",
+      "completed_at": "2025-09-15T06:35:15.011Z",
+      "duration_ms": 659
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 694,
-      "newly_processed": 529,
-      "successful": 528,
-      "failed": 1
+      "already_processed": 1224,
+      "newly_processed": 1,
+      "successful": 1,
+      "failed": 0
     },
     "plugins": {
-      "total_found": 10616,
-      "new_plugins": 1
+      "total_found": 33,
+      "new_plugins": 33
     }
   }
 }
