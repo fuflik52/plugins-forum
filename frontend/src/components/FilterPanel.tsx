@@ -10,6 +10,8 @@ interface FilterPanelProps {
   plugins: IndexedPlugin[];
   activeFilters: FilterValue[];
   onFiltersChange: (filters: FilterValue[]) => void;
+  variant?: 'desktop' | 'mobile';
+  onClose?: () => void;
 }
 
 // Separate search state component to prevent re-renders
@@ -209,7 +211,9 @@ const FilterSection = React.memo(({
 export const FilterPanel: React.FC<FilterPanelProps> = ({
   plugins,
   activeFilters,
-  onFiltersChange
+  onFiltersChange,
+  variant = 'desktop',
+  onClose
 }) => {
   const [expandedSections, setExpandedSections] = useState({
     authors: false,
@@ -378,8 +382,12 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
 
   const hasActiveFilters = activeFilters.length > 0;
 
+  const panelContainerClass = variant === 'mobile'
+    ? 'flex h-full flex-col bg-white shadow-xl border border-gray-200 rounded-l-3xl'
+    : 'bg-white rounded-lg border border-gray-200 sticky top-4 max-h-[calc(100vh-2rem)] overflow-hidden flex flex-col';
+
   return (
-    <div className="bg-white rounded-lg border border-gray-200 sticky top-4 max-h-[calc(100vh-2rem)] overflow-hidden flex flex-col">
+    <div className={panelContainerClass}>
       {/* Compact Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100">
         <div className="flex items-center space-x-2">
@@ -391,15 +399,25 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
             </span>
           )}
         </div>
-        
-        {hasActiveFilters && (
-          <button
-            onClick={clearAllFilters}
-            className="text-xs text-red-600 hover:text-red-700 transition-colors"
-          >
-            Clear all
-          </button>
-        )}
+        <div className="flex items-center gap-3">
+          {hasActiveFilters && (
+            <button
+              onClick={clearAllFilters}
+              className="text-xs text-red-600 hover:text-red-700 transition-colors"
+            >
+              Clear all
+            </button>
+          )}
+          {variant === 'mobile' && onClose && (
+            <button
+              onClick={onClose}
+              className="rounded-full p-2 text-gray-500 transition hover:bg-gray-100 hover:text-gray-700"
+              aria-label="Close filters"
+            >
+              <X className="h-3.5 w-3.5" />
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Active Filters */}

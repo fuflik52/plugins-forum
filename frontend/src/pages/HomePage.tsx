@@ -17,7 +17,7 @@ import { PluginGrid } from '../components/PluginGrid';
 import { GroupedPluginView } from '../components/GroupedPluginView';
 import { StatsBar } from '../components/StatsBar';
 import { EmptyState } from '../components/EmptyState';
-import { AlertCircle, RefreshCw, Zap, Sparkles, Code, Grid, Package } from 'lucide-react';
+import { AlertCircle, RefreshCw, Zap, Sparkles, Code, Grid, Package, Filter } from 'lucide-react';
 import { Pagination } from '../components/Pagination';
 import { useUrlState } from '../hooks/useUrlState';
 import { getPluginTimestamp } from '../utils/dateUtils';
@@ -25,21 +25,21 @@ import { debugSortOrder } from '../utils/debugSort';
 import { Analytics } from '../utils/analytics';
 
 // Analytics tracking helpers
-const trackViewModeChange = (mode: 'grid' | 'grouped') => {
+const trackViewModeChange = (mode: 'grid' | 'grouped'): void => {
   Analytics.trackEvent('view_mode_change', {
     view_mode: mode,
     event_category: 'interface'
   });
 };
 
-const trackSortChange = (sortBy: string) => {
+const trackSortChange = (sortBy: string): void => {
   Analytics.trackEvent('sort_change', {
     sort_by: sortBy,
     event_category: 'interface'
   });
 };
 
-const trackPageSizeChange = (pageSize: number) => {
+const trackPageSizeChange = (pageSize: number): void => {
   Analytics.trackEvent('page_size_change', {
     page_size: pageSize,
     event_category: 'interface'
@@ -50,6 +50,7 @@ export const HomePage: React.FC = () => {
   const [pluginIndex, setPluginIndex] = useState<PluginIndex | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const {
     searchQuery,
     viewMode,
@@ -91,6 +92,21 @@ export const HomePage: React.FC = () => {
       setError(null);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isFilterOpen) return;
+
+    const handleResize = (): void => {
+      if (window.innerWidth >= 1024) {
+        setIsFilterOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return (): void => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isFilterOpen]);
 
   const filteredData = useMemo((): {
     searchFiltered: IndexedPlugin[];
@@ -294,26 +310,29 @@ export const HomePage: React.FC = () => {
     );
   }
 
+  const searchResultCount = filteredData ? filteredData.filteredCount : 0;
+  const filterPanelPlugins = filteredData ? filteredData.searchFiltered : [];
+
   return (
     <div className="min-h-screen">
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700"></div>
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
+          <div className="mb-8 text-center">
+            <div className="mb-4 flex items-center justify-center space-x-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm">
                 <Code className="h-6 w-6 text-white" />
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white">
+              <h1 className="text-3xl font-bold text-white md:text-5xl">
                 Rust Oxide Plugins
               </h1>
             </div>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-4">
+            <p className="mx-auto mb-4 max-w-2xl text-base text-white/90 sm:text-lg md:text-xl">
               Discover and explore the best Rust plugins from GitHub repositories
             </p>
 
-            <div className="flex items-center justify-center space-x-4">
+            <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
                 to="/"
                 className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white hover:bg-white/30 transition-all duration-200 text-sm font-medium"
@@ -335,7 +354,7 @@ export const HomePage: React.FC = () => {
             options={searchOptions}
             onOptionsChange={setSearchOptions}
             placeholder="Search by plugin name, author, repository, or description..."
-            resultCount={filteredData?.filteredCount || 0}
+            resultCount={searchResultCount}
           />
         </div>
       </header>
@@ -350,17 +369,32 @@ export const HomePage: React.FC = () => {
               searchQuery={searchQuery}
             />
 
-            <div className="flex gap-8">
-              <div className="w-72 flex-shrink-0">
-                <FilterPanel
-                  plugins={filteredData.searchFiltered}
+            <div className="mb-6 lg:hidden">
+              <button
+                onClick={() => setIsFilterOpen(true)}
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white/90 px-4 py-3 text-sm font-semibold text-gray-700 shadow-sm transition-all hover:bg-white"
+              >
+                <Filter className="h-4 w-4 text-blue-600" />
+                <span>Filters</span>
+                {activeFilters.length > 0 && (
+                  <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800">
+                    {activeFilters.length}
+                  </span>
+                )}
+              </button>
+            </div>
+
+            <div className="flex flex-col-reverse gap-8 lg:flex-row">
+              <div className="hidden w-72 flex-shrink-0 lg:block">
+              <FilterPanel
+                  plugins={filterPanelPlugins}
                   activeFilters={activeFilters}
                   onFiltersChange={setActiveFilters}
                 />
               </div>
 
               <div className="flex-1 min-w-0">
-                <div className="flex items-center justify-between gap-4 mb-6">
+                <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                   <div className="text-sm text-gray-600">
                     {viewMode === 'grouped' ? (
                       <span>
@@ -375,10 +409,10 @@ export const HomePage: React.FC = () => {
                       </span>
                     )}
                   </div>
-                  <div className="flex items-center gap-4 text-sm">
+                  <div className="flex flex-wrap items-center gap-3 text-sm">
                     <div className="flex items-center gap-2">
                       <span className="text-gray-600">View:</span>
-                      <div className="flex rounded-lg border border-gray-300 overflow-hidden">
+                      <div className="flex overflow-hidden rounded-lg border border-gray-300">
                         <button
                           onClick={() => {
                             setViewMode('grid');
@@ -398,7 +432,7 @@ export const HomePage: React.FC = () => {
                             setViewMode('grouped');
                             trackViewModeChange('grouped');
                           }}
-                          className={`px-3 py-1 flex items-center gap-1 transition-colors border-l border-gray-300 ${
+                          className={`flex items-center gap-1 border-l border-gray-300 px-3 py-1 transition-colors ${
                             viewMode === 'grouped'
                               ? 'bg-blue-500 text-white'
                               : 'bg-white text-gray-700 hover:bg-gray-50'
@@ -501,6 +535,25 @@ export const HomePage: React.FC = () => {
           </>
         )}
       </main>
+
+      {isFilterOpen && (
+        <div className="fixed inset-0 z-50 flex lg:hidden">
+          <div
+            className="absolute inset-0 bg-black/40"
+            onClick={() => setIsFilterOpen(false)}
+            aria-hidden="true"
+          ></div>
+          <div className="relative ml-auto flex h-full w-full max-w-sm flex-col">
+            <FilterPanel
+              plugins={filterPanelPlugins}
+              activeFilters={activeFilters}
+              onFiltersChange={setActiveFilters}
+              variant="mobile"
+              onClose={() => setIsFilterOpen(false)}
+            />
+          </div>
+        </div>
+      )}
 
       <footer className="relative mt-20">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900"></div>

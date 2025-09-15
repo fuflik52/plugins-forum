@@ -27,9 +27,9 @@ export const StatsBar: React.FC<StatsBarProps> = React.memo(({
 
   return (
     <div className="stats-card mb-8">
-      <div className="flex flex-wrap items-center justify-between gap-6">
-        <div className="flex items-center space-x-8">
-          <div className="flex items-center space-x-3">
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-stretch sm:gap-6">
+          <div className="flex items-center gap-3">
             <div className="icon-wrapper">
               <Package className="h-5 w-5" />
             </div>
@@ -43,7 +43,7 @@ export const StatsBar: React.FC<StatsBarProps> = React.memo(({
             </div>
           </div>
           
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center gap-3">
             <div className="icon-wrapper">
               <Clock className="h-5 w-5" />
             </div>
@@ -54,7 +54,7 @@ export const StatsBar: React.FC<StatsBarProps> = React.memo(({
           </div>
           
           {searchQuery && (
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center gap-3">
               <div className="icon-wrapper">
                 <Search className="h-5 w-5" />
               </div>
@@ -66,12 +66,12 @@ export const StatsBar: React.FC<StatsBarProps> = React.memo(({
           )}
         </div>
 
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-2 text-sm text-gray-600">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+          <div className="flex items-center gap-2 text-sm text-gray-600">
             <TrendingUp className="h-4 w-4 text-green-500" />
             <span>Live Data</span>
           </div>
-          <div className="flex items-center space-x-2 text-sm text-gray-600">
+          <div className="flex items-center gap-2 text-sm text-gray-600">
             <Zap className="h-4 w-4 text-yellow-500" />
             <span>Real-time</span>
           </div>
@@ -80,4 +80,3 @@ export const StatsBar: React.FC<StatsBarProps> = React.memo(({
     </div>
   );
 });
-

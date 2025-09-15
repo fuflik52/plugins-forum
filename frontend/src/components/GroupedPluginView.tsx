@@ -146,8 +146,8 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
   return (
     <div className="space-y-4">
       {/* Group controls */}
-      <div className="flex items-center justify-between bg-gray-50 rounded-lg p-4">
-        <div className="flex items-center gap-4">
+      <div className="flex flex-col gap-4 rounded-lg bg-gray-50 p-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <Package className="h-4 w-4" />
             <span className="font-medium">{groupedPlugins.length}</span>
@@ -159,7 +159,7 @@ export const GroupedPluginView: React.FC<GroupedPluginViewProps> = ({
             <span>total instances</span>
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
           <button
             onClick={expandAll}
             className="px-3 py-1 text-sm bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors"
