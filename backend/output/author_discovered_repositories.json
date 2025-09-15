@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-15T02:00:59.620Z",
+  "generated_at": "2025-09-15T06:39:05.572Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1131,
+  "count": 1132,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -985,6 +985,7 @@
     "msharp19/RustBangBangAirdropPlugin",
     "msharp19/RustStarterKitPlugin",
     "msharp19/rust-skinzoneitems",
+    "muxira/RustPlugins",
     "mvanzanten/docker-rust-server",
     "nbistrov255/lightrp",
     "netch-dev/Rust.UIFramework",
