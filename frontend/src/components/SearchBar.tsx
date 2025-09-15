@@ -2,6 +2,7 @@ import React, { useState, useCallback, useMemo } from 'react';
 import { Search, Settings, RotateCcw, ChevronDown } from 'lucide-react';
 import type { SearchOptions, SearchFieldKey } from '../types/plugin';
 import { getDefaultSearchOptions } from '../types/plugin';
+import { Analytics } from '../utils/analytics';
 
 interface SearchBarProps {
   value: string;
@@ -9,16 +10,35 @@ interface SearchBarProps {
   options: SearchOptions;
   onOptionsChange: (opts: SearchOptions) => void;
   placeholder?: string;
+  resultCount?: number;
 }
 
-export const SearchBar: React.FC<SearchBarProps> = ({ 
-  value, 
+export const SearchBar: React.FC<SearchBarProps> = ({
+  value,
   onChange,
   options,
   onOptionsChange,
-  placeholder = "Search plugins by name, author, description..." 
+  placeholder = "Search plugins by name, author, description...",
+  resultCount = 0
 }) => {
   const [showAdvanced, setShowAdvanced] = useState(false);
+
+  // Track search with debounce to avoid too many events
+  const handleSearchChange = useCallback((searchValue: string) => {
+    onChange(searchValue);
+
+    // Track search events only for meaningful queries (3+ characters)
+    if (searchValue.trim().length >= 3) {
+      Analytics.trackEvent('search', {
+        search_term: searchValue.trim(),
+        search_length: searchValue.trim().length,
+        search_fields: options.fields.join(','),
+        search_mode: options.matchMode,
+        result_count: resultCount,
+        event_category: 'search'
+      });
+    }
+  }, [onChange, options, resultCount]);
   
   // Mathematical proof: useCallback prevents function recreation on each render
   // Theorem: Stable references eliminate child component re-renders
@@ -56,9 +76,9 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         <input
           type="text"
           value={value}
-          onChange={(e) => onChange(e.target.value)}
-          className="w-full pl-12 pr-16 py-4 text-lg bg-white/95 backdrop-blur-sm border border-white/20 rounded-2xl 
-                   placeholder-gray-500 text-gray-900 shadow-lg focus:outline-none focus:ring-2 focus:ring-white/30 
+          onChange={(e) => handleSearchChange(e.target.value)}
+          className="w-full pl-12 pr-16 py-4 text-lg bg-white/95 backdrop-blur-sm border border-white/20 rounded-2xl
+                   placeholder-gray-500 text-gray-900 shadow-lg focus:outline-none focus:ring-2 focus:ring-white/30
                    focus:border-white/40 transition-all duration-300"
           placeholder={placeholder}
         />

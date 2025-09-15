@@ -5,6 +5,7 @@ import "./index.css";
 import "./styles/performance.css";
 import App from "./App.tsx";
 import { PluginDetail } from "./components/PluginDetail.tsx";
+import { StatisticsPageWrapper } from "./pages/StatisticsPageWrapper.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/plugin/:pluginId" element={<PluginDetail />} />
+        <Route path="/statistics" element={<StatisticsPageWrapper />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
