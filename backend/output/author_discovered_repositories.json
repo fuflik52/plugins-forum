@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-16T01:51:47.773Z",
+  "generated_at": "2025-09-16T06:37:13.503Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1132,
+  "count": 1133,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -805,6 +805,7 @@
     "cornholio21/ScrapMultiplier",
     "cornholio21/chairtrap",
     "dakkinbyte/ClanTeam",
+    "dan4451/Rust",
     "danielgnh/plugins_oxide",
     "dassjosh/DeathNotes",
     "dassjosh/DiscordExtensionBeta",
