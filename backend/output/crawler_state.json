@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-16T04:26:28.888Z",
-  "total_repositories_processed": 1227,
-  "successful_crawls": 1221,
+  "last_updated": "2025-09-17T09:30:52.104Z",
+  "total_repositories_processed": 1228,
+  "successful_crawls": 1222,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7375,6 +7375,12 @@
     "dan4451/Rust": {
       "last_crawled": "2025-09-16T04:26:28.882Z",
       "plugins_count": 3,
+      "success": true,
+      "errors": []
+    },
+    "13dasd123/yougame-plugins": {
+      "last_crawled": "2025-09-17T09:30:51.783Z",
+      "plugins_count": 992,
       "success": true,
       "errors": []
     }
