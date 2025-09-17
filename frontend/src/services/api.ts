@@ -1,45 +1,29 @@
 import type { PluginIndex, SearchOptions, SearchFieldKey, IndexedPlugin } from '../types/plugin';
 import { PluginMerger } from './pluginMerger';
+import { CacheService, type CacheMetadata } from './cacheService';
 
 const API_BASE_URL = 'https://raw.githubusercontent.com/publicrust/plugins-forum/main/backend/output';
 
 export class ApiService {
   static async fetchPluginIndex(): Promise<PluginIndex> {
     try {
-      // Fetch both plugin sources in parallel
-      const [oxideResponse, crawledResponse] = await Promise.all([
-        fetch(`${API_BASE_URL}/oxide_plugins.json`),
-        fetch(`${API_BASE_URL}/crawled_plugins.json`)
-      ]);
-
-      // Check responses
-      if (!oxideResponse.ok) {
-        throw new Error(`Failed to fetch oxide_plugins.json: ${oxideResponse.status}`);
-      }
-      if (!crawledResponse.ok) {
-        throw new Error(`Failed to fetch crawled_plugins.json: ${crawledResponse.status}`);
-      }
-
-      // Parse JSON data
+      // Fetch both plugin sources in parallel using cache
       const [oxidePlugins, crawledPlugins] = await Promise.all([
-        oxideResponse.json() as Promise<PluginIndex>,
-        crawledResponse.json() as Promise<PluginIndex>
+        CacheService.fetchWithCache<PluginIndex>(`${API_BASE_URL}/oxide_plugins.json`),
+        CacheService.fetchWithCache<PluginIndex>(`${API_BASE_URL}/crawled_plugins.json`)
       ]);
 
       // Merge the plugin sources
       return PluginMerger.mergePluginSources(oxidePlugins, crawledPlugins);
-      
+
     } catch (error) {
       console.error('Failed to fetch plugin index:', error);
-      
+
       // Fallback: try to fetch oxide_plugins.json only
       try {
         console.warn('Falling back to oxide_plugins.json only');
-        const response = await fetch(`${API_BASE_URL}/oxide_plugins.json`);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return await response.json() as PluginIndex;
+        const oxidePlugins = await CacheService.fetchWithCache<PluginIndex>(`${API_BASE_URL}/oxide_plugins.json`);
+        return oxidePlugins;
       } catch (fallbackError) {
         console.error('Fallback also failed:', fallbackError);
         throw error;
@@ -122,6 +106,14 @@ export class ApiService {
     });
 
     return { ...plugins, items: filteredItems, count: filteredItems.length };
+  }
+
+  static async clearCache(): Promise<void> {
+    return CacheService.clearCache();
+  }
+
+  static async getCacheInfo(): Promise<Array<{ url: string; metadata: CacheMetadata; size: string }>> {
+    return CacheService.getCacheInfo();
   }
 }
 

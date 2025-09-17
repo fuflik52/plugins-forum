@@ -17,6 +17,7 @@ import { PluginGrid } from '../components/PluginGrid';
 import { GroupedPluginView } from '../components/GroupedPluginView';
 import { StatsBar } from '../components/StatsBar';
 import { EmptyState } from '../components/EmptyState';
+import { CacheManager } from '../components/CacheManager';
 import { AlertCircle, RefreshCw, Zap, Sparkles, Code, Grid, Package, Filter } from 'lucide-react';
 import { Pagination } from '../components/Pagination';
 import { useUrlState } from '../hooks/useUrlState';
@@ -572,6 +573,8 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      <CacheManager />
     </div>
   );
 };

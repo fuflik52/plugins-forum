@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",
+    "@ton-ai-core/devtrace": "^0.2.6",
     "@types/prismjs": "^1.26.5",
     "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.21",
@@ -26,6 +27,7 @@
     "@babel/preset-typescript": "^7.27.1",
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
     "@eslint/js": "^9.33.0",
+    "@rollup/plugin-babel": "^6.0.4",
     "@ton-ai-core/eslint-plugin-suggest-members": "^1.6.2",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
