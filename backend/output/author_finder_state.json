@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-19T18:34:06.273Z",
+  "last_updated": "2025-09-20T01:49:58.478Z",
   "current_author_index": 0,
   "processed_authors": {
     "djimbou92": {
@@ -1812,6 +1812,22 @@
       "last_processed": "2025-09-16T06:37:11.494Z",
       "repositories_found": 1,
       "success": true
+    },
+    "PayNow-Services": {
+      "last_processed": "2025-09-20T01:49:44.346Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "paynow-gg": {
+      "last_processed": "2025-09-20T01:49:54.234Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "SweetInk": {
+      "last_processed": "2025-09-20T01:49:58.475Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (127)"
     }
   },
   "discovered_repositories": [
@@ -2947,6 +2963,8 @@
     "RazoRRustPlugins/Battlepass-1.37.3",
     "RazoRRustPlugins/Convoy-Reforged-2.8.1",
     "muxira/RustPlugins",
-    "dan4451/Rust"
+    "dan4451/Rust",
+    "PayNow-Services/PayNow.GameServers.Plugins.OxideMod",
+    "paynow-gg/rust-plugin"
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-19T18:34:06.274Z",
+  "generated_at": "2025-09-20T01:49:58.479Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1133,
+  "count": 1135,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -258,6 +258,7 @@
     "OxideMod/Oxide.SevenDaysToDie",
     "OxideMod/Oxide.TheForest",
     "PRISM-Servers/plugins_public",
+    "PayNow-Services/PayNow.GameServers.Plugins.OxideMod",
     "PenisBlistashiq/Rust-plugins-236-240-dev",
     "Pho3niX90/ExtraSeating",
     "Pho3niX90/MiniCopterOptions",
@@ -1012,6 +1013,7 @@
     "oleduc/Oxide-Plagued",
     "openmailbox/RustExamples",
     "openmailbox/RustMods",
+    "paynow-gg/rust-plugin",
     "pedroivorbgrodrigues/Oxide",
     "pedroivorbgrodrigues/hunt",
     "peter-r-g/uMod.RulesManager",
