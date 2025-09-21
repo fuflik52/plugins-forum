@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-21T06:53:55.381Z",
+  "generated_at": "2025-09-21T13:05:58.110Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1138,
+  "count": 1139,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -140,6 +140,7 @@
     "KajWithAJ/TollButtons",
     "KajWithAJ/Watchdog",
     "KajWithAJ/YouveGotMail",
+    "KichDM/RustLegacyPlugins",
     "Kirollos/Oxide.Ext.IRC",
     "Kulltero/Carbon.Core",
     "Kulltero/Oxide.Rust",
