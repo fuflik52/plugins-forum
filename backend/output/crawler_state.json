@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-20T07:19:41.722Z",
-  "total_repositories_processed": 1232,
-  "successful_crawls": 1226,
+  "last_updated": "2025-09-21T05:21:44.094Z",
+  "total_repositories_processed": 1233,
+  "successful_crawls": 1227,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7405,6 +7405,12 @@
     "Ghenghis/Rust-AI-Base-Builder2": {
       "last_crawled": "2025-09-20T07:19:41.611Z",
       "plugins_count": 64,
+      "success": true,
+      "errors": []
+    },
+    "PT-Studios/rust-donation-credits": {
+      "last_crawled": "2025-09-21T05:21:44.062Z",
+      "plugins_count": 1,
       "success": true,
       "errors": []
     }
