@@ -1,274 +1,277 @@
 {
-  "last_updated": "2025-09-21T02:02:58.026Z",
-  "current_author_index": 0,
+  "last_updated": "2025-09-21T06:53:55.380Z",
+  "current_author_index": 53,
   "processed_authors": {
     "djimbou92": {
-      "last_processed": "2025-09-14T05:13:43.006Z",
+      "last_processed": "2025-09-21T06:34:59.952Z",
       "repositories_found": 2,
       "success": true
     },
     "MONaH-Rasta": {
-      "last_processed": "2025-09-14T05:14:42.856Z",
+      "last_processed": "2025-09-21T06:35:35.461Z",
       "repositories_found": 37,
       "success": true
     },
     "Wrecks830": {
-      "last_processed": "2025-09-14T05:14:50.178Z",
+      "last_processed": "2025-09-21T06:35:40.512Z",
       "repositories_found": 3,
       "success": true
     },
     "Yorboot": {
-      "last_processed": "2025-09-14T05:15:09.739Z",
+      "last_processed": "2025-09-21T06:35:52.801Z",
       "repositories_found": 1,
       "success": true
     },
     "LaserHydra": {
-      "last_processed": "2025-09-14T05:16:08.106Z",
-      "repositories_found": 13,
+      "last_processed": "2025-09-21T06:36:17.009Z",
+      "repositories_found": 14,
       "success": true
     },
     "oddbunchmedia": {
-      "last_processed": "2025-09-14T05:16:12.971Z",
+      "last_processed": "2025-09-21T06:36:20.633Z",
       "repositories_found": 2,
       "success": true
     },
     "HunterZ": {
-      "last_processed": "2025-09-14T05:17:12.754Z",
+      "last_processed": "2025-09-21T06:36:47.055Z",
       "repositories_found": 2,
       "success": true
     },
     "Wakanda1519": {
-      "last_processed": "2025-09-14T05:18:24.162Z",
+      "last_processed": "2025-09-21T06:37:00.636Z",
       "repositories_found": 1,
       "success": true
     },
     "0xz00m": {
-      "last_processed": "2025-09-14T05:18:27.870Z",
+      "last_processed": "2025-09-21T06:37:03.522Z",
       "repositories_found": 1,
       "success": true
     },
     "Rust-Haus": {
-      "last_processed": "2025-09-14T05:18:37.154Z",
+      "last_processed": "2025-09-21T06:37:08.934Z",
       "repositories_found": 2,
       "success": true
     },
     "read-0nly": {
-      "last_processed": "2025-09-14T05:25:47.299Z",
-      "repositories_found": 2,
+      "last_processed": "2025-09-21T06:40:09.246Z",
+      "repositories_found": 3,
       "success": true
     },
     "CarbonCommunity": {
-      "last_processed": "2025-09-14T05:27:30.407Z",
+      "last_processed": "2025-09-21T06:40:56.747Z",
       "repositories_found": 2,
       "success": true
     },
     "publicrust": {
-      "last_processed": "2025-09-14T05:30:33.145Z",
+      "last_processed": "2025-09-21T06:41:57.765Z",
       "repositories_found": 7,
       "success": true
     },
     "ilovepatatos-rust": {
-      "last_processed": "2025-09-14T05:30:51.955Z",
+      "last_processed": "2025-09-21T06:42:09.257Z",
       "repositories_found": 5,
       "success": true
     },
     "Tacman1981": {
-      "last_processed": "2025-09-14T05:30:59.605Z",
+      "last_processed": "2025-09-21T06:42:14.399Z",
       "repositories_found": 2,
       "success": true
     },
     "st-little": {
-      "last_processed": "2025-09-14T05:32:20.481Z",
+      "last_processed": "2025-09-21T06:42:33.444Z",
       "repositories_found": 1,
       "success": true
     },
     "abolfazl3133": {
-      "last_processed": "2025-09-14T05:32:29.504Z",
+      "last_processed": "2025-09-21T06:42:37.670Z",
       "repositories_found": 1,
       "success": true
     },
     "RustyyTown": {
-      "last_processed": "2025-09-14T05:32:38.615Z",
-      "repositories_found": 1,
+      "last_processed": "2025-09-21T06:42:40.435Z",
+      "repositories_found": 0,
       "success": true
     },
     "PenisBlistashiq": {
-      "last_processed": "2025-09-14T05:32:43.532Z",
+      "last_processed": "2025-09-21T06:42:43.975Z",
       "repositories_found": 1,
       "success": true
     },
     "Cl1cker0": {
-      "last_processed": "2025-09-14T05:32:58.829Z",
+      "last_processed": "2025-09-21T06:42:51.596Z",
       "repositories_found": 1,
       "success": true
     },
     "DanielHenderson-17": {
-      "last_processed": "2025-09-14T05:39:24.723Z",
-      "repositories_found": 1,
-      "success": true
+      "last_processed": "2025-09-21T06:42:56.042Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (135)"
     },
     "0xBlitzmachine": {
-      "last_processed": "2025-09-14T05:39:57.380Z",
+      "last_processed": "2025-09-21T06:43:04.177Z",
       "repositories_found": 1,
       "success": true
     },
     "codefling-0xf": {
-      "last_processed": "2025-09-14T05:40:02.695Z",
+      "last_processed": "2025-09-21T06:43:07.838Z",
       "repositories_found": 1,
       "success": true
     },
     "JorgeCayetano1": {
-      "last_processed": "2025-09-14T05:41:23.943Z",
+      "last_processed": "2025-09-21T06:43:38.625Z",
       "repositories_found": 1,
       "success": true
     },
     "DemoNiMa": {
-      "last_processed": "2025-09-14T05:41:44.564Z",
+      "last_processed": "2025-09-21T06:43:47.347Z",
       "repositories_found": 1,
       "success": true
     },
     "KajWithAJ": {
-      "last_processed": "2025-09-14T05:41:57.238Z",
+      "last_processed": "2025-09-21T06:43:55.482Z",
       "repositories_found": 7,
       "success": true
     },
     "dassjosh": {
-      "last_processed": "2025-09-14T05:42:54.200Z",
+      "last_processed": "2025-09-21T06:44:17.741Z",
       "repositories_found": 13,
       "success": true
     },
     "Warri0r007": {
-      "last_processed": "2025-09-14T05:42:58.478Z",
+      "last_processed": "2025-09-21T06:44:20.874Z",
       "repositories_found": 1,
       "success": true
     },
     "VisEntities": {
-      "last_processed": "2025-09-14T05:46:08.574Z",
-      "repositories_found": 149,
-      "success": true
+      "last_processed": "2025-09-21T06:44:25.464Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (149)"
     },
     "VFlov": {
-      "last_processed": "2025-09-14T05:49:14.801Z",
+      "last_processed": "2025-09-21T06:45:12.805Z",
       "repositories_found": 2,
       "success": true
     },
     "dakkinbyte": {
-      "last_processed": "2025-09-14T05:50:00.006Z",
+      "last_processed": "2025-09-21T06:45:51.936Z",
       "repositories_found": 1,
       "success": true
     },
     "illRalli": {
-      "last_processed": "2025-09-14T05:50:04.817Z",
+      "last_processed": "2025-09-21T06:45:55.574Z",
       "repositories_found": 2,
       "success": true
     },
     "flintmonkey": {
-      "last_processed": "2025-09-14T05:50:12.276Z",
+      "last_processed": "2025-09-21T06:46:00.688Z",
       "repositories_found": 2,
       "success": true
     },
     "jerkypaisen": {
-      "last_processed": "2025-09-14T05:50:40.604Z",
+      "last_processed": "2025-09-21T06:46:18.376Z",
       "repositories_found": 20,
       "success": true
     },
     "ViolationHandler-exe": {
-      "last_processed": "2025-09-14T05:51:17.566Z",
+      "last_processed": "2025-09-21T06:46:35.455Z",
       "repositories_found": 14,
       "success": true
     },
     "birdenly": {
-      "last_processed": "2025-09-14T05:53:05.158Z",
-      "repositories_found": 0,
+      "last_processed": "2025-09-21T06:47:16.046Z",
+      "repositories_found": 1,
       "success": true
     },
     "Mabel8686": {
-      "last_processed": "2025-09-14T05:53:12.873Z",
+      "last_processed": "2025-09-21T06:47:21.222Z",
       "repositories_found": 3,
       "success": true
     },
     "cipeaX": {
-      "last_processed": "2025-09-14T05:53:52.191Z",
+      "last_processed": "2025-09-21T06:47:31.019Z",
       "repositories_found": 1,
       "success": true
     },
     "rube200": {
-      "last_processed": "2025-09-14T05:55:48.964Z",
+      "last_processed": "2025-09-21T06:48:35.243Z",
       "repositories_found": 1,
       "success": true
     },
     "CaptainBlake": {
-      "last_processed": "2025-09-14T05:55:57.905Z",
+      "last_processed": "2025-09-21T06:48:40.775Z",
       "repositories_found": 2,
       "success": true
     },
     "mvanzanten": {
-      "last_processed": "2025-09-14T05:56:15.766Z",
+      "last_processed": "2025-09-21T06:48:50.113Z",
       "repositories_found": 1,
       "success": true
     },
     "PRISM-Servers": {
-      "last_processed": "2025-09-14T05:56:27.560Z",
+      "last_processed": "2025-09-21T06:48:57.669Z",
       "repositories_found": 1,
       "success": true
     },
     "greggianbayocboc": {
-      "last_processed": "2025-09-14T05:57:22.812Z",
+      "last_processed": "2025-09-21T06:49:13.169Z",
       "repositories_found": 1,
       "success": true
     },
     "RustWipeDay": {
-      "last_processed": "2025-09-14T05:57:57.996Z",
+      "last_processed": "2025-09-21T06:49:36.763Z",
       "repositories_found": 1,
       "success": true
     },
     "mjmfighter": {
-      "last_processed": "2025-09-14T05:58:04.876Z",
+      "last_processed": "2025-09-21T06:49:41.342Z",
       "repositories_found": 1,
       "success": true
     },
     "RebeccaStevens": {
-      "last_processed": "2025-09-14T06:02:38.566Z",
+      "last_processed": "2025-09-21T06:51:22.962Z",
       "repositories_found": 5,
       "success": true
     },
     "Limmek": {
-      "last_processed": "2025-09-14T06:03:09.700Z",
+      "last_processed": "2025-09-21T06:51:40.241Z",
       "repositories_found": 3,
       "success": true
     },
     "Eoin-McCartan": {
-      "last_processed": "2025-09-14T06:03:47.114Z",
+      "last_processed": "2025-09-21T06:51:52.831Z",
       "repositories_found": 2,
       "success": true
     },
     "DocValerian": {
-      "last_processed": "2025-09-14T06:04:15.479Z",
+      "last_processed": "2025-09-21T06:52:03.816Z",
       "repositories_found": 1,
       "success": true
     },
     "drakar-bit": {
-      "last_processed": "2025-09-14T06:05:15.606Z",
+      "last_processed": "2025-09-21T06:52:23.060Z",
       "repositories_found": 1,
       "success": true
     },
     "WheteThunger": {
-      "last_processed": "2025-09-14T06:07:49.315Z",
-      "repositories_found": 103,
-      "success": true
+      "last_processed": "2025-09-21T06:52:26.763Z",
+      "repositories_found": 0,
+      "success": true,
+      "error": "Skipped - too many repositories (107)"
     },
     "famus0v": {
-      "last_processed": "2025-09-14T06:08:07.011Z",
+      "last_processed": "2025-09-21T06:52:33.757Z",
       "repositories_found": 1,
       "success": true
     },
     "Tyler-Lopez": {
-      "last_processed": "2025-09-14T06:11:51.206Z",
+      "last_processed": "2025-09-21T06:53:19.884Z",
       "repositories_found": 4,
       "success": true
     },
     "bugrakaann": {
-      "last_processed": "2025-09-14T06:13:15.238Z",
+      "last_processed": "2025-09-21T06:53:55.380Z",
       "repositories_found": 2,
       "success": true
     },
@@ -2965,6 +2968,9 @@
     "muxira/RustPlugins",
     "dan4451/Rust",
     "PayNow-Services/PayNow.GameServers.Plugins.OxideMod",
-    "paynow-gg/rust-plugin"
+    "paynow-gg/rust-plugin",
+    "LaserHydra/Oxide",
+    "read-0nly/Rust-coop-survival",
+    "birdenly/NC-handlers"
   ]
 }

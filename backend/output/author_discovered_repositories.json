@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-21T02:02:58.027Z",
+  "generated_at": "2025-09-21T06:53:55.381Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1135,
+  "count": 1138,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -153,6 +153,7 @@
     "LaserHydra/DeathNotes",
     "LaserHydra/DeathNotesGui",
     "LaserHydra/HWTeleportation",
+    "LaserHydra/Oxide",
     "LaserHydra/SleeperGuard",
     "LaserHydra/TimedPermissions",
     "LaserHydra/UpdateChecker",
@@ -777,6 +778,7 @@
     "bawNg/HookDispatch",
     "bawNg/Oxide",
     "bawNg/Rust",
+    "birdenly/NC-handlers",
     "bradygaster/Aspire.Hosting.Facepunch.Rust",
     "bradygaster/RustMods",
     "bugrakaann/MurderGameMode",
@@ -1029,6 +1031,7 @@
     "publicrust/umod-pluigns-dataset",
     "razorfish-sl/PlayerAdministration-1",
     "read-0nly/Oxide.Rust",
+    "read-0nly/Rust-coop-survival",
     "read-0nly/RustMods",
     "robbie-williams/rust-server-docker",
     "romgerman/CGUI",
