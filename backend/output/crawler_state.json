@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-21T07:18:57.129Z",
-  "total_repositories_processed": 1234,
-  "successful_crawls": 1228,
+  "last_updated": "2025-09-21T19:16:53.753Z",
+  "total_repositories_processed": 1235,
+  "successful_crawls": 1229,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7417,6 +7417,12 @@
     "LaserHydra/Oxide": {
       "last_crawled": "2025-09-21T07:18:57.034Z",
       "plugins_count": 33,
+      "success": true,
+      "errors": []
+    },
+    "byome/Oxide": {
+      "last_crawled": "2025-09-21T19:16:53.662Z",
+      "plugins_count": 34,
       "success": true,
       "errors": []
     }
