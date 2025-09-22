@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-22T06:57:57.940Z",
+  "generated_at": "2025-09-22T13:03:58.562Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1149,
+  "count": 1150,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -858,6 +858,7 @@
     "flintmonkey/MonumentLogger",
     "flutessources/Oxide.Ext.CustomNpc",
     "flutessources/Oxide.Rust",
+    "fuflik52/umod-plugins",
     "gettakaro/rust-mods",
     "granis/RustItemDumper",
     "greggianbayocboc/rust-simple-mods",

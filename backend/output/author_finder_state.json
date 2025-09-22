@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-09-22T06:57:57.940Z",
-  "current_author_index": 205,
+  "last_updated": "2025-09-22T13:03:58.561Z",
+  "current_author_index": 228,
   "processed_authors": {
     "djimbou92": {
       "last_processed": "2025-09-21T06:34:59.952Z",
@@ -1004,72 +1004,72 @@
       "success": true
     },
     "fenderrex": {
-      "last_processed": "2025-09-14T14:34:01.753Z",
+      "last_processed": "2025-09-22T12:55:39.540Z",
       "repositories_found": 1,
       "success": true
     },
     "Whitecandor": {
-      "last_processed": "2025-09-14T14:34:05.565Z",
+      "last_processed": "2025-09-22T12:55:42.646Z",
       "repositories_found": 1,
       "success": true
     },
     "a-downing": {
-      "last_processed": "2025-09-14T14:35:09.231Z",
+      "last_processed": "2025-09-22T12:56:09.529Z",
       "repositories_found": 3,
       "success": true
     },
     "jonaslagoni": {
-      "last_processed": "2025-09-14T14:39:17.738Z",
+      "last_processed": "2025-09-22T12:57:44.086Z",
       "repositories_found": 1,
       "success": true
     },
     "tebexio": {
-      "last_processed": "2025-09-14T14:40:29.099Z",
+      "last_processed": "2025-09-22T12:58:21.679Z",
       "repositories_found": 2,
       "success": true
     },
     "HandyS11": {
-      "last_processed": "2025-09-14T14:42:50.614Z",
+      "last_processed": "2025-09-22T12:58:57.002Z",
       "repositories_found": 5,
       "success": true
     },
     "CraftingStore": {
-      "last_processed": "2025-09-14T14:43:02.924Z",
+      "last_processed": "2025-09-22T12:59:04.541Z",
       "repositories_found": 1,
       "success": true
     },
     "UncleMle": {
-      "last_processed": "2025-09-14T14:44:06.777Z",
+      "last_processed": "2025-09-22T12:59:25.416Z",
       "repositories_found": 1,
       "success": true
     },
     "oleduc": {
-      "last_processed": "2025-09-14T14:47:09.032Z",
+      "last_processed": "2025-09-22T13:00:33.341Z",
       "repositories_found": 1,
       "success": true
     },
     "IIIaKa": {
-      "last_processed": "2025-09-14T14:47:23.181Z",
+      "last_processed": "2025-09-22T13:00:43.369Z",
       "repositories_found": 6,
       "success": true
     },
     "danielgnh": {
-      "last_processed": "2025-09-14T14:48:01.491Z",
+      "last_processed": "2025-09-22T13:00:58.376Z",
       "repositories_found": 1,
       "success": true
     },
     "UltraRust": {
-      "last_processed": "2025-09-14T14:48:12.758Z",
+      "last_processed": "2025-09-22T13:01:06.325Z",
       "repositories_found": 7,
       "success": true
     },
     "setfps": {
-      "last_processed": "2025-09-14T14:48:22.494Z",
+      "last_processed": "2025-09-22T13:01:12.051Z",
       "repositories_found": 1,
       "success": true
     },
     "sknchan": {
-      "last_processed": "2025-09-14T14:51:47.074Z",
+      "last_processed": "2025-09-22T13:02:28.407Z",
       "repositories_found": 1,
       "success": true
     },
@@ -1079,27 +1079,27 @@
       "success": true
     },
     "fuflik52": {
-      "last_processed": "2025-09-14T14:53:49.652Z",
-      "repositories_found": 0,
+      "last_processed": "2025-09-22T13:02:38.880Z",
+      "repositories_found": 1,
       "success": true
     },
     "seanmb0": {
-      "last_processed": "2025-09-14T14:53:56.386Z",
+      "last_processed": "2025-09-22T13:02:43.855Z",
       "repositories_found": 1,
       "success": true
     },
     "kisuka": {
-      "last_processed": "2025-09-14T14:56:36.220Z",
+      "last_processed": "2025-09-22T13:03:41.294Z",
       "repositories_found": 1,
       "success": true
     },
     "xmxv": {
-      "last_processed": "2025-09-14T14:56:53.178Z",
+      "last_processed": "2025-09-22T13:03:52.261Z",
       "repositories_found": 2,
       "success": true
     },
     "Killa4": {
-      "last_processed": "2025-09-14T14:57:01.965Z",
+      "last_processed": "2025-09-22T13:03:58.561Z",
       "repositories_found": 0,
       "success": true
     },
@@ -2991,6 +2991,7 @@
     "Dpendable/Oxide",
     "Visagalis/Oxide",
     "koenrad/Oxide",
-    "brandonnorsworthy/R1Z1"
+    "brandonnorsworthy/R1Z1",
+    "fuflik52/umod-plugins"
   ]
 }
