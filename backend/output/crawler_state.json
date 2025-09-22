@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-17T09:30:52.104Z",
-  "total_repositories_processed": 1228,
-  "successful_crawls": 1222,
+  "last_updated": "2025-09-22T15:25:19.848Z",
+  "total_repositories_processed": 1239,
+  "successful_crawls": 1233,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7383,24 +7383,90 @@
       "plugins_count": 992,
       "success": true,
       "errors": []
+    },
+    "PayNow-Services/PayNow.GameServers.Plugins.OxideMod": {
+      "last_crawled": "2025-09-19T20:24:10.055Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "paynow-gg/rust-plugin": {
+      "last_crawled": "2025-09-19T20:24:11.076Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "SweetInk/uMod.HumanFallFlat": {
+      "last_crawled": "2025-09-19T20:24:12.258Z",
+      "plugins_count": 0,
+      "success": true,
+      "errors": []
+    },
+    "Ghenghis/Rust-AI-Base-Builder2": {
+      "last_crawled": "2025-09-20T07:19:41.611Z",
+      "plugins_count": 64,
+      "success": true,
+      "errors": []
+    },
+    "PT-Studios/rust-donation-credits": {
+      "last_crawled": "2025-09-21T05:21:44.062Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "LaserHydra/Oxide": {
+      "last_crawled": "2025-09-21T07:18:57.034Z",
+      "plugins_count": 33,
+      "success": true,
+      "errors": []
+    },
+    "byome/Oxide": {
+      "last_crawled": "2025-09-21T19:16:53.662Z",
+      "plugins_count": 34,
+      "success": true,
+      "errors": []
+    },
+    "math280h/Oxide-ChatManager": {
+      "last_crawled": "2025-09-22T07:24:01.845Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "QWERTY-Seba/rust_plugins": {
+      "last_crawled": "2025-09-22T07:24:02.647Z",
+      "plugins_count": 5,
+      "success": true,
+      "errors": []
+    },
+    "fuflik52/umod-plugins": {
+      "last_crawled": "2025-09-22T13:32:14.316Z",
+      "plugins_count": 1508,
+      "success": true,
+      "errors": []
+    },
+    "Owned67/MonumentAddonsTanki": {
+      "last_crawled": "2025-09-22T15:25:19.842Z",
+      "plugins_count": 2,
+      "success": true,
+      "errors": []
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-15T06:35:14.352Z",
-      "completed_at": "2025-09-15T06:35:15.011Z",
-      "duration_ms": 659
+      "started_at": "2025-09-22T07:24:01.416Z",
+      "completed_at": "2025-09-22T07:24:02.090Z",
+      "duration_ms": 674
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 1224,
+      "already_processed": 1235,
       "newly_processed": 1,
       "successful": 1,
       "failed": 0
     },
     "plugins": {
-      "total_found": 33,
-      "new_plugins": 33
+      "total_found": 1,
+      "new_plugins": 1
     }
   }
 }
