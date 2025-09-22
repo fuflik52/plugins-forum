@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-21T19:16:53.753Z",
-  "total_repositories_processed": 1235,
-  "successful_crawls": 1229,
+  "last_updated": "2025-09-22T07:24:02.651Z",
+  "total_repositories_processed": 1237,
+  "successful_crawls": 1231,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7425,23 +7425,35 @@
       "plugins_count": 34,
       "success": true,
       "errors": []
+    },
+    "math280h/Oxide-ChatManager": {
+      "last_crawled": "2025-09-22T07:24:01.845Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "QWERTY-Seba/rust_plugins": {
+      "last_crawled": "2025-09-22T07:24:02.647Z",
+      "plugins_count": 5,
+      "success": true,
+      "errors": []
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-19T20:24:09.446Z",
-      "completed_at": "2025-09-19T20:24:11.316Z",
-      "duration_ms": 1870
+      "started_at": "2025-09-22T07:24:01.416Z",
+      "completed_at": "2025-09-22T07:24:02.090Z",
+      "duration_ms": 674
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 1228,
-      "newly_processed": 2,
-      "successful": 2,
+      "already_processed": 1235,
+      "newly_processed": 1,
+      "successful": 1,
       "failed": 0
     },
     "plugins": {
-      "total_found": 2,
+      "total_found": 1,
       "new_plugins": 1
     }
   }
