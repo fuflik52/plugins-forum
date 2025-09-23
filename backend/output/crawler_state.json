@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-23T14:23:08.937Z",
-  "total_repositories_processed": 1243,
-  "successful_crawls": 1237,
+  "last_updated": "2025-09-23T19:19:04.684Z",
+  "total_repositories_processed": 1257,
+  "successful_crawls": 1251,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7473,23 +7473,107 @@
       "plugins_count": 1,
       "success": true,
       "errors": []
+    },
+    "13dasd123/https-slivrust-plugin.ru-": {
+      "last_crawled": "2025-09-23T19:18:46.953Z",
+      "plugins_count": 1663,
+      "success": true,
+      "errors": []
+    },
+    "Owned67/FailedCodeAlert": {
+      "last_crawled": "2025-09-23T19:18:48.227Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Owned67/InvasivePlants": {
+      "last_crawled": "2025-09-23T19:18:49.343Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Owned67/MonumentAddons": {
+      "last_crawled": "2025-09-23T19:18:50.565Z",
+      "plugins_count": 3,
+      "success": true,
+      "errors": []
+    },
+    "Owned67/Oxide-PlantsNeverDie": {
+      "last_crawled": "2025-09-23T19:18:51.727Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "Owned67/RustPlugins": {
+      "last_crawled": "2025-09-23T19:18:53.100Z",
+      "plugins_count": 3,
+      "success": true,
+      "errors": []
+    },
+    "QWERTY-Seba/rust_patrol": {
+      "last_crawled": "2025-09-23T19:18:54.205Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "bodyweightenergy/CaptureTheFlag": {
+      "last_crawled": "2025-09-23T19:18:55.373Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "bodyweightenergy/Nations": {
+      "last_crawled": "2025-09-23T19:18:56.491Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "bodyweightenergy/RustMods": {
+      "last_crawled": "2025-09-23T19:18:57.681Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "bodyweightenergy/plugins": {
+      "last_crawled": "2025-09-23T19:18:58.800Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "dfxphoenix/AdminUtilities": {
+      "last_crawled": "2025-09-23T19:19:00.128Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "dfxphoenix/WipeInfo": {
+      "last_crawled": "2025-09-23T19:19:01.259Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "sami3737/rusttech": {
+      "last_crawled": "2025-09-23T19:19:04.594Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
     }
   },
   "latest_session_statistics": {
     "crawl_session": {
-      "started_at": "2025-09-22T07:24:01.416Z",
-      "completed_at": "2025-09-22T07:24:02.090Z",
-      "duration_ms": 674
+      "started_at": "2025-09-23T19:18:38.066Z",
+      "completed_at": "2025-09-23T19:19:01.562Z",
+      "duration_ms": 23497
     },
     "repositories": {
       "total_found": 0,
-      "already_processed": 1235,
-      "newly_processed": 1,
-      "successful": 1,
+      "already_processed": 1243,
+      "newly_processed": 13,
+      "successful": 13,
       "failed": 0
     },
     "plugins": {
-      "total_found": 1,
+      "total_found": 1679,
       "new_plugins": 1
     }
   }
