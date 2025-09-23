@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-23T06:57:04.935Z",
+  "generated_at": "2025-09-23T13:04:16.130Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1153,
+  "count": 1154,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -875,6 +875,7 @@
     "headtapper/FishingRewards",
     "headtapper/InvasivePlants",
     "headtapper/NameFilter",
+    "headtapper/NoHeavies",
     "headtapper/UnlimitedFuel",
     "heronj2703/RustPlugin-SimpleGather",
     "heymeepo/Decompiled-Assemblies",
