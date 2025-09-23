@@ -1,7 +1,7 @@
 {
-  "generated_at": "2025-09-23T02:11:06.783Z",
+  "generated_at": "2025-09-23T06:57:04.935Z",
   "source": "Author repository discovery from plugin authors",
-  "count": 1151,
+  "count": 1153,
   "repositories": [
     "0xBlitzmachine/Rust-Tools",
     "0xz00m/test",
@@ -1100,6 +1100,7 @@
     "sami3737/SmartChat",
     "sami3737/Social",
     "sami3737/Voter",
+    "saramindra/d1",
     "scarecr0w12/Oxide",
     "scarecr0w12/rust-imperium",
     "scorpyon/plugins",
@@ -1133,6 +1134,7 @@
     "strykes/Oxide2Plugins",
     "tVeratti/rust-meter",
     "tbdscripts/cosmo-rust",
+    "teamgamesllc/teamgames-umod",
     "tebexio/Tebex-Oxide",
     "tebexio/Tebex-Rust",
     "ternpixel/plugins",
