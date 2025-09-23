@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-23T03:00:58.735Z",
-  "total_repositories_processed": 1240,
-  "successful_crawls": 1234,
+  "last_updated": "2025-09-23T08:30:16.606Z",
+  "total_repositories_processed": 1241,
+  "successful_crawls": 1235,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7453,6 +7453,12 @@
     "rustmy/Oxide": {
       "last_crawled": "2025-09-23T03:00:58.634Z",
       "plugins_count": 33,
+      "success": true,
+      "errors": []
+    },
+    "bodyweightenergy/TeamBattlefield": {
+      "last_crawled": "2025-09-23T08:30:16.601Z",
+      "plugins_count": 1,
       "success": true,
       "errors": []
     }
