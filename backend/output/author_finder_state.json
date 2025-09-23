@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-09-22T18:53:39.618Z",
-  "current_author_index": 250,
+  "last_updated": "2025-09-23T02:11:06.782Z",
+  "current_author_index": 279,
   "processed_authors": {
     "djimbou92": {
       "last_processed": "2025-09-21T06:34:59.952Z",
@@ -1205,118 +1205,118 @@
       "success": true
     },
     "devhyper": {
-      "last_processed": "2025-09-14T15:34:54.435Z",
+      "last_processed": "2025-09-23T01:53:49.204Z",
       "repositories_found": 1,
       "success": true
     },
     "dbteku": {
-      "last_processed": "2025-09-14T15:36:12.300Z",
+      "last_processed": "2025-09-23T01:54:20.148Z",
       "repositories_found": 2,
       "success": true
     },
     "soerr": {
-      "last_processed": "2025-09-14T15:36:27.252Z",
+      "last_processed": "2025-09-23T01:54:25.936Z",
       "repositories_found": 1,
       "success": true
     },
     "razorfish-sl": {
-      "last_processed": "2025-09-14T15:36:32.965Z",
+      "last_processed": "2025-09-23T01:54:30.666Z",
       "repositories_found": 1,
       "success": true
     },
     "TebexOllie": {
-      "last_processed": "2025-09-14T15:36:46.056Z",
+      "last_processed": "2025-09-23T01:54:39.809Z",
       "repositories_found": 1,
       "success": true
     },
     "liam-wiltshire": {
-      "last_processed": "2025-09-14T15:39:13.913Z",
+      "last_processed": "2025-09-23T01:55:46.644Z",
       "repositories_found": 1,
       "success": true
     },
     "Naaathan": {
-      "last_processed": "2025-09-14T15:39:21.439Z",
+      "last_processed": "2025-09-23T01:55:52.968Z",
       "repositories_found": 1,
       "success": true
     },
     "collectVood": {
-      "last_processed": "2025-09-14T15:40:21.106Z",
+      "last_processed": "2025-09-23T01:56:18.746Z",
       "repositories_found": 5,
       "success": true
     },
     "benhamiltonpro": {
-      "last_processed": "2025-09-14T15:41:29.762Z",
+      "last_processed": "2025-09-23T01:56:49.659Z",
       "repositories_found": 0,
       "success": true
     },
     "nurdism": {
-      "last_processed": "2025-09-14T15:46:47.871Z",
+      "last_processed": "2025-09-23T01:58:53.988Z",
       "repositories_found": 1,
       "success": true
     },
     "mohamedyassine-benmiled": {
-      "last_processed": "2025-09-14T15:47:48.855Z",
+      "last_processed": "2025-09-23T01:59:16.155Z",
       "repositories_found": 1,
       "success": true
     },
     "mleem97": {
-      "last_processed": "2025-09-14T15:48:18.594Z",
+      "last_processed": "2025-09-23T01:59:33.912Z",
       "repositories_found": 2,
       "success": true
     },
     "Xairooo": {
-      "last_processed": "2025-09-14T15:48:23.832Z",
+      "last_processed": "2025-09-23T01:59:37.755Z",
       "repositories_found": 0,
       "success": true,
       "error": "Skipped - too many repositories (129)"
     },
     "GFLClan": {
-      "last_processed": "2025-09-14T15:49:09.167Z",
+      "last_processed": "2025-09-23T01:59:58.242Z",
       "repositories_found": 1,
       "success": true
     },
     "txnitxnichopper": {
-      "last_processed": "2025-09-14T15:50:56.942Z",
+      "last_processed": "2025-09-23T02:01:03.736Z",
       "repositories_found": 1,
       "success": true
     },
     "ailishev": {
-      "last_processed": "2025-09-14T15:53:50.800Z",
+      "last_processed": "2025-09-23T02:02:20.881Z",
       "repositories_found": 1,
       "success": true
     },
     "Azuriom": {
-      "last_processed": "2025-09-14T15:54:25.035Z",
+      "last_processed": "2025-09-23T02:02:47.463Z",
       "repositories_found": 1,
       "success": true
     },
     "osirislab": {
-      "last_processed": "2025-09-14T16:08:11.044Z",
+      "last_processed": "2025-09-23T02:05:53.103Z",
       "repositories_found": 0,
       "success": true
     },
     "Ghostyenc": {
-      "last_processed": "2025-09-14T16:08:35.988Z",
+      "last_processed": "2025-09-23T02:06:08.228Z",
       "repositories_found": 6,
       "success": true
     },
     "spencermcw": {
-      "last_processed": "2025-09-14T16:09:57.516Z",
+      "last_processed": "2025-09-23T02:06:34.260Z",
       "repositories_found": 1,
       "success": true
     },
     "RelFost": {
-      "last_processed": "2025-09-14T16:10:21.203Z",
+      "last_processed": "2025-09-23T02:06:50.238Z",
       "repositories_found": 0,
       "success": true
     },
     "Mentol0408": {
-      "last_processed": "2025-09-14T16:10:30.299Z",
+      "last_processed": "2025-09-23T02:06:53.634Z",
       "repositories_found": 1,
       "success": true
     },
     "LauraRozier": {
-      "last_processed": "2025-09-14T16:15:06.349Z",
+      "last_processed": "2025-09-23T02:08:35.414Z",
       "repositories_found": 8,
       "success": true
     },
@@ -1326,32 +1326,32 @@
       "success": true
     },
     "rust-app-io": {
-      "last_processed": "2025-09-14T16:16:03.701Z",
+      "last_processed": "2025-09-23T02:08:39.826Z",
       "repositories_found": 1,
       "success": true
     },
     "admin4eg": {
-      "last_processed": "2025-09-14T16:16:57.919Z",
+      "last_processed": "2025-09-23T02:08:56.081Z",
       "repositories_found": 1,
       "success": true
     },
     "FtuoilXelrash": {
-      "last_processed": "2025-09-14T16:18:22.112Z",
+      "last_processed": "2025-09-23T02:09:35.566Z",
       "repositories_found": 3,
       "success": true
     },
     "rustmy": {
-      "last_processed": "2025-09-14T16:20:22.448Z",
-      "repositories_found": 21,
+      "last_processed": "2025-09-23T02:10:24.190Z",
+      "repositories_found": 22,
       "success": true
     },
     "alfredo-leonelli": {
-      "last_processed": "2025-09-14T16:20:41.971Z",
+      "last_processed": "2025-09-23T02:10:38.193Z",
       "repositories_found": 4,
       "success": true
     },
     "NemoAM7": {
-      "last_processed": "2025-09-14T16:21:30.672Z",
+      "last_processed": "2025-09-23T02:11:06.782Z",
       "repositories_found": 1,
       "success": true
     },
@@ -2992,6 +2992,7 @@
     "Visagalis/Oxide",
     "koenrad/Oxide",
     "brandonnorsworthy/R1Z1",
-    "fuflik52/umod-plugins"
+    "fuflik52/umod-plugins",
+    "rustmy/Oxide"
   ]
 }
