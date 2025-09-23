@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-22T15:25:19.848Z",
-  "total_repositories_processed": 1239,
-  "successful_crawls": 1233,
+  "last_updated": "2025-09-23T03:00:58.735Z",
+  "total_repositories_processed": 1240,
+  "successful_crawls": 1234,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7447,6 +7447,12 @@
     "Owned67/MonumentAddonsTanki": {
       "last_crawled": "2025-09-22T15:25:19.842Z",
       "plugins_count": 2,
+      "success": true,
+      "errors": []
+    },
+    "rustmy/Oxide": {
+      "last_crawled": "2025-09-23T03:00:58.634Z",
+      "plugins_count": 33,
       "success": true,
       "errors": []
     }
