@@ -1,7 +1,7 @@
 {
-  "last_updated": "2025-09-23T08:30:16.606Z",
-  "total_repositories_processed": 1241,
-  "successful_crawls": 1235,
+  "last_updated": "2025-09-23T13:31:46.042Z",
+  "total_repositories_processed": 1242,
+  "successful_crawls": 1236,
   "failed_crawls": 6,
   "processed_repositories": {
     "djimbou92/SimpleScrapShop": {
@@ -7458,6 +7458,12 @@
     },
     "bodyweightenergy/TeamBattlefield": {
       "last_crawled": "2025-09-23T08:30:16.601Z",
+      "plugins_count": 1,
+      "success": true,
+      "errors": []
+    },
+    "headtapper/NoHeavies": {
+      "last_crawled": "2025-09-23T13:31:46.035Z",
       "plugins_count": 1,
       "success": true,
       "errors": []
