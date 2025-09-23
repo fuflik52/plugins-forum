@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-23T13:04:16.129Z",
+  "last_updated": "2025-09-23T18:45:54.707Z",
   "current_author_index": 0,
   "processed_authors": {
     "djimbou92": {
@@ -616,8 +616,8 @@
       "success": true
     },
     "13dasd123": {
-      "last_processed": "2025-09-14T13:17:56.245Z",
-      "repositories_found": 13,
+      "last_processed": "2025-09-23T18:38:22.467Z",
+      "repositories_found": 14,
       "success": true
     },
     "Ghenghis": {
@@ -649,8 +649,8 @@
       "error": "Skipped - too many repositories (156)"
     },
     "skulidropek": {
-      "last_processed": "2025-09-14T13:26:34.882Z",
-      "repositories_found": 6,
+      "last_processed": "2025-09-23T18:45:11.323Z",
+      "repositories_found": 5,
       "success": true
     },
     "mkojoa": {
@@ -747,7 +747,7 @@
       "success": true
     },
     "DeXGaming": {
-      "last_processed": "2025-09-14T13:44:25.934Z",
+      "last_processed": "2025-09-23T18:45:16.487Z",
       "repositories_found": 2,
       "success": true
     },
@@ -1074,8 +1074,8 @@
       "success": true
     },
     "sami3737": {
-      "last_processed": "2025-09-14T14:53:44.093Z",
-      "repositories_found": 21,
+      "last_processed": "2025-09-23T18:45:49.050Z",
+      "repositories_found": 22,
       "success": true
     },
     "fuflik52": {
@@ -1377,7 +1377,7 @@
       "success": true
     },
     "stoneharry": {
-      "last_processed": "2025-09-14T16:30:39.119Z",
+      "last_processed": "2025-09-23T18:41:33.297Z",
       "repositories_found": 1,
       "success": true
     },
@@ -1625,7 +1625,7 @@
       "success": true
     },
     "Steamcord": {
-      "last_processed": "2025-09-14T17:05:46.249Z",
+      "last_processed": "2025-09-23T18:41:39.478Z",
       "repositories_found": 1,
       "success": true
     },
@@ -1810,12 +1810,12 @@
       "success": true
     },
     "muxira": {
-      "last_processed": "2025-09-15T06:39:03.567Z",
+      "last_processed": "2025-09-23T18:38:42.619Z",
       "repositories_found": 1,
       "success": true
     },
     "dan4451": {
-      "last_processed": "2025-09-16T06:37:11.494Z",
+      "last_processed": "2025-09-23T18:45:52.702Z",
       "repositories_found": 1,
       "success": true
     },
@@ -1838,6 +1838,31 @@
     "PT-Studios": {
       "last_processed": "2025-09-21T18:51:45.259Z",
       "repositories_found": 1,
+      "success": true
+    },
+    "dfxphoenix": {
+      "last_processed": "2025-09-23T18:38:36.412Z",
+      "repositories_found": 3,
+      "success": true
+    },
+    "bodyweightenergy": {
+      "last_processed": "2025-09-23T18:39:22.452Z",
+      "repositories_found": 5,
+      "success": true
+    },
+    "Owned67": {
+      "last_processed": "2025-09-23T18:40:44.362Z",
+      "repositories_found": 6,
+      "success": true
+    },
+    "math280h": {
+      "last_processed": "2025-09-23T18:42:19.544Z",
+      "repositories_found": 1,
+      "success": true
+    },
+    "QWERTY-Seba": {
+      "last_processed": "2025-09-23T18:42:40.756Z",
+      "repositories_found": 2,
       "success": true
     }
   },
@@ -2995,6 +3020,26 @@
     "rustmy/Oxide",
     "saramindra/d1",
     "teamgamesllc/teamgames-umod",
-    "headtapper/NoHeavies"
+    "headtapper/NoHeavies",
+    "13dasd123/https-slivrust-plugin.ru-",
+    "13dasd123/SlivPlugins",
+    "dfxphoenix/AdminUtilities",
+    "dfxphoenix/EasyVoteExtended",
+    "dfxphoenix/WipeInfo",
+    "bodyweightenergy/CaptureTheFlag",
+    "bodyweightenergy/Nations",
+    "bodyweightenergy/plugins",
+    "bodyweightenergy/RustMods",
+    "bodyweightenergy/TeamBattlefield",
+    "Owned67/FailedCodeAlert",
+    "Owned67/InvasivePlants",
+    "Owned67/MonumentAddons",
+    "Owned67/MonumentAddonsTanki",
+    "Owned67/Oxide-PlantsNeverDie",
+    "Owned67/RustPlugins",
+    "math280h/Oxide-ChatManager",
+    "QWERTY-Seba/rust_patrol",
+    "QWERTY-Seba/rust_plugins",
+    "sami3737/rusttech"
   ]
 }
